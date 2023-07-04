@@ -8,4 +8,11 @@ public class MainFragmentManager {
     public static void init (FragmentManager supportFragmentManager){
         MainFragmentManager.supportFragmentManager = supportFragmentManager;
     }
+
+    public static void setView (int fragmentContainerView, Class fragmentViewClass){
+        supportFragmentManager.beginTransaction()
+                .setReorderingAllowed(true)
+                .replace(fragmentContainerView, fragmentViewClass, null)
+                .commit();
+    }
 }

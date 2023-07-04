@@ -12,7 +12,7 @@ import sas.mastermind.core.controllers.StartController;
 
 public class StartView extends Fragment {
     public void interact(StartController startController) {
-
+        MainFragmentManager.setView(R.id.fragment_container_view, StartView.class);
     }
 
     @Override

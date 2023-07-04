@@ -1,7 +1,5 @@
 package sas.mastermind.android;
 
-import androidx.fragment.app.FragmentManager;
-
 import sas.mastermind.android.dao.SessionDAO;
 import sas.mastermind.core.MasterMind;
 import sas.mastermind.core.controllers.Logic;
@@ -22,6 +20,7 @@ public class AndroidMasterMind extends MasterMind {
 
     @Override
     protected void play() {
+        System.out.println("PLAY DE ANDROID MASTER MIND");
         super.play();
     }
 }
