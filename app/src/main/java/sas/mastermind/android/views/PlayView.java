@@ -12,6 +12,8 @@ import sas.mastermind.core.controllers.PlayController;
 
 public class PlayView extends Fragment {
     public void interact(PlayController playController) {
+        MainFragmentManager.setView(R.id.fragment_container_view, PlayView.class);
+        playController.next();
     }
 
     @Override

@@ -12,6 +12,8 @@ import sas.mastermind.core.controllers.ResumeController;
 
 public class ResumeView extends Fragment {
     public void interact(ResumeController resumeController) {
+        MainFragmentManager.setView(R.id.fragment_container_view, ResumeView.class);
+        resumeController.resume(true);
     }
 
     @Override

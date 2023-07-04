@@ -12,6 +12,8 @@ import sas.mastermind.core.controllers.SaveController;
 
 public class SaveView extends Fragment {
     public void interact(SaveController saveController) {
+        MainFragmentManager.setView(R.id.fragment_container_view, SaveView.class);
+        saveController.next();
     }
 
     @Override

@@ -26,11 +26,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
 
-    implementation files('H:\\spring-boot-proyects\\master-mind-multiplatform\\master-mind-core\\target\\master-mind-core-1.0.0.jar')
+    implementation files('/home/pacomorando/SpringBootProjects/multiplatform-master-mind/master-mind-core/target/master-mind-core-1.0.0.jar')
     def fragment_version = "1.5.7"
     implementation "androidx.fragment:fragment:$fragment_version"
     implementation 'androidx.appcompat:appcompat:1.6.1'
