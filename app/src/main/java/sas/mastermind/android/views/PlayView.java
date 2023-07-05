@@ -16,13 +16,13 @@ public class PlayView extends Fragment {
     private PlayViewBinding binding;
     private PlayController playController;
     public void interact(PlayController playController) {
-        MainFragmentManager.setView(R.id.fragment_container_view, PlayView.class);
+
         String secretCombination = playController.getSecretCombination().toString();
         System.out.println(secretCombination);
         System.out.println(this + "OHOHOHOHOHOHOHOHOHOOHOH");
         //Toast.makeText(getContext(), secretCombination, Toast.LENGTH_SHORT).show();
         this.playController = playController;
-        //playController.next();
+        playController.next();
     }
 
     @Override
@@ -35,7 +35,7 @@ public class PlayView extends Fragment {
 
     }
 
-    public void printController(){
+    public void redo(){
         String controller;
         if (this.playController == null){
             controller = "missing cotroller";
@@ -49,7 +49,7 @@ public class PlayView extends Fragment {
     public void addNames(){
         String secretCombination = this.playController.getSecretCombination().toString();
         System.out.println(secretCombination);
-       // Toast.makeText(getContext(), secretCombination, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), secretCombination, Toast.LENGTH_SHORT).show();
      //   String names[] = {"Pudin", "Nata", "Neni", "Paco", "Euler", "Asgard","Pudin", "Nata", "Neni", "Paco", "Euler", "Asgard","Pudin", "Nata", "Neni", "Paco", "Euler", "Asgard"};
     }
 }

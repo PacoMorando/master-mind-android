@@ -16,7 +16,6 @@ public class StartView extends Fragment {
     private StartViewBinding binding;
     public String title = "START GAME";
     public void interact(StartController startController) {
-        MainFragmentManager.setView(R.id.fragment_container_view, StartView.class);
         startController.start();
     }
 

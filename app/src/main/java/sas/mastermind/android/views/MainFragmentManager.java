@@ -1,5 +1,6 @@
 package sas.mastermind.android.views;
 
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 public class MainFragmentManager {
@@ -14,5 +15,14 @@ public class MainFragmentManager {
                 .setReorderingAllowed(true)
                 .replace(fragmentContainerView, fragmentViewClass, null)
                 .commit();
+
+    }
+
+    public static void setView (int fragmentContainerView, Fragment fragmentView){
+        supportFragmentManager.beginTransaction()
+                .setReorderingAllowed(true)
+                .replace(fragmentContainerView, fragmentView, null)
+                .commit();
+
     }
 }
