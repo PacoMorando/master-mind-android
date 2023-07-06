@@ -4,9 +4,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.PlayViewBinding;
@@ -16,11 +19,6 @@ public class PlayView extends Fragment {
     private PlayViewBinding binding;
     private PlayController playController;
     public void interact(PlayController playController) {
-
-        String secretCombination = playController.getSecretCombination().toString();
-        System.out.println(secretCombination);
-        System.out.println(this + "OHOHOHOHOHOHOHOHOHOOHOH");
-        //Toast.makeText(getContext(), secretCombination, Toast.LENGTH_SHORT).show();
         this.playController = playController;
         playController.next();
     }
@@ -30,9 +28,14 @@ public class PlayView extends Fragment {
         this.binding = PlayViewBinding.inflate(inflater, container, false);
         this.binding.setPlayView(this);
         View view = binding.getRoot();
-        System.out.println(this + "XLXLXLXLXLXLXLXLXLXLXLXLXLX");
+        this.setBoard();
         return view;
 
+    }
+
+    private void setBoard() {
+        binding.boardRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        binding.boardRecyclerView.setAdapter(new BoardAdapter());
     }
 
     public void redo(){
@@ -42,14 +45,12 @@ public class PlayView extends Fragment {
         }else {
             controller = this.playController.toString();
         }
-        System.out.println(this + "OHOHOHOHOHOHOHOHOHOOHOH");
          Toast.makeText(getContext(), controller, Toast.LENGTH_SHORT).show();
     }
 
-    public void addNames(){
-        String secretCombination = this.playController.getSecretCombination().toString();
-        System.out.println(secretCombination);
-        Toast.makeText(getContext(), secretCombination, Toast.LENGTH_SHORT).show();
-     //   String names[] = {"Pudin", "Nata", "Neni", "Paco", "Euler", "Asgard","Pudin", "Nata", "Neni", "Paco", "Euler", "Asgard","Pudin", "Nata", "Neni", "Paco", "Euler", "Asgard"};
+    public void undo(){
+        Toast.makeText(getContext(), this.playController.getSecretCombination().toString(), Toast.LENGTH_SHORT).show();
+        /*binding.boardRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        binding.boardRecyclerView.setAdapter(new BoardAdapter());*/
     }
 }

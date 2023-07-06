@@ -10,14 +10,6 @@ public class MainFragmentManager {
         MainFragmentManager.supportFragmentManager = supportFragmentManager;
     }
 
-    public static void setView (int fragmentContainerView, Class fragmentViewClass){
-        supportFragmentManager.beginTransaction()
-                .setReorderingAllowed(true)
-                .replace(fragmentContainerView, fragmentViewClass, null)
-                .commit();
-
-    }
-
     public static void setView (int fragmentContainerView, Fragment fragmentView){
         supportFragmentManager.beginTransaction()
                 .setReorderingAllowed(true)

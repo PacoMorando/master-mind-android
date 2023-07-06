@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boardRoad"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingVertical="5dp">
@@ -7,8 +8,8 @@
     <TextView
         android:layout_marginLeft="15dp"
         android:id="@+id/results"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
         android:text="*"
         android:textColor="@color/white"
         android:textSize="15pt"
@@ -17,8 +18,8 @@
     <TextView
         android:id="@+id/colorOne"
         android:layout_marginLeft="15dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
         android:text="*"
         android:textColor="@color/white"
         android:textSize="15pt"
@@ -27,8 +28,8 @@
     <TextView
         android:id="@+id/colorTwo"
         android:layout_marginLeft="15dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
         android:text="*"
         android:textColor="@color/white"
         android:textSize="15pt"
@@ -37,8 +38,8 @@
     <TextView
         android:id="@+id/colorThree"
         android:layout_marginLeft="15dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
         android:text="*"
         android:textColor="@color/white"
         android:textSize="15pt"
@@ -47,8 +48,8 @@
     <TextView
         android:id="@+id/colorFour"
         android:layout_marginLeft="15dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
         android:text="*"
         android:textColor="@color/white"
         android:textSize="15pt"

@@ -35,11 +35,13 @@ public class View extends sas.mastermind.core.views.View {
 
     @Override
     public void visit(ResumeController resumeController) {
+        MainFragmentManager.setView(R.id.fragment_container_view, this.resumeView);
         this.resumeView.interact(resumeController);
     }
 
     @Override
     public void visit(SaveController saveController) {
+        MainFragmentManager.setView(R.id.fragment_container_view, this.saveView);
         this.saveView.interact(saveController);
     }
 }

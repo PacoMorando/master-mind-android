@@ -1,19 +1,19 @@
 package sas.mastermind.android.views;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import sas.mastermind.android.R;
+import sas.mastermind.android.databinding.PlayViewBinding;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> {
-    //private Context context;
-    //private PlayViewBinding binding;
+    private static final int PROPOSED_COMBINATIONS_SIZE = 10;
+    private PlayViewBinding binding;
 
     /*public BoardAdapter(PlayViewBinding binding) {
         this.binding = binding;
@@ -22,8 +22,7 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.board_road, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.proposed_combination_row, parent, false);
         return new ViewHolder(view);
     }
 
@@ -34,12 +33,14 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        return 10;
+        return this.PROPOSED_COMBINATIONS_SIZE;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
+        LinearLayout boardRoad;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            this.boardRoad = itemView.findViewById(R.id.boardRoad);
         }
     }
 }
