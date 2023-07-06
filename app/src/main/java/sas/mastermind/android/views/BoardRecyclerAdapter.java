@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.PlayViewBinding;
 
-public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> {
+public class BoardRecyclerAdapter extends RecyclerView.Adapter<BoardRecyclerAdapter.ViewHolder> {
     private static final int PROPOSED_COMBINATIONS_SIZE = 10;
     private PlayViewBinding binding;
 

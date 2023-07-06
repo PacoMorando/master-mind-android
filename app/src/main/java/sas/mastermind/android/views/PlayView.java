@@ -4,23 +4,21 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.PlayViewBinding;
 import sas.mastermind.core.controllers.PlayController;
 
 public class PlayView extends Fragment {
+    private PlayController playController;//este lo deberia de tener que borrar al final
     private PlayViewBinding binding;
-    private PlayController playController;
+    private BoardView boardView;
     public void interact(PlayController playController) {
-        this.playController = playController;
-        playController.next();
+        this.playController = playController; // este lo deberia de poder borrar al final;
+        this.boardView = new BoardView(playController);
     }
 
     @Override
@@ -28,14 +26,34 @@ public class PlayView extends Fragment {
         this.binding = PlayViewBinding.inflate(inflater, container, false);
         this.binding.setPlayView(this);
         View view = binding.getRoot();
+        System.out.println(this);
         this.setBoard();
         return view;
+    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        this.showBoardResult();
     }
 
     private void setBoard() {
-        binding.boardRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        binding.boardRecyclerView.setAdapter(new BoardAdapter());
+        this.binding.boardRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        this.binding.boardRecyclerView.setAdapter(new BoardRecyclerAdapter());
+       // this.showBoard(playController);
+    }
+
+    private void showBoard(PlayController playController) {
+            this.boardView.showBoard(playController);
+    }
+
+    private void showBoardResult() {
+        if (!this.playController.isFinished()) {
+            this.boardView.showBoard(playController);
+            System.out.println("SHOW BOARD RESULT ON RESUME PLAY VIEW");
+        } else {
+            boardView.showGameResult(playController);
+        }
     }
 
     public void redo(){

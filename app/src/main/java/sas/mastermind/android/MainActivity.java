@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import sas.mastermind.android.views.MainFragmentManager;
+import sas.mastermind.android.views.Activity;
 
 public class MainActivity extends AppCompatActivity {
     private final AndroidMasterMind androidMasterMind = new AndroidMasterMind();
@@ -14,9 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MainFragmentManager.init(getSupportFragmentManager());
+        Activity.init(this);
         this.androidMasterMind.play();
-
     }
 
     public void next(View view) {

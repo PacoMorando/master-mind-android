@@ -1,7 +1,5 @@
 package sas.mastermind.android.views;
 
-import androidx.fragment.app.FragmentManager;
-
 import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
 import sas.mastermind.core.controllers.ResumeController;
@@ -23,25 +21,25 @@ public class View extends sas.mastermind.core.views.View {
 
     @Override
     public void visit(StartController startController) {
-        MainFragmentManager.setView(R.id.fragment_container_view, this.startView);
+        Activity.setFragmentView(R.id.fragment_container_view, this.startView);
         this.startView.interact(startController);
     }
 
     @Override
     public void visit(PlayController playController) {
-        MainFragmentManager.setView(R.id.fragment_container_view, this.playView);
+        Activity.setFragmentView(R.id.fragment_container_view, this.playView);
         this.playView.interact(playController);
     }
 
     @Override
     public void visit(ResumeController resumeController) {
-        MainFragmentManager.setView(R.id.fragment_container_view, this.resumeView);
+        Activity.setFragmentView(R.id.fragment_container_view, this.resumeView);
         this.resumeView.interact(resumeController);
     }
 
     @Override
     public void visit(SaveController saveController) {
-        MainFragmentManager.setView(R.id.fragment_container_view, this.saveView);
+        Activity.setFragmentView(R.id.fragment_container_view, this.saveView);
         this.saveView.interact(saveController);
     }
 }
