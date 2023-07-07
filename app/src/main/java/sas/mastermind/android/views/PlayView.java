@@ -40,7 +40,7 @@ public class PlayView extends Fragment {
     private void setBoard() {
         this.binding.boardRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         this.binding.boardRecyclerView.setAdapter(new BoardRecyclerAdapter());
-       // this.showBoard(playController);
+        //this.showBoard(playController);
     }
 
     private void showBoard(PlayController playController) {
@@ -57,13 +57,7 @@ public class PlayView extends Fragment {
     }
 
     public void redo(){
-        String controller;
-        if (this.playController == null){
-            controller = "missing cotroller";
-        }else {
-            controller = this.playController.toString();
-        }
-         Toast.makeText(getContext(), controller, Toast.LENGTH_SHORT).show();
+        this.boardView.pintarCombinacionSecreta();
     }
 
     public void undo(){

@@ -18,7 +18,7 @@ import sas.mastermind.core.models.SecretCombination;
 public class SecretCombinationView extends Fragment {
     SecretCombination secretCombination;
     private SecretCombinationBinding binding;
-    private ArrayList <TextView> secretCombinationColors;
+    private final ArrayList<TextView> secretCombinationColors = new ArrayList<>();
 
     public SecretCombinationView(SecretCombination secretCombination) {
         this.secretCombination = secretCombination;
@@ -40,13 +40,16 @@ public class SecretCombinationView extends Fragment {
         this.secretCombinationColors.add(this.binding.secretColorFour);
     }
 
-    public void showUnrevealed() {
-        for (TextView color : this.secretCombinationColors){
-            color.setText("?");
+    public void showUnrevealed() { //Tal vez deberia de quitar esta metodo y dejar por dejecto en el xml la combinacion sin revelar
+        for (TextView color : this.secretCombinationColors) {
+            color.setText("¿?");
         }
     }
 
     public void showRevealed() {
-
+        String secretCombination = this.secretCombination.toString();
+        for (int i = 0; i < this.secretCombinationColors.size(); i++) {
+            this.secretCombinationColors.get(i).setText(String.valueOf(secretCombination.charAt(i)));
+        }
     }
 }

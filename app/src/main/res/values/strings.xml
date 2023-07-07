@@ -2,4 +2,6 @@
     <string name="app_name">MasterMind</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">FRAGMENTO TEST</string>
+    <string name="unrevealed_color">\?</string>
+    <string name="proposed_color">#</string>
 </resources>

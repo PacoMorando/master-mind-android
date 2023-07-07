@@ -4,12 +4,15 @@ import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
 
 public class BoardView {
-    private SecretCombinationView secretCombinationView;
+    private final SecretCombinationView secretCombinationView;
     private ResultView resultView;
 
     public BoardView(PlayController playController) {
         this.secretCombinationView = new SecretCombinationView(playController.getSecretCombination());
         Activity.setFragmentView(R.id.secretCombinationFragmentContainer, this.secretCombinationView);
+        //################ ESTO NO SE SI VA AQUIIIIIII ###################
+        ProposedCombinationView proposedCombinationView = new ProposedCombinationView();
+        Activity.setFragmentView(R.id.proposedCombinationFragmentContainer, proposedCombinationView);
     }
 
     public void showBoard(PlayController playController) {
@@ -22,10 +25,13 @@ public class BoardView {
         if (playController.isWinner()) {
             //Message.WINNER.write();
         } else {
-            new SecretCombinationView(playController.getSecretCombination()).showRevealed();
-            //Message.ANSWER.write();
+            this.secretCombinationView.showRevealed();
             //Message.LOSER.write();
         }
         playController.next();
+    }
+
+    public void pintarCombinacionSecreta(){
+        this.secretCombinationView.showRevealed();
     }
 }
