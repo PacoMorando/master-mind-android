@@ -9,20 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import sas.mastermind.android.R;
-import sas.mastermind.android.databinding.PlayViewBinding;
 
-public class BoardRecyclerAdapter extends RecyclerView.Adapter<BoardRecyclerAdapter.ViewHolder> {
-    private static final int PROPOSED_COMBINATIONS_SIZE = 10;
-    private PlayViewBinding binding;
-
-    /*public BoardAdapter(PlayViewBinding binding) {
-        this.binding = binding;
-    }*/
+public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecyclerAdapter.ViewHolder> {
+    private final int PROPOSED_COMBINATIONS_SIZE = 10;
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.proposed_combination_row, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.result_combination_row, parent, false);
         return new ViewHolder(view);
     }
 

@@ -22,20 +22,18 @@
             android:layout_height="wrap_content"
             android:paddingVertical="10dp"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/boardRecyclerView"
-            android:layout_width="340dp"
-            android:layout_height="410dp"
-            android:layout_gravity="center"
-            android:background="@color/white"
-            app:layout_constraintVertical_bias="0.1" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/resultsRecyclerViewFragmentContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/boardRecyclerView">
+            app:layout_constraintTop_toBottomOf="@+id/resultsRecyclerView">
 
             <Button
                 android:id="@+id/undo"
@@ -67,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="36dp"
-                android:onClick="next"
+                android:onClick="@{() -> playView.addProposeCombination()}"
                 android:text="PROPOSE"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

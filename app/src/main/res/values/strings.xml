@@ -4,4 +4,12 @@
     <string name="hello_blank_fragment">FRAGMENTO TEST</string>
     <string name="unrevealed_color">\?</string>
     <string name="proposed_color">#</string>
+    <string-array name="combinatios_colors">
+        <item>r</item>
+        <item>g</item>
+        <item>b</item>
+        <item>y</item>
+        <item>c</item>
+        <item>m</item>
+    </string-array>
 </resources>

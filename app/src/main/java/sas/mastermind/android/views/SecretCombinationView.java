@@ -16,7 +16,7 @@ import sas.mastermind.android.databinding.SecretCombinationBinding;
 import sas.mastermind.core.models.SecretCombination;
 
 public class SecretCombinationView extends Fragment {
-    SecretCombination secretCombination;
+    private final SecretCombination secretCombination;
     private SecretCombinationBinding binding;
     private final ArrayList<TextView> secretCombinationColors = new ArrayList<>();
 
