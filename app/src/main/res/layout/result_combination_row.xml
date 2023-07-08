@@ -3,6 +3,7 @@
     android:id="@+id/boardRoad"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="horizontal"
     android:paddingVertical="5dp">
 
     <TextView
@@ -10,9 +11,10 @@
         android:id="@+id/results"
         android:layout_width="@dimen/token_size"
         android:layout_height="@dimen/token_size"
-        android:text="*"
+        android:text=""
+        android:layout_gravity="center"
         android:textColor="@color/white"
-        android:textSize="15pt"
+        android:textSize="9pt"
         android:textAlignment="center"
         android:background="@color/black"/>
     <TextView

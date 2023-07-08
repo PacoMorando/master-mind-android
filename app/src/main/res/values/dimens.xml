@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="token_size">50dp</dimen>
+    <dimen name="token_size">40dp</dimen>
 </resources>

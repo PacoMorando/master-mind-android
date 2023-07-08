@@ -31,7 +31,7 @@ public class PlayView extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        this.boardView.showBoardResult(this.playController);
+        this.boardView.showBoardResults();
     }
 
     /*private void showBoardResult() {
@@ -44,9 +44,8 @@ public class PlayView extends Fragment {
     }*/
 
     public void addProposeCombination() {
-        this.boardView.addProposedCombination(this.playController);
-        this.boardView.showBoardResult(this.playController);
-        //Activity.toast(String.valueOf(this.playController.getCurrentAttempt()));
+        this.boardView.addProposedCombination();
+        this.boardView.showBoardResults();
     }
 
     public void undo() {

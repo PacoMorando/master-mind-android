@@ -12,14 +12,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import sas.mastermind.android.databinding.ResultsViewBinding;
 import sas.mastermind.core.controllers.PlayController;
+import sas.mastermind.core.models.ProposedCombination;
 
 public class ResultsView extends Fragment {
+    //private final PlayController playController;
     private ResultsViewBinding binding;
-
-    private final PlayController playController;
+    private final ResultsRecyclerAdapter resultsRecyclerAdapter;
 
     public ResultsView(PlayController playController) {
-        this.playController = playController;
+        //this.playController = playController;
+        this.resultsRecyclerAdapter = new ResultsRecyclerAdapter(playController);
     }
 
     @Nullable
@@ -33,10 +35,12 @@ public class ResultsView extends Fragment {
 
     private void setResultsRecyclerView() {
         this.binding.resultsRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        this.binding.resultsRecyclerView.setAdapter(new ResultsRecyclerAdapter());
+        this.binding.resultsRecyclerView.setAdapter(this.resultsRecyclerAdapter);
     }
 
-    public void showProposedCombinationsResults() { //FALTA QUE ESTE REPINTE EL RECYCLER VIEW CON LAS COMBINACIONES PROPOUESTAS Y LOS RESULTADOS
-
+    public void showProposedCombinationsResult(PlayController playController) { //FALTA QUE ESTE REPINTE EL RECYCLER VIEW CON LAS COMBINACIONES PROPOUESTAS Y LOS RESULTADOS
+        if (playController.getCurrentAttempt() > 0) {
+            this.resultsRecyclerAdapter.notifyDataSetChanged();
+        }
     }
 }
