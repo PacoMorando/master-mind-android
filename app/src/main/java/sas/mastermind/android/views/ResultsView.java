@@ -15,12 +15,10 @@ import sas.mastermind.core.controllers.PlayController;
 import sas.mastermind.core.models.ProposedCombination;
 
 public class ResultsView extends Fragment {
-    //private final PlayController playController;
     private ResultsViewBinding binding;
     private final ResultsRecyclerAdapter resultsRecyclerAdapter;
 
     public ResultsView(PlayController playController) {
-        //this.playController = playController;
         this.resultsRecyclerAdapter = new ResultsRecyclerAdapter(playController);
     }
 
@@ -38,7 +36,7 @@ public class ResultsView extends Fragment {
         this.binding.resultsRecyclerView.setAdapter(this.resultsRecyclerAdapter);
     }
 
-    public void showProposedCombinationsResult(PlayController playController) { //FALTA QUE ESTE REPINTE EL RECYCLER VIEW CON LAS COMBINACIONES PROPOUESTAS Y LOS RESULTADOS
+    public void showProposedCombinationsResult(PlayController playController) {
         if (playController.getCurrentAttempt() > 0) {
             this.resultsRecyclerAdapter.notifyDataSetChanged();
         }

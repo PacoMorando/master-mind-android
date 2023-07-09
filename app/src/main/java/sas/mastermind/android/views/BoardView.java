@@ -10,7 +10,7 @@ public class BoardView {
     private final ProposedCombinationView proposedCombinationView;
     private ResultsView resultsView;
 
-    public BoardView(PlayController playController) { // Plantearse que el play controller sea un parametro de la clase
+    public BoardView(PlayController playController) {
         this.playController = playController;
         this.secretCombinationView = new SecretCombinationView(this.playController.getSecretCombination());
         Activity.setFragmentView(R.id.secretCombinationFragmentContainer, this.secretCombinationView);
@@ -28,7 +28,7 @@ public class BoardView {
             this.resultsView.showProposedCombinationsResult(this.playController);
             this.showGameResult();
             SaveDialog saveDialog = new SaveDialog(this.playController);
-            saveDialog.setCancelable(false); // esto es para que no se pueda clicar fuer del dialogo, pero tengo que programar que el boton de propose se desactive cuando termine la partida
+            saveDialog.setCancelable(false); // esto es para que no se pueda clicar fuer del dialogo, pero tengo que TODO programar que el boton de propose se desactive cuando termine la partida
             saveDialog.show(Activity.getInstance().getSupportFragmentManager(),"save game");
         }
     }
@@ -48,7 +48,7 @@ public class BoardView {
         this.proposedCombinationView.addProposedCombination(this.playController);
     }
 
-    public void pintarCombinacionSecreta() {///este se va a tener que ir porque era solo para probar
+    public void pintarCombinacionSecreta() {// TODO este se va a tener que ir porque era solo para probar
         this.secretCombinationView.showRevealed();
     }
 }

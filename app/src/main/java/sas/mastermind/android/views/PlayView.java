@@ -11,12 +11,12 @@ import sas.mastermind.android.databinding.PlayViewBinding;
 import sas.mastermind.core.controllers.PlayController;
 
 public class PlayView extends Fragment {
-    private PlayController playController;//este lo deberia de tener que borrar al final
+    private PlayController playController;
     private PlayViewBinding binding;
     private BoardView boardView;
 
     public void interact(PlayController playController) {
-        this.playController = playController; // este lo deberia de poder borrar al final;
+        this.playController = playController;
         this.boardView = new BoardView(playController);
     }
 
@@ -40,14 +40,22 @@ public class PlayView extends Fragment {
     }
 
     public void undo() {
-        Activity.toast(this.playController.getSecretCombination().toString());
+       // Activity.toast(this.playController.getSecretCombination().toString());
+        if (this.playController.isUndoable()){//TODO DESABILITAR EL BOTON SI isUndoable = false
+            this.playController.undo();//TODO HACER QUE EN EL ULTIMO UNDO SE PINTEN LOS ASTERISCOS
+            this.boardView.showBoardResults();
+        }
     }
 
     public void redo() {
-        this.boardView.pintarCombinacionSecreta();
+        //this.boardView.pintarCombinacionSecreta();//TODO METER UN TEXT VIEW QUE PONGA LA COMBINACION SECRETA PARA HACER PRUEBAS
+        if (this.playController.isRedoable()){ //TODO DESABILITAR EL BOTON SI isRedoable = false
+            this.playController.redo();
+            this.boardView.showBoardResults();
+        }
     }
 
     public void exit() {
-
+        //TODO programar un boton de exit que lance un SaveDialog
     }
 }

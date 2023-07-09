@@ -51,7 +51,7 @@
                 android:id="@+id/redo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="next"
+                android:onClick="@{() -> playView.redo()}"
                 android:text="REDO"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/exit"
