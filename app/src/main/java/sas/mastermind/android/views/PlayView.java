@@ -42,7 +42,7 @@ public class PlayView extends Fragment {
     public void undo() {
        // Activity.toast(this.playController.getSecretCombination().toString());
         if (this.playController.isUndoable()){//TODO DESABILITAR EL BOTON SI isUndoable = false
-            this.playController.undo();//TODO HACER QUE EN EL ULTIMO UNDO SE PINTEN LOS ASTERISCOS
+            this.playController.undo();
             this.boardView.showBoardResults();
         }
     }

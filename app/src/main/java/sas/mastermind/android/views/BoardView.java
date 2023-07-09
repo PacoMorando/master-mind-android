@@ -1,6 +1,5 @@
 package sas.mastermind.android.views;
 
-import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
 
@@ -8,7 +7,7 @@ public class BoardView {
     private final PlayController playController;
     private final SecretCombinationView secretCombinationView;
     private final ProposedCombinationView proposedCombinationView;
-    private ResultsView resultsView;
+    private final ResultsView resultsView;
 
     public BoardView(PlayController playController) {
         this.playController = playController;
@@ -23,9 +22,9 @@ public class BoardView {
     public void showBoardResults() {
         if (!this.playController.isFinished()) {
             this.secretCombinationView.showUnrevealed();
-            this.resultsView.showProposedCombinationsResult(this.playController);
+            this.resultsView.showProposedCombinationsResult();
         } else {
-            this.resultsView.showProposedCombinationsResult(this.playController);
+            this.resultsView.showProposedCombinationsResult();
             this.showGameResult();
             SaveDialog saveDialog = new SaveDialog(this.playController);
             saveDialog.setCancelable(false); // esto es para que no se pueda clicar fuer del dialogo, pero tengo que TODO programar que el boton de propose se desactive cuando termine la partida

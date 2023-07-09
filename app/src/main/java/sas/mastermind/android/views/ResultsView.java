@@ -36,9 +36,7 @@ public class ResultsView extends Fragment {
         this.binding.resultsRecyclerView.setAdapter(this.resultsRecyclerAdapter);
     }
 
-    public void showProposedCombinationsResult(PlayController playController) {
-        if (playController.getCurrentAttempt() > 0) {
+    public void showProposedCombinationsResult() {
             this.resultsRecyclerAdapter.notifyDataSetChanged();
-        }
     }
 }
