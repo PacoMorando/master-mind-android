@@ -26,9 +26,6 @@ public class BoardView {
         } else {
             this.resultsView.showProposedCombinationsResult();
             this.showGameResult();
-            SaveDialog saveDialog = new SaveDialog(this.playController);
-            saveDialog.setCancelable(false); //TODO  esto es para que no se pueda clicar fuer del dialogo, pero tengo que programar que el boton de propose se desactive cuando termine la partida
-            saveDialog.show(Activity.getInstance().getSupportFragmentManager(),"save game");
         }
     }
 
@@ -40,7 +37,7 @@ public class BoardView {
             Activity.toast("Has perdido!");
             this.secretCombinationView.showRevealed();
         }
-        this.playController.next();//ESTE NEXT ME MANDA AL SAVE CONTROLLER
+        new SaveDialog(this.playController).show(Activity.getSupportFragmentManager(),"save game");//TODO refactorizar el singleton
     }
 
     public void addProposedCombination() {

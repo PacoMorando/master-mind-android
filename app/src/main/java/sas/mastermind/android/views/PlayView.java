@@ -66,9 +66,6 @@ public class PlayView extends Fragment {
     }
 
     public void exit() {
-        this.playController.next();
-        SaveDialog saveDialog = new SaveDialog(this.playController);
-        saveDialog.setCancelable(false); //TODO esto es para que no se pueda clicar fuer del dialogo, pero tengo que programar que el boton de propose se desactive cuando termine la partida
-        saveDialog.show(Activity.getInstance().getSupportFragmentManager(),"exit game");
+        new SaveDialog(this.playController).show(Activity.getSupportFragmentManager(),"exit game");
     }
 }

@@ -27,11 +27,13 @@ public class SaveDialog extends AppCompatDialogFragment {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Activity.toast("Apretaste Yes");
+                        playController.next();
                         Activity.getInstance().next();
                     }
                 })
                 .setNegativeButton("No", (dialogInterface, i) -> {
                     Activity.toast("Apretaste no");
+                    playController.next();
                     playController.next();
                     Activity.getInstance().next();
                 });

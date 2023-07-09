@@ -37,4 +37,8 @@ public class Activity {
     public static void toast(String message){
         Toast.makeText(Activity.getContext(),message,Toast.LENGTH_SHORT).show();
     }
+
+    public static FragmentManager getSupportFragmentManager() {
+        return Activity.getInstance().getSupportFragmentManager();
+    }
 }
