@@ -32,30 +32,43 @@ public class PlayView extends Fragment {
     public void onResume() {
         super.onResume();
         this.boardView.showBoardResults();
+        this.setEnableButtons();
+    }
+
+    private void setEnableButtons() {
+        this.binding.undo.setEnabled(this.playController.isUndoable());
+        this.binding.redo.setEnabled(this.playController.isRedoable());
+        this.binding.addProposeCombination.setEnabled(!this.playController.isFinished());
     }
 
     public void addProposeCombination() {
         this.boardView.addProposedCombination();
         this.boardView.showBoardResults();
+        this.setEnableButtons();
     }
 
     public void undo() {
-       // Activity.toast(this.playController.getSecretCombination().toString());
-        if (this.playController.isUndoable()){//TODO DESABILITAR EL BOTON SI isUndoable = false
+        System.out.println("UNDO");
+        if (this.playController.isUndoable()){
             this.playController.undo();
             this.boardView.showBoardResults();
         }
+        this.setEnableButtons();
     }
 
     public void redo() {
-        //this.boardView.pintarCombinacionSecreta();//TODO METER UN TEXT VIEW QUE PONGA LA COMBINACION SECRETA PARA HACER PRUEBAS
-        if (this.playController.isRedoable()){ //TODO DESABILITAR EL BOTON SI isRedoable = false
+        System.out.println("REDO");
+        if (this.playController.isRedoable()){
             this.playController.redo();
             this.boardView.showBoardResults();
         }
+        this.setEnableButtons();
     }
 
     public void exit() {
-        //TODO programar un boton de exit que lance un SaveDialog
+        this.playController.next();
+        SaveDialog saveDialog = new SaveDialog(this.playController);
+        saveDialog.setCancelable(false); //TODO esto es para que no se pueda clicar fuer del dialogo, pero tengo que programar que el boton de propose se desactive cuando termine la partida
+        saveDialog.show(Activity.getInstance().getSupportFragmentManager(),"exit game");
     }
 }

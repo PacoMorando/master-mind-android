@@ -21,7 +21,7 @@ public class SaveDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle(this.isWinnerMessage())
+        builder.setTitle(this.titleMessage())
                 .setMessage("Do you want to save?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -37,11 +37,15 @@ public class SaveDialog extends AppCompatDialogFragment {
                 });
         return builder.create();
     }
-    private String isWinnerMessage(){
-        if (this.playController.isWinner()){
-            return "Has ganao tío!! :D";
+    private String titleMessage(){
+        if (this.playController.isFinished()){
+            if (this.playController.isWinner()){
+                return "Has ganao tío!! :D";
+            }else {
+                return "jajaja perdiste! xD";
+            }
         }else {
-            return "jajaja perdiste! xD";
+            return "Exit";
         }
     }
 }

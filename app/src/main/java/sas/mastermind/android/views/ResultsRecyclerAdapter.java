@@ -54,7 +54,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
             this.proposedColors.add(itemView.findViewById(R.id.colorFour));
         }
 
-        protected void showProposedCombinations(int position, ArrayList<ProposedCombination> proposedCombinations) { //TODO REFACTORIZAR ESTE METODO
+        protected void showProposedCombinations(int position, ArrayList<ProposedCombination> proposedCombinations) { //TODO REFACTORIZAR ESTE METODO YA QUE ESTE EL DISEÑO
             if (proposedCombinations.size() > position) {
                 for (int i = 0; i < this.proposedColors.size(); i++) {
                     this.proposedColors.get(i).setText(String.valueOf(proposedCombinations.get(position).toString().charAt(i)));
@@ -63,12 +63,6 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
                 int blacks = playController.calculateBlacks(proposedCombinations.get(position));
                 this.results.setText("W=" + whites + "\nB=" + blacks);
             }
-            /*if (proposedCombinations.size() == 0) {
-                for (int i = 0; i < this.proposedColors.size(); i++) {
-                    this.proposedColors.get(i).setText("*");
-                }
-                this.results.setText("");
-            }*/
         }
     }
 }

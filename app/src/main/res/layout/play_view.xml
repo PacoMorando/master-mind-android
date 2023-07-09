@@ -20,13 +20,13 @@
             android:id="@+id/secretCombinationFragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="10dp"/>
+            android:paddingVertical="10dp" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/resultsRecyclerViewFragmentContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -35,47 +35,57 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/resultsRecyclerView">
 
-            <Button
+            <ImageButton
                 android:id="@+id/undo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="132dp"
                 android:onClick="@{() -> playView.undo()}"
-                android:text="UNDO"
+                android:src="@drawable/undo_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/redo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
                 android:onClick="@{() -> playView.redo()}"
-                android:text="REDO"
+                android:src="@drawable/redo_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/exit"
-                app:layout_constraintHorizontal_bias="0.356"
+                app:layout_constraintEnd_toStartOf="@+id/addProposeCombination"
+                app:layout_constraintHorizontal_bias="0.651"
                 app:layout_constraintStart_toEndOf="@+id/undo"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/exit"
+                android:id="@+id/addProposeCombination"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="36dp"
+                android:layout_marginEnd="28dp"
                 android:onClick="@{() -> playView.addProposeCombination()}"
                 android:text="PROPOSE"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:src="@drawable/exit_icon"
+                android:onClick="@{() -> playView.exit()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/undo"
+                app:layout_constraintHorizontal_bias="0.309"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/proposedCombinationFragmentContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

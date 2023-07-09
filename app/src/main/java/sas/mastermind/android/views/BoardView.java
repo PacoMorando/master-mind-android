@@ -27,7 +27,7 @@ public class BoardView {
             this.resultsView.showProposedCombinationsResult();
             this.showGameResult();
             SaveDialog saveDialog = new SaveDialog(this.playController);
-            saveDialog.setCancelable(false); // esto es para que no se pueda clicar fuer del dialogo, pero tengo que TODO programar que el boton de propose se desactive cuando termine la partida
+            saveDialog.setCancelable(false); //TODO  esto es para que no se pueda clicar fuer del dialogo, pero tengo que programar que el boton de propose se desactive cuando termine la partida
             saveDialog.show(Activity.getInstance().getSupportFragmentManager(),"save game");
         }
     }
@@ -45,9 +45,5 @@ public class BoardView {
 
     public void addProposedCombination() {
         this.proposedCombinationView.addProposedCombination(this.playController);
-    }
-
-    public void pintarCombinacionSecreta() {// TODO este se va a tener que ir porque era solo para probar
-        this.secretCombinationView.showRevealed();
     }
 }
