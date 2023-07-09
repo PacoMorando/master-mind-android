@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import sas.mastermind.android.MainActivity;
+
 public class Activity {
-    static AppCompatActivity activity;
+    static MainActivity activity;
     static FragmentManager supportFragmentManager;
 
-    public static void init(AppCompatActivity activity) {
+    public static void init(MainActivity activity) {
         Activity.activity = activity;
     }
 
@@ -18,7 +20,7 @@ public class Activity {
         return Activity.activity;
     }
 
-    public static AppCompatActivity getInstance() {
+    public static MainActivity getInstance() {
         return Activity.activity;
     }
 

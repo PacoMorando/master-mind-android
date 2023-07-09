@@ -21,4 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void next(View view) {
         this.androidMasterMind.play();
     }
+    public void next() {
+        this.androidMasterMind.play();
+    }
 }

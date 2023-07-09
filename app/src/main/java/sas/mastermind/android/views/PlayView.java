@@ -24,24 +24,15 @@ public class PlayView extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         this.binding = PlayViewBinding.inflate(inflater, container, false);
         this.binding.setPlayView(this);
-        //this.setBoard();
         return binding.getRoot();
     }
+
 
     @Override
     public void onResume() {
         super.onResume();
         this.boardView.showBoardResults();
     }
-
-    /*private void showBoardResult() {
-        if (!this.playController.isFinished()) {
-            this.boardView.showBoard();
-            Activity.toast(String.valueOf(this.playController.getCurrentAttempt()));
-        } else {
-            boardView.showGameResult(playController);
-        }
-    }*/
 
     public void addProposeCombination() {
         this.boardView.addProposedCombination();

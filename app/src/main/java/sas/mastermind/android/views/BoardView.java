@@ -1,5 +1,6 @@
 package sas.mastermind.android.views;
 
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
 
@@ -21,31 +22,26 @@ public class BoardView {
 
     public void showBoardResults() {
         if (!this.playController.isFinished()) {
-            this.showBoard();
+            this.secretCombinationView.showUnrevealed();
+            this.resultsView.showProposedCombinationsResult(this.playController);
         } else {
-            this.showBoard();
-            this.showGameResult(this.playController);
+            this.resultsView.showProposedCombinationsResult(this.playController);
+            this.showGameResult();
+            SaveDialog saveDialog = new SaveDialog(this.playController);
+            saveDialog.setCancelable(false); // esto es para que no se pueda clicar fuer del dialogo, pero tengo que programar que el boton de propose se desactive cuando termine la partida
+            saveDialog.show(Activity.getInstance().getSupportFragmentManager(),"save game");
         }
     }
 
-    private void showBoard() {
-        this.secretCombinationView.showUnrevealed();
-        this.resultsView.showProposedCombinationsResult(this.playController);
-    }
-
-    private void showGameResult(PlayController playController) {
-        if (playController.isWinner()) {
-            //Message.WINNER.write();
-            this.showBoard();
+    private void showGameResult() {
+        if (this.playController.isWinner()) {
             Activity.toast("Has ganado!");
             this.secretCombinationView.showRevealed();
         } else {
-            //Message.LOSER.write();
-            this.showBoard();
             Activity.toast("Has perdido!");
             this.secretCombinationView.showRevealed();
         }
-        playController.next();
+        this.playController.next();//ESTE NEXT ME MANDA AL SAVE CONTROLLER
     }
 
     public void addProposedCombination() {
