@@ -8,13 +8,13 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.StartViewBinding;
 import sas.mastermind.core.controllers.StartController;
 
 public class StartView extends Fragment {
     private StartViewBinding binding;
-    public String title = "MASTER MIND";
     public void interact(StartController startController) {
         startController.start();
     }
@@ -28,7 +28,7 @@ public class StartView extends Fragment {
     }
 
     public void openGame(){
-        Activity.toast("persistence has not been implemented yet");
+        ((MainActivity)requireActivity()).toast("persistence has not been implemented yet");
     }
 
     @Override

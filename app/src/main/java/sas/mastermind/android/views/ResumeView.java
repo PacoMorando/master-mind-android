@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import sas.mastermind.android.R;
+
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.databinding.ResumeViewBinding;
 import sas.mastermind.core.controllers.ResumeController;
 
@@ -27,8 +28,8 @@ public class ResumeView extends Fragment {
     }
 
     public void exit (){
-        Activity.toast("Bye bye!");
+        ((MainActivity) requireActivity()).toast("Bye!!");
         this.resumeController.resume(false);
-        Activity.finish();
+        requireActivity().finishAndRemoveTask();//TODO Este metodo no finaliza por completo la app, la cierra pero no hace lo mismo a que si le doy stop al IDE o la cierro desde el cel
     }
 }

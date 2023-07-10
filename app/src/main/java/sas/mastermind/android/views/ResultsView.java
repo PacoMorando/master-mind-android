@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import sas.mastermind.android.MainActivity;
+import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.ResultsViewBinding;
 import sas.mastermind.core.controllers.PlayController;
 import sas.mastermind.core.models.ProposedCombination;

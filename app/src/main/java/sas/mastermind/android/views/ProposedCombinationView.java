@@ -11,7 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.ProposedCombinationBinding;
 import sas.mastermind.core.controllers.PlayController;
@@ -24,7 +26,6 @@ public class ProposedCombinationView extends Fragment {
     private ArrayList<ProposedCombination> proposeCombinations;
 
     public ProposedCombinationView(ArrayList<ProposedCombination> proposeCombinations) {
-
         this.proposeCombinations = proposeCombinations;
     }
 
@@ -60,7 +61,6 @@ public class ProposedCombinationView extends Fragment {
         for (NumberPicker color : this.proposedCombinationColors) {
             proposedCombinationString.append(this.combinationColors[color.getValue()]);
         }
-       // Activity.toast("You propose: " + proposedCombinationString);
         return proposedCombinationString.toString();
     }
 }

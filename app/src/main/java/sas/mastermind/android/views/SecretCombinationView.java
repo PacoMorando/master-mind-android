@@ -11,7 +11,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
+import sas.mastermind.android.MainActivity;
+import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.SecretCombinationBinding;
 import sas.mastermind.core.models.SecretCombination;
 

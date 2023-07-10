@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
+import java.util.Objects;
+
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.core.controllers.PlayController;
 
 public class SaveDialog extends AppCompatDialogFragment {
@@ -26,16 +29,16 @@ public class SaveDialog extends AppCompatDialogFragment {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Activity.toast("persistence has not been implemented yet");
+                        ((MainActivity) requireActivity()).toast("persistence has not been implemented yet \n:(");
                         playController.next();
                         playController.next();
-                        Activity.next();
+                        ((MainActivity) requireActivity()).next();
                     }
                 })
                 .setNegativeButton("No", (dialogInterface, i) -> {
                     playController.next();
                     playController.next();
-                    Activity.next();
+                    ((MainActivity) requireActivity()).next();
                 });
         return builder.create();
     }

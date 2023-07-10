@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.databinding.PlayViewBinding;
 import sas.mastermind.core.controllers.PlayController;
 
@@ -17,7 +18,6 @@ public class PlayView extends Fragment {
 
     public void interact(PlayController playController) {
         this.playController = playController;
-        this.boardView = new BoardView(playController);
     }
 
     @Override
@@ -31,7 +31,8 @@ public class PlayView extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        this.boardView.showBoardResults();
+        this.boardView = new BoardView(playController, (MainActivity) requireActivity());
+        this.boardView.showBoardResults((MainActivity) getActivity());
         this.setEnableButtons();
     }
 
@@ -43,7 +44,7 @@ public class PlayView extends Fragment {
 
     public void addProposeCombination() {
         this.boardView.addProposedCombination();
-        this.boardView.showBoardResults();
+        this.boardView.showBoardResults((MainActivity) getActivity());
         this.setEnableButtons();
     }
 
@@ -51,7 +52,7 @@ public class PlayView extends Fragment {
         System.out.println("UNDO");
         if (this.playController.isUndoable()){
             this.playController.undo();
-            this.boardView.showBoardResults();
+            this.boardView.showBoardResults((MainActivity) getActivity());
         }
         this.setEnableButtons();
     }
@@ -60,12 +61,12 @@ public class PlayView extends Fragment {
         System.out.println("REDO");
         if (this.playController.isRedoable()){
             this.playController.redo();
-            this.boardView.showBoardResults();
+            this.boardView.showBoardResults((MainActivity) getActivity());
         }
         this.setEnableButtons();
     }
 
     public void exit() {
-        new SaveDialog(this.playController).show(Activity.getSupportFragmentManager(),"exit game");
+        new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(),"exit game");
     }
 }
