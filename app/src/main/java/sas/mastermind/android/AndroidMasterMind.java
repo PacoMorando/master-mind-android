@@ -1,6 +1,7 @@
 package sas.mastermind.android;
 
 import sas.mastermind.android.dao.SessionDAO;
+import sas.mastermind.android.views.Activity;
 import sas.mastermind.core.controllers.AcceptorController;
 import sas.mastermind.core.controllers.Logic;
 import sas.mastermind.core.controllers.LogicImplementation;

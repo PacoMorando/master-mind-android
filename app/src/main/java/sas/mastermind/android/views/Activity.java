@@ -2,7 +2,6 @@ package sas.mastermind.android.views;
 
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -20,7 +19,7 @@ public class Activity {
         return Activity.activity;
     }
 
-    public static MainActivity getInstance() {
+    private static MainActivity getInstance() {
         return Activity.activity;
     }
 
@@ -40,5 +39,13 @@ public class Activity {
 
     public static FragmentManager getSupportFragmentManager() {
         return Activity.getInstance().getSupportFragmentManager();
+    }
+
+    public static void finish() {
+        Activity.getInstance().finishAndRemoveTask();
+    }
+
+    public static void next() {
+        Activity.getInstance().next();
     }
 }

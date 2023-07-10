@@ -14,7 +14,7 @@ import sas.mastermind.core.controllers.StartController;
 
 public class StartView extends Fragment {
     private StartViewBinding binding;
-    public String title = "START GAME";
+    public String title = "MASTER MIND";
     public void interact(StartController startController) {
         startController.start();
     }
@@ -28,7 +28,7 @@ public class StartView extends Fragment {
     }
 
     public void openGame(){
-        Toast.makeText(getContext(),"persistence has not been implemented yet",Toast.LENGTH_SHORT).show();
+        Activity.toast("persistence has not been implemented yet");
     }
 
     @Override

@@ -19,23 +19,23 @@ public class SaveDialog extends AppCompatDialogFragment {
     }
     @NonNull
     @Override
-    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) { //TODO PLANTEARME QUE ESTA CLASE SE CREE EN LA CLASE VIEW
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(this.titleMessage())
                 .setMessage("Do you want to save?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Activity.toast("Apretaste Yes");
+                        Activity.toast("persistence has not been implemented yet");
                         playController.next();
-                        Activity.getInstance().next();
+                        playController.next();
+                        Activity.next();
                     }
                 })
                 .setNegativeButton("No", (dialogInterface, i) -> {
-                    Activity.toast("Apretaste no");
                     playController.next();
                     playController.next();
-                    Activity.getInstance().next();
+                    Activity.next();
                 });
         return builder.create();
     }
