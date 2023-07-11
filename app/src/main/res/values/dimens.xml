@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="token_size">40dp</dimen>
+    <dimen name="token_size">32dp</dimen>
+    <dimen name="start_view_buttons">130dp</dimen>
+    <dimen name="token_result_size">10dp</dimen>
 </resources>

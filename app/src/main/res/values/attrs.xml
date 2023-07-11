@@ -1,0 +1,33 @@
+
+<resources>
+    <attr name="colorRedToken" format="color" />
+    <attr name="colorOnRedToken" format="color" />
+    <attr name="colorRedTokenContainer" format="color" />
+    <attr name="colorOnRedTokenContainer" format="color" />
+    <attr name="harmonizeRedToken" format="boolean" />
+    <attr name="colorGreenToken" format="color" />
+    <attr name="colorOnGreenToken" format="color" />
+    <attr name="colorGreenTokenContainer" format="color" />
+    <attr name="colorOnGreenTokenContainer" format="color" />
+    <attr name="harmonizeGreenToken" format="boolean" />
+    <attr name="colorBlueToken" format="color" />
+    <attr name="colorOnBlueToken" format="color" />
+    <attr name="colorBlueTokenContainer" format="color" />
+    <attr name="colorOnBlueTokenContainer" format="color" />
+    <attr name="harmonizeBlueToken" format="boolean" />
+    <attr name="colorCianToken" format="color" />
+    <attr name="colorOnCianToken" format="color" />
+    <attr name="colorCianTokenContainer" format="color" />
+    <attr name="colorOnCianTokenContainer" format="color" />
+    <attr name="harmonizeCianToken" format="boolean" />
+    <attr name="colorYellowToken" format="color" />
+    <attr name="colorOnYellowToken" format="color" />
+    <attr name="colorYellowTokenContainer" format="color" />
+    <attr name="colorOnYellowTokenContainer" format="color" />
+    <attr name="harmonizeYellowToken" format="boolean" />
+    <attr name="colorMagentaToken" format="color" />
+    <attr name="colorOnMagentaToken" format="color" />
+    <attr name="colorMagentaTokenContainer" format="color" />
+    <attr name="colorOnMagentaTokenContainer" format="color" />
+    <attr name="harmonizeMagentaToken" format="boolean" />
+</resources>

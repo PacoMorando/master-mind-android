@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,7 +22,7 @@ import sas.mastermind.core.models.SecretCombination;
 public class SecretCombinationView extends Fragment {
     private final SecretCombination secretCombination;
     private SecretCombinationBinding binding;
-    private final ArrayList<TextView> secretCombinationColors = new ArrayList<>();
+    private final ArrayList<ImageView> secretCombinationColors = new ArrayList<>();
 
     public SecretCombinationView(SecretCombination secretCombination) {
         this.secretCombination = secretCombination;
@@ -44,15 +45,15 @@ public class SecretCombinationView extends Fragment {
     }
 
     public void showUnrevealed() {
-        for (TextView color : this.secretCombinationColors) {
-            color.setText("¿?");
+        for (ImageView color : this.secretCombinationColors) {
+            //color.setText("¿?");
         }
     }
 
     public void showRevealed() {
         String secretCombination = this.secretCombination.toString();
         for (int i = 0; i < this.secretCombinationColors.size(); i++) {
-            this.secretCombinationColors.get(i).setText(String.valueOf(secretCombination.charAt(i)));
+           // this.secretCombinationColors.get(i).setText(String.valueOf(secretCombination.charAt(i)));
         }
     }
 

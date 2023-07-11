@@ -1,7 +1,60 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MasterMind" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.MasterMind" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_dark_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_dark_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_dark_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_dark_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_dark_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_dark_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_dark_error</item>
+        <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_dark_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorOnBackground">@color/md_theme_dark_onBackground</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_dark_outline</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
+        <item name="colorRedToken">#ffb3ae</item>
+        <item name="colorOnRedToken">#68000c</item>
+        <item name="colorRedTokenContainer">#930015</item>
+        <item name="colorOnRedTokenContainer">#ffdad7</item>
+        <item name="harmonizeRedToken">true</item>
+        <item name="colorGreenToken">#96d784</item>
+        <item name="colorOnGreenToken">#003a00</item>
+        <item name="colorGreenTokenContainer">#15520f</item>
+        <item name="colorOnGreenTokenContainer">#b1f49d</item>
+        <item name="harmonizeGreenToken">true</item>
+        <item name="colorBlueToken">#bac3ff</item>
+        <item name="colorOnBlueToken">#152778</item>
+        <item name="colorBlueTokenContainer">#303f90</item>
+        <item name="colorOnBlueTokenContainer">#dee0ff</item>
+        <item name="harmonizeBlueToken">true</item>
+        <item name="colorCianToken">#60d4fe</item>
+        <item name="colorOnCianToken">#003545</item>
+        <item name="colorCianTokenContainer">#004d63</item>
+        <item name="colorOnCianTokenContainer">#bbe9ff</item>
+        <item name="harmonizeCianToken">true</item>
+        <item name="colorYellowToken">#e6c42f</item>
+        <item name="colorOnYellowToken">#3a3000</item>
+        <item name="colorYellowTokenContainer">#544600</item>
+        <item name="colorOnYellowTokenContainer">#ffe16b</item>
+        <item name="harmonizeYellowToken">true</item>
+        <item name="colorMagentaToken">#ffb0cc</item>
+        <item name="colorOnMagentaToken">#640038</item>
+        <item name="colorMagentaTokenContainer">#861650</item>
+        <item name="colorOnMagentaTokenContainer">#ffd9e4</item>
+        <item name="harmonizeMagentaToken">true</item>
+        <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
     </style>
 </resources>

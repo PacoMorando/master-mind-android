@@ -14,8 +14,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MASTER MIND"
-            android:textSize="12pt"
+            android:text="Master Mind"
+            android:textSize="25pt"
+            android:fontFamily="@font/lobster_regular"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,28 +24,32 @@
             app:layout_constraintVertical_bias="0.2" />
 
         <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:id="@+id/newGameButton"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/start_view_buttons"
             android:layout_height="wrap_content"
             android:onClick="next"
             android:text="NEW GAME"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.333" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
         <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:elevation="2dp"
             android:id="@+id/openGameButton"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/start_view_buttons"
             android:layout_height="wrap_content"
             android:text="OPEN GAME"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:onClick="@{() -> startView.openGame()}"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.666" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

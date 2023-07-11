@@ -3,6 +3,8 @@ package sas.mastermind.android.views;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -42,8 +44,8 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView results;
-        ArrayList<TextView> proposedColors = new ArrayList<>();
+        LinearLayout results;
+        ArrayList<ImageView> proposedColors = new ArrayList<>();
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -57,11 +59,11 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
         protected void showProposedCombinations(int position, ArrayList<ProposedCombination> proposedCombinations) { //TODO REFACTORIZAR ESTE METODO YA QUE ESTE EL DISEÑO
             if (proposedCombinations.size() > position) {
                 for (int i = 0; i < this.proposedColors.size(); i++) {
-                    this.proposedColors.get(i).setText(String.valueOf(proposedCombinations.get(position).toString().charAt(i)));
+                   // this.proposedColors.get(i).setText(String.valueOf(proposedCombinations.get(position).toString().charAt(i)));
                 }
                 int whites = playController.calculateWhites(proposedCombinations.get(position));
                 int blacks = playController.calculateBlacks(proposedCombinations.get(position));
-                this.results.setText("W=" + whites + "\nB=" + blacks);
+                //this.results.setText("W=" + whites + "\nB=" + blacks);
             }
         }
     }
