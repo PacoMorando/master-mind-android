@@ -13,39 +13,31 @@
 
         <include
             layout="@layout/color_picker"
-            android:id="@+id/proposedColorOne"
+            android:id="@+id/pickerOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"/>
 
         <include
             layout="@layout/color_picker"
+            android:id="@+id/pickerTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="@string/proposed_color"
-            android:textAlignment="center"
-            android:textColor="@color/white"/>
+            android:layout_marginLeft="15dp"/>
 
         <include
             layout="@layout/color_picker"
+            android:id="@+id/pickerThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="@string/proposed_color"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="15pt" />
+            android:layout_marginLeft="15dp"/>
 
         <include
-        layout="@layout/color_picker"
+            layout="@layout/color_picker"
+            android:id="@+id/pickerFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="@string/proposed_color"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="15pt" />
+            android:layout_marginLeft="15dp"/>
 
     </LinearLayout>
 </layout>

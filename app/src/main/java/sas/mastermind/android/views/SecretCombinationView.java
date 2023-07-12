@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 import sas.mastermind.android.MainActivity;
@@ -46,18 +47,19 @@ public class SecretCombinationView extends Fragment {
 
     public void showUnrevealed() {
         for (ImageView color : this.secretCombinationColors) {
-            //color.setText("¿?");
+            color.setImageResource(R.drawable.token_secret);
         }
     }
 
     public void showRevealed() {
         String secretCombination = this.secretCombination.toString();
         for (int i = 0; i < this.secretCombinationColors.size(); i++) {
-           // this.secretCombinationColors.get(i).setText(String.valueOf(secretCombination.charAt(i)));
+            this.secretCombinationColors.get(i).setImageResource(Colors.valueOf(String.valueOf(secretCombination.charAt(i))).getColorResource());
         }
     }
 
     public void pintarCombinacionSecreta() {// TODO este se va a tener que ir porque era solo para probar
         this.binding.secretText.setText(this.secretCombination.toString());
+        this.showRevealed();
     }
 }

@@ -27,7 +27,6 @@ public class PlayView extends Fragment {
         return binding.getRoot();
     }
 
-
     @Override
     public void onResume() {
         super.onResume();

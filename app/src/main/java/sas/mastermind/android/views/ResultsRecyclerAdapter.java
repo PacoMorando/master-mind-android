@@ -65,12 +65,16 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
         protected void showProposedCombinations(int position, ArrayList<ProposedCombination> proposedCombinations) { //TODO REFACTORIZAR ESTE METODO YA QUE ESTE EL DISEÑO
             if (proposedCombinations.size() > position) {
                 for (int i = 0; i < this.proposedColors.size(); i++) {
-                    // this.proposedColors.get(i).setText(String.valueOf(proposedCombinations.get(position).toString().charAt(i)));
+                    this.proposedColors.get(i).setImageResource(getColorResource(position, proposedCombinations, i));
                 }
                 int whites = playController.calculateWhites(proposedCombinations.get(position));
                 int blacks = playController.calculateBlacks(proposedCombinations.get(position));
                 //this.results.setText("W=" + whites + "\nB=" + blacks);
             }
+        }
+
+        private int getColorResource(int position, ArrayList<ProposedCombination> proposedCombinations, int i) {
+            return Colors.valueOf(String.valueOf(proposedCombinations.get(position).toString().charAt(i))).getColorResource();
         }
     }
 }
