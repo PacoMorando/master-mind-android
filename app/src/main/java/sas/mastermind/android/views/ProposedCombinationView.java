@@ -23,7 +23,7 @@ public class ProposedCombinationView extends Fragment {
     private ProposedCombinationBinding binding;
     private final ArrayList<NumberPicker> proposedCombinationColors = new ArrayList<>();
     private String[] combinationColors;
-    private ArrayList<ProposedCombination> proposeCombinations;
+    private ArrayList<ProposedCombination> proposeCombinations;//TODO BOrrar este que no se usa
 
     public ProposedCombinationView(ArrayList<ProposedCombination> proposeCombinations) {
         this.proposeCombinations = proposeCombinations;
@@ -40,7 +40,7 @@ public class ProposedCombinationView extends Fragment {
     }
 
     private void setColors(String[] combinationColors) {
-        this.proposedCombinationColors.add(this.binding.proposedColorOne);
+        /*this.proposedCombinationColors.add(this.binding.proposedColorOne);
         this.proposedCombinationColors.add(this.binding.proposedColorTwo);
         this.proposedCombinationColors.add(this.binding.proposedColorThree);
         this.proposedCombinationColors.add(this.binding.proposedColorFour);
@@ -49,7 +49,7 @@ public class ProposedCombinationView extends Fragment {
             color.setMinValue(0);
             color.setMaxValue(combinationColors.length - 1);
             color.setDisplayedValues(combinationColors);
-        }
+        }*/
     }
 
     public void addProposedCombination(PlayController playController) {

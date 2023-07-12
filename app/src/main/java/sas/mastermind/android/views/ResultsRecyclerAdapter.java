@@ -20,6 +20,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     private final int PROPOSED_COMBINATIONS_SIZE = 10;
     private static PlayController playController;
     private final ArrayList<ProposedCombination> proposedCombinations;
+    private int itemHeight;
 
     public ResultsRecyclerAdapter(PlayController playController) {
         ResultsRecyclerAdapter.playController = playController;
@@ -36,11 +37,16 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.showProposedCombinations(position, this.proposedCombinations);
+        holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, this.itemHeight));
     }
 
     @Override
     public int getItemCount() {
         return this.PROPOSED_COMBINATIONS_SIZE;
+    }
+
+    public void setItemHeight(int recyclerHeight) {
+        this.itemHeight = recyclerHeight / this.PROPOSED_COMBINATIONS_SIZE;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -59,7 +65,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
         protected void showProposedCombinations(int position, ArrayList<ProposedCombination> proposedCombinations) { //TODO REFACTORIZAR ESTE METODO YA QUE ESTE EL DISEÑO
             if (proposedCombinations.size() > position) {
                 for (int i = 0; i < this.proposedColors.size(); i++) {
-                   // this.proposedColors.get(i).setText(String.valueOf(proposedCombinations.get(position).toString().charAt(i)));
+                    // this.proposedColors.get(i).setText(String.valueOf(proposedCombinations.get(position).toString().charAt(i)));
                 }
                 int whites = playController.calculateWhites(proposedCombinations.get(position));
                 int blacks = playController.calculateBlacks(proposedCombinations.get(position));

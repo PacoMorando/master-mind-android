@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:id="@+id/upPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_pick_up"/>
+
+    <ImageView
+        android:id="@+id/pickedColor"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
+        android:layout_gravity="center"
+        android:src="@drawable/token_red"/>
+
+    <ImageButton
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:id="@+id/downPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_pick_down"/>
+
+</LinearLayout>
