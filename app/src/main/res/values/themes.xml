@@ -25,36 +25,6 @@
         <item name="colorOutline">@color/md_theme_light_outline</item>
         <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
-        <item name="colorRedToken">#b91c26</item>
-        <item name="colorOnRedToken">#ffffff</item>
-        <item name="colorRedTokenContainer">#ffdad7</item>
-        <item name="colorOnRedTokenContainer">#410004</item>
-        <item name="harmonizeRedToken">true</item>
-        <item name="colorGreenToken">#2f6b26</item>
-        <item name="colorOnGreenToken">#ffffff</item>
-        <item name="colorGreenTokenContainer">#b1f49d</item>
-        <item name="colorOnGreenTokenContainer">#002200</item>
-        <item name="harmonizeGreenToken">true</item>
-        <item name="colorBlueToken">#4958a9</item>
-        <item name="colorOnBlueToken">#ffffff</item>
-        <item name="colorBlueTokenContainer">#dee0ff</item>
-        <item name="colorOnBlueTokenContainer">#00115a</item>
-        <item name="harmonizeBlueToken">true</item>
-        <item name="colorCianToken">#006782</item>
-        <item name="colorOnCianToken">#ffffff</item>
-        <item name="colorCianTokenContainer">#bbe9ff</item>
-        <item name="colorOnCianTokenContainer">#001f29</item>
-        <item name="harmonizeCianToken">true</item>
-        <item name="colorYellowToken">#6f5d00</item>
-        <item name="colorOnYellowToken">#ffffff</item>
-        <item name="colorYellowTokenContainer">#ffe16b</item>
-        <item name="colorOnYellowTokenContainer">#221b00</item>
-        <item name="harmonizeYellowToken">true</item>
-        <item name="colorMagentaToken">#a53168</item>
-        <item name="colorOnMagentaToken">#ffffff</item>
-        <item name="colorMagentaTokenContainer">#ffd9e4</item>
-        <item name="colorOnMagentaTokenContainer">#3e0021</item>
-        <item name="harmonizeMagentaToken">true</item>
         <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
     </style>
 
