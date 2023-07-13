@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,12 +18,13 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     private final int PROPOSED_COMBINATIONS_SIZE = 10;
     private static PlayController playController;
     private static ArrayList<ProposedCombination> proposedCombinations;
+    private static ArrayList<ResultCombination> resultsCombinations;
     private int itemHeight;
 
     public ResultsRecyclerAdapter(PlayController playController) {
         ResultsRecyclerAdapter.playController = playController;
         proposedCombinations = ResultsRecyclerAdapter.playController.getProposeCombinations();
-        // this.proposedCombinations = ResultsRecyclerAdapter.playController.getProposeCombinations();
+        resultsCombinations = new ArrayList<>();
     }
 
     @NonNull
@@ -36,8 +36,16 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.showProposedCombinations(position);
         holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, this.itemHeight));
+        this.setResults();
+        holder.showProposedCombinationsResult();
+    }
+
+    private void setResults() {
+        resultsCombinations.clear();
+        for (ProposedCombination proposedCombination : proposedCombinations) {
+            resultsCombinations.add(new ResultCombination(playController.calculateBlacks(proposedCombination), playController.calculateWhites(proposedCombination)));
+        }
     }
 
     @Override
@@ -65,40 +73,31 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
             this.resultsColors.add(itemView.findViewById(R.id.resultFour));
         }
 
-        protected void showProposedCombinations(int position) { //TODO REFACTORIZAR ESTE METODO YA QUE ESTE EL DISEÑO
-            if (proposedCombinations.size() > position) {
-                for (int i = 0; i < this.proposedColors.size(); i++) {
-                    this.proposedColors.get(i).setImageResource(getColorResource(position, i));
-                }
-                this.setWhitesAndBlacks(position);
+        protected void showProposedCombinationsResult() {
+            if (proposedCombinations.size() > getLayoutPosition()) {
+                this.showProposedCombinations();
+                this.showResults();
             }
         }
 
-        private void setWhitesAndBlacks(int position) {
-            int whites = playController.calculateWhites(proposedCombinations.get(position));
-            int blacks = playController.calculateBlacks(proposedCombinations.get(position));
-            this.setWhites(whites);
-            this.setBlacks(blacks, whites);
-        }
-
-        private void setWhites(int whites) {
-            if (whites > 0) {
-                for (int i = 0; i < whites; i++) {
-                    this.resultsColors.get(i).setImageResource(R.drawable.token_white);
-                }
+        private void showProposedCombinations() {
+            for (int i = 0; i < this.proposedColors.size(); i++) {
+                this.proposedColors.get(i).setImageResource(getColorResource(i));
             }
         }
 
-        private void setBlacks(int blacks, int whites) {
-            if (blacks > 0) {
-                for (int i = whites; i < blacks + whites; i++) {
-                    this.resultsColors.get(i).setImageResource(R.drawable.token_black);
-                }
+        private int getColorResource(int i) {
+            return CombinationColors.valueOf(String.valueOf(proposedCombinations.get(getLayoutPosition()).toString().charAt(i))).getColorResource();
+        }
+
+        private void showResults() {
+            for (int i = 0; i < this.resultsColors.size(); i++) {
+                this.resultsColors.get(i).setImageResource(this.getResultImageResource(i));
             }
         }
 
-        private int getColorResource(int position, int i) {
-            return Colors.valueOf(String.valueOf(proposedCombinations.get(position).toString().charAt(i))).getColorResource();
+        private int getResultImageResource(int i) {
+            return resultsCombinations.get(getLayoutPosition()).getResultResource(i);
         }
     }
 }

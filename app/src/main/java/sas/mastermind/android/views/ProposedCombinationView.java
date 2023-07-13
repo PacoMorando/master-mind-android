@@ -13,15 +13,12 @@ import java.util.ArrayList;
 
 import sas.mastermind.android.databinding.ProposedCombinationBinding;
 import sas.mastermind.core.controllers.PlayController;
-import sas.mastermind.core.models.ProposedCombination;
 
 public class ProposedCombinationView extends Fragment {
     private ProposedCombinationBinding binding;
     private final ArrayList<ColorPicker> proposedCombinationColors = new ArrayList<>();
-    private ArrayList<ProposedCombination> proposeCombinations;//TODO BOrrar este que no se usa
 
-    public ProposedCombinationView(ArrayList<ProposedCombination> proposeCombinations) {
-        this.proposeCombinations = proposeCombinations;
+    public ProposedCombinationView() {
     }
 
     @Nullable

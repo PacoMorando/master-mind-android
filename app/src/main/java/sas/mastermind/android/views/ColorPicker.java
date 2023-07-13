@@ -22,11 +22,11 @@ public class ColorPicker {
     }
 
     public char getColorPicked(){
-        return Colors.values()[i].getColorChar();
+        return CombinationColors.values()[i].getColorChar();
     }
 
     private void setPicker() {
-        this.pickedColor.setImageResource(Colors.values()[i].getColorResource());
+        this.pickedColor.setImageResource(CombinationColors.values()[i].getColorResource());
         this.up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,15 +37,15 @@ public class ColorPicker {
     }
 
     private void pickUp() {
-        System.out.println("UP " + this.name);
+        //System.out.println("UP " + this.name);
         this.pickedColor.setImageResource(this.getNextColor());
-        System.out.println(Colors.values()[this.i]);
+        System.out.println(CombinationColors.values()[this.i]);
     }
 
     private void pickDown() {
-        System.out.println("DOWN " + name);
+        //System.out.println("DOWN " + name);
         this.pickedColor.setImageResource(getPreviousColor());
-        System.out.println(Colors.values()[this.i]);
+        System.out.println(CombinationColors.values()[this.i]);
     }
 
     private int getNextColor() {
@@ -53,7 +53,7 @@ public class ColorPicker {
         if (this.i > 5) {
             this.i = 0;
         }
-        return Colors.values()[this.i].getColorResource();
+        return CombinationColors.values()[this.i].getColorResource();
     }
 
     private int getPreviousColor() {
@@ -61,6 +61,6 @@ public class ColorPicker {
         if (i < 0) {
             i = 5;
         }
-        return Colors.values()[this.i].getColorResource();
+        return CombinationColors.values()[this.i].getColorResource();
     }
 }

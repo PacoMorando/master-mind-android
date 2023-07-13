@@ -15,7 +15,7 @@ public class BoardView {
         this.playController = playController;
         this.secretCombinationView = new SecretCombinationView(this.playController.getSecretCombination());
         mainActivity.setFragmentView(R.id.secretCombinationFragmentContainer, this.secretCombinationView);
-        this.proposedCombinationView = new ProposedCombinationView(this.playController.getProposeCombinations());
+        this.proposedCombinationView = new ProposedCombinationView();
         mainActivity.setFragmentView(R.id.proposedCombinationFragmentContainer, this.proposedCombinationView);
         this.resultsView = new ResultsView(this.playController);
         mainActivity.setFragmentView(R.id.resultsRecyclerViewFragmentContainer, this.resultsView);

@@ -5,17 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Objects;
 
-import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.SecretCombinationBinding;
 import sas.mastermind.core.models.SecretCombination;
@@ -54,7 +50,7 @@ public class SecretCombinationView extends Fragment {
     public void showRevealed() {
         String secretCombination = this.secretCombination.toString();
         for (int i = 0; i < this.secretCombinationColors.size(); i++) {
-            this.secretCombinationColors.get(i).setImageResource(Colors.valueOf(String.valueOf(secretCombination.charAt(i))).getColorResource());
+            this.secretCombinationColors.get(i).setImageResource(CombinationColors.valueOf(String.valueOf(secretCombination.charAt(i))).getColorResource());
         }
     }
 
