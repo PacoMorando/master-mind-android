@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.CardView.Board" parent="Widget.Material3.CardView.Outlined">
+        <item name="strokeColor">@color/md_theme_light_primary</item>
+    </style>
+</resources>
