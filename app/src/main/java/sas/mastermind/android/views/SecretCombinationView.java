@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
+import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.SecretCombinationBinding;
 import sas.mastermind.core.models.SecretCombination;
@@ -52,10 +53,5 @@ public class SecretCombinationView extends Fragment {
         for (int i = 0; i < this.secretCombinationColors.size(); i++) {
             this.secretCombinationColors.get(i).setImageResource(CombinationColors.valueOf(String.valueOf(secretCombination.charAt(i))).getColorResource());
         }
-    }
-
-    public void pintarCombinacionSecreta() {// TODO este se va a tener que ir porque era solo para probar
-        this.binding.secretText.setText(this.secretCombination.toString());
-        this.showRevealed();
     }
 }

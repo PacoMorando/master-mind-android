@@ -2,7 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <data>
+
         <variable
             name="playView"
             type="sas.mastermind.android.views.PlayView" />
@@ -16,10 +18,10 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_margin="10dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
-            app:cardElevation="7dp">
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,63 +29,80 @@
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
-                <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/secretCombinationFragmentContainer"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingVertical="10dp" />
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageButton
+                        android:id="@+id/exit"
+                        style="?attr/materialIconButtonStyle"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> playView.exit()}"
+                        android:src="@drawable/exit_icon"
+                        app:tint="?attr/colorOnSecondaryContainer"/>
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/secretCombinationFragmentContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingVertical="8dp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/resultsRecyclerViewFragmentContainer"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:layout_gravity="center" />
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"/>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingVertical="5dp"
-                    android:layout_gravity="bottom">
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
 
-                    <ImageButton
-                        style="@style/Widget.Material3.Button.IconButton.Filled"
-                        android:id="@+id/undo"
-                        android:layout_width="55dp"
-                        android:layout_height="48dp"
-                        android:onClick="@{() -> playView.undo()}"
-                        android:src="@drawable/ic_undo"/>
-
-                    <ImageButton
-                        style="@style/Widget.Material3.Button.IconButton.Filled"
-                        android:id="@+id/redo"
-                        android:layout_width="55dp"
-                        android:layout_height="48dp"
-                        android:onClick="@{() -> playView.redo()}"
-                        android:src="@drawable/ic_redo"/>
-
-                    <ImageButton
-                        style="@style/Widget.Material3.Button.IconButton.Filled"
-                        android:id="@+id/exit"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:onClick="@{() -> playView.exit()}"
-                        android:src="@drawable/exit_icon" />
-
-                    <Button
-                        style="@style/Widget.Material3.Button"
-                        android:id="@+id/addProposeCombination"
+                    <com.google.android.material.button.MaterialButtonToggleGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="@{() -> playView.addProposeCombination()}"
-                        android:text="ADD" />
+                        android:paddingVertical="10dp">
+
+                        <Button
+                            android:id="@+id/undo"
+                            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{() -> playView.undo()}"
+                            android:backgroundTint="?attr/colorSurface"
+                            app:icon="@drawable/ic_undo" />
+
+                        <Button
+                            android:id="@+id/redo"
+                            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{() -> playView.redo()}"
+                            android:backgroundTint="?attr/colorSurface"
+                            app:icon="@drawable/ic_redo" />
+
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
 
 
                 </LinearLayout>
-
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -92,5 +111,17 @@
             android:id="@+id/proposedCombinationFragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="?attr/floatingActionButtonSmallStyle"
+            android:id="@+id/addProposeCombination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:onClick="@{() -> playView.addProposeCombination()}"
+            app:srcCompat="@drawable/ic_propose"
+            app:backgroundTint="?attr/colorSecondary"
+            app:tint="?attr/colorOnSecondary"/>
     </LinearLayout>
 </layout>

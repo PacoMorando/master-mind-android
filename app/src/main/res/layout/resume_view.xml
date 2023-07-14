@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GAME OVER"
-            android:textSize="20pt"
+            android:textSize="25pt"
             android:fontFamily="@font/dyna_puff_medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,12 +31,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="developed by saturn apple studios"
-            android:textSize="6pt"
+            android:textSize="5pt"
+            android:fontFamily="@font/baloo2_semi_bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/resumeTitle"
-            app:layout_constraintVertical_bias="0.01" />
+            app:layout_constraintVertical_bias="0.001" />
 
         <Button
             style="@style/Widget.Material3.Button.ElevatedButton"
@@ -44,6 +45,8 @@
             android:layout_height="wrap_content"
             android:onClick="next"
             android:text="CONTINUE"
+            android:textSize="@dimen/button_text_size"
+            android:fontFamily="@font/baloo2_semi_bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +58,8 @@
             android:layout_width="@dimen/start_view_buttons"
             android:layout_height="wrap_content"
             android:onClick="@{() -> resumeView.exit()}"
+            android:textSize="@dimen/button_text_size"
+            android:fontFamily="@font/baloo2_semi_bold"
             android:text="EXIT"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

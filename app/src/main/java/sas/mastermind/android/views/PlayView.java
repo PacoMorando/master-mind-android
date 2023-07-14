@@ -54,6 +54,7 @@ public class PlayView extends Fragment {
             this.boardView.showBoardResults((MainActivity) getActivity());
         }
         this.setEnableButtons();
+        ((MainActivity)requireActivity()).toast(this.playController.getSecretCombination().toString());//TODO borrar esta linea, es solo para pruebas
     }
 
     public void redo() {
