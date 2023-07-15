@@ -7,11 +7,44 @@
     android:layout_gravity="center"
     android:paddingVertical="3dp">
 
+    <ImageView
+        android:id="@+id/colorOne"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:src="@drawable/empty_color"/>
+    <ImageView
+        android:id="@+id/colorTwo"
+        android:layout_marginLeft="15dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:src="@drawable/empty_color"/>
+    <ImageView
+        android:id="@+id/colorThree"
+        android:layout_marginLeft="15dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:src="@drawable/empty_color"/>
+    <ImageView
+        android:id="@+id/colorFour"
+        android:layout_marginLeft="15dp"
+        android:layout_width="@dimen/token_size"
+        android:layout_height="@dimen/token_size"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:src="@drawable/empty_color"/>
+
     <LinearLayout
         android:orientation="vertical"
         android:id="@+id/results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:layout_gravity="center"
         android:textAlignment="center">
 
@@ -56,39 +89,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
-    <ImageView
-        android:id="@+id/colorOne"
-        android:layout_marginLeft="15dp"
-        android:layout_width="@dimen/token_size"
-        android:layout_height="@dimen/token_size"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:src="@drawable/empty_color"/>
-    <ImageView
-        android:id="@+id/colorTwo"
-        android:layout_marginLeft="15dp"
-        android:layout_width="@dimen/token_size"
-        android:layout_height="@dimen/token_size"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:src="@drawable/empty_color"/>
-    <ImageView
-        android:id="@+id/colorThree"
-        android:layout_marginLeft="15dp"
-        android:layout_width="@dimen/token_size"
-        android:layout_height="@dimen/token_size"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:src="@drawable/empty_color"/>
-    <ImageView
-        android:id="@+id/colorFour"
-        android:layout_marginLeft="15dp"
-        android:layout_width="@dimen/token_size"
-        android:layout_height="@dimen/token_size"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:src="@drawable/empty_color"/>
 
 </LinearLayout>
