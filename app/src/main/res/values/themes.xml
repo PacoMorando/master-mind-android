@@ -36,11 +36,22 @@
 
     <style name="Board.CardView" parent="Widget.Material3.CardView.Outlined">
         <item name="strokeColor">?attr/colorPrimary</item>
-        <item name="strokeWidth">3dp</item>
+        <item name="strokeWidth">2.5dp</item>
         <item name="cardBackgroundColor">?attr/colorOnPrimary</item>
     </style>
     <style name="Card.Divider" parent="Widget.Material3.MaterialDivider">
-        <item name="dividerThickness">3dp</item>
+        <item name="dividerThickness">2.5dp</item>
         <item name="dividerColor">?attr/colorPrimary</item>
+    </style>
+    <style name="MasterMind.Button" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    <style name="Send.Combination.Button" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="strokeWidth">1.5dp</item>
     </style>
 </resources>

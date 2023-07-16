@@ -60,6 +60,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     public static class ViewHolder extends RecyclerView.ViewHolder {
         ArrayList<ImageView> proposedColors = new ArrayList<>();
         ArrayList<ImageView> resultsColors = new ArrayList<>();
+        //TODO tal vez la proposed combination deberia de componer esta clase "this.proposedCombination = proposedCombination.get(getLayoutPosition())"
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

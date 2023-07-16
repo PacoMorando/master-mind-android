@@ -32,7 +32,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingHorizontal="10dp"
+                    android:paddingHorizontal="@dimen/start_margin_result"
                     android:orientation="horizontal">
 
                     <androidx.fragment.app.FragmentContainerView
@@ -41,7 +41,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="15dp"
                         android:layout_gravity="center"
-                        android:paddingVertical="8dp" />
+                        android:paddingVertical="10dp" />
 
                     <ImageButton
                         android:id="@+id/exit"
@@ -66,7 +66,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:paddingVertical="5dp"
-                    android:paddingHorizontal="10dp"/>
+                    android:paddingHorizontal="@dimen/start_margin_result"/>
 
                 <com.google.android.material.divider.MaterialDivider
                     style="@style/Card.Divider"
@@ -121,20 +121,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                style="?attr/floatingActionButtonSmallStyle"
+            <Button
                 android:id="@+id/addProposeCombination"
+                style="@style/Send.Combination.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="18dp"
                 android:onClick="@{() -> playView.addProposeCombination()}"
-                app:srcCompat="@drawable/ic_propose"
-                app:backgroundTint="?attr/colorSecondary"
-                app:tint="?attr/colorOnSecondary"/>
+                app:icon="@drawable/ic_propose"/>
         </LinearLayout>
-
-
 
     </LinearLayout>
 </layout>

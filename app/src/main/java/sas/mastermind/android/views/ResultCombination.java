@@ -5,7 +5,7 @@ import sas.mastermind.android.R;
 public class ResultCombination {
     private final int whiteResource = R.drawable.token_white;
     private final int blackResource = R.drawable.token_black;
-    private final int emptyResource = R.drawable.empty_color;
+    private final int emptyResource = R.drawable.token_empty;//TODO actualizar despues de definir el disenho
     private final int[] resultResources = new int[CombinationColors.COMBINATION_SIZE];
 
     public ResultCombination(int blacks, int whites) {

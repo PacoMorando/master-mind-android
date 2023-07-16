@@ -10,13 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <ImageView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Master Mind"
-            android:textSize="22pt"
-            android:fontFamily="@font/moirai_one_regular"
+            android:src="@drawable/master_mind_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +22,7 @@
             app:layout_constraintVertical_bias="0.2" />
 
         <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
+            style="@style/MasterMind.Button"
             android:id="@+id/newGameButton"
             android:layout_width="@dimen/start_view_buttons"
             android:layout_height="wrap_content"
@@ -39,8 +37,7 @@
             app:layout_constraintVertical_bias="0.5" />
 
         <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:elevation="2dp"
+            style="@style/MasterMind.Button"
             android:id="@+id/openGameButton"
             android:layout_width="@dimen/start_view_buttons"
             android:layout_height="wrap_content"

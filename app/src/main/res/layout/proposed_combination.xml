@@ -22,21 +22,21 @@
             android:id="@+id/pickerTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="18dp"/>
 
         <include
             layout="@layout/color_picker"
             android:id="@+id/pickerThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="18dp"/>
 
         <include
             layout="@layout/color_picker"
             android:id="@+id/pickerFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="18dp"/>
 
     </LinearLayout>
 </layout>
