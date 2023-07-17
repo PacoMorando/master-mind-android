@@ -39,7 +39,7 @@
                         android:id="@+id/secretCombinationFragmentContainer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginRight="@dimen/start_margin_result"
                         android:layout_gravity="center"
                         android:paddingVertical="10dp" />
 

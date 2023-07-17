@@ -24,8 +24,8 @@
         <Button
             style="@style/MasterMind.Button"
             android:id="@+id/newGameButton"
-            android:layout_width="@dimen/start_view_buttons"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/main_buttons_width"
+            android:layout_height="@dimen/main_buttons_height"
             android:onClick="next"
             android:text="NEW GAME"
             android:textSize="@dimen/button_text_size"
@@ -39,8 +39,8 @@
         <Button
             style="@style/MasterMind.Button"
             android:id="@+id/openGameButton"
-            android:layout_width="@dimen/start_view_buttons"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/main_buttons_width"
+            android:layout_height="@dimen/main_buttons_height"
             android:text="OPEN GAME"
             android:textSize="@dimen/button_text_size"
             android:fontFamily="@font/baloo2_semi_bold"
