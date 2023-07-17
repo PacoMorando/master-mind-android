@@ -10,11 +10,9 @@ public class ColorPicker {
     private final ImageButton up;
     private final ImageView pickedColor;
     private final ImageButton down;
-    private final String name;
     private int i = 0;
 
-    public ColorPicker(String name, ColorPickerBinding picker) {
-        this.name = name;
+    public ColorPicker(ColorPickerBinding picker) {
         this.up = picker.up;
         this.pickedColor = picker.pickedColor;
         this.down = picker.down;
@@ -37,15 +35,11 @@ public class ColorPicker {
     }
 
     private void pickUp() {
-        //System.out.println("UP " + this.name);
         this.pickedColor.setImageResource(this.getNextColor());
-        System.out.println(CombinationColors.values()[this.i]);
     }
 
     private void pickDown() {
-        //System.out.println("DOWN " + name);
         this.pickedColor.setImageResource(getPreviousColor());
-        System.out.println(CombinationColors.values()[this.i]);
     }
 
     private int getNextColor() {

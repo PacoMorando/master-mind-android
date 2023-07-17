@@ -33,10 +33,8 @@ public class BoardView {
 
     private void showGameResult(MainActivity mainActivity) {
         if (this.playController.isWinner()) {
-            mainActivity.toast("Has ganado!");
             this.secretCombinationView.showRevealed();
         } else {
-            mainActivity.toast("Has perdido!");
             this.secretCombinationView.showRevealed();
         }
         new SaveDialog(this.playController).show(mainActivity.getSupportFragmentManager(),"save game");

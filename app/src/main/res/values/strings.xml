@@ -1,10 +1,16 @@
 <resources>
-    <string name="app_name">MasterMind</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Master Mind</string>
+
     <string name="hello_blank_fragment">FRAGMENTO TEST</string>
     <string name="unrevealed_color">\?</string>
     <string name="proposed_color">#</string>
-    <string-array name="combinatios_colors">
+    <string name="save_question">Do you want to save?</string>
+    <string name="save_positive">Yes</string>
+    <string name="save_negative">No</string>
+    <string name="winner_message">Has ganao!! :D</string>
+    <string name="looser_message">Perdiste!… :/</string>
+    <string name="exit_dialog">Exit</string>
+    <string-array name="combination_colors">
         <item>r</item>
         <item>g</item>
         <item>b</item>

@@ -43,7 +43,6 @@ public class ResultsView extends Fragment {
     }
 
     public void showProposedCombinationsResult() {
-        //this.resultsRecyclerAdapter.setResults();
         this.resultsRecyclerAdapter.notifyDataSetChanged();
     }
 

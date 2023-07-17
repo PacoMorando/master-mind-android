@@ -16,14 +16,14 @@ import sas.mastermind.core.models.ProposedCombination;
 
 public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecyclerAdapter.ViewHolder> {
     private final int PROPOSED_COMBINATIONS_SIZE = 10;
-    private static PlayController playController;
-    private static ArrayList<ProposedCombination> proposedCombinations;
-    private static ArrayList<ResultCombination> resultsCombinations;
+    private final PlayController playController;
+    private final ArrayList<ProposedCombination> proposedCombinations;
+    private final ArrayList<ResultCombination> resultsCombinations;
     private int itemHeight;
 
     public ResultsRecyclerAdapter(PlayController playController) {
-        ResultsRecyclerAdapter.playController = playController;
-        proposedCombinations = ResultsRecyclerAdapter.playController.getProposeCombinations();
+        this.playController = playController;
+        this.proposedCombinations = this.playController.getProposeCombinations();
         resultsCombinations = new ArrayList<>();
     }
 
@@ -37,14 +37,23 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, this.itemHeight));
-        this.setResults();
+        this.setItemViewCombinationsResults(holder, position);
         holder.showProposedCombinationsResult();
+        holder.testCombination();
+    }
+
+    private void setItemViewCombinationsResults(@NonNull ViewHolder holder, int position) {
+        if (this.proposedCombinations.size() > position) {
+            holder.setProposedCombination(this.proposedCombinations.get(position).toString());
+            this.setResults();
+            holder.setResultCombination(this.resultsCombinations.get(position));
+        }
     }
 
     private void setResults() {
-        resultsCombinations.clear();
-        for (ProposedCombination proposedCombination : proposedCombinations) {
-            resultsCombinations.add(new ResultCombination(playController.calculateBlacks(proposedCombination), playController.calculateWhites(proposedCombination)));
+        this.resultsCombinations.clear();
+        for (ProposedCombination proposedCombination : this.proposedCombinations) {
+            this.resultsCombinations.add(new ResultCombination(this.playController.calculateBlacks(proposedCombination), this.playController.calculateWhites(proposedCombination)));
         }
     }
 
@@ -58,9 +67,10 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ArrayList<ImageView> proposedColors = new ArrayList<>();
-        ArrayList<ImageView> resultsColors = new ArrayList<>();
-        //TODO tal vez la proposed combination deberia de componer esta clase "this.proposedCombination = proposedCombination.get(getLayoutPosition())"
+        private final ArrayList<ImageView> proposedColors = new ArrayList<>();
+        private final ArrayList<ImageView> resultsColors = new ArrayList<>();
+        private String proposedCombination;
+        private ResultCombination resultCombination;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -74,8 +84,16 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
             this.resultsColors.add(itemView.findViewById(R.id.resultFour));
         }
 
+        public void setProposedCombination(String proposedCombination) {
+            this.proposedCombination = proposedCombination;
+        }
+
+        public void setResultCombination(ResultCombination resultCombination) {
+            this.resultCombination = resultCombination;
+        }
+
         protected void showProposedCombinationsResult() {
-            if (proposedCombinations.size() > getLayoutPosition()) {
+            if (this.proposedCombination != null) {
                 this.showProposedCombinations();
                 this.showResults();
             }
@@ -88,7 +106,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
         }
 
         private int getColorResource(int i) {
-            return CombinationColors.valueOf(String.valueOf(proposedCombinations.get(getLayoutPosition()).toString().charAt(i))).getColorResource();
+            return CombinationColors.valueOf(String.valueOf(this.proposedCombination.charAt(i))).getColorResource();
         }
 
         private void showResults() {
@@ -98,7 +116,15 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
         }
 
         private int getResultImageResource(int i) {
-            return resultsCombinations.get(getLayoutPosition()).getResultResource(i);
+            return this.resultCombination.getResultResource(i);
+        }
+
+        public void testCombination() {//TODO Borrar esto despues de que el adapter este funcionando y refactorizado
+            if (this.proposedCombination != null) {
+                System.out.println(this.proposedCombination);
+            } else {
+                System.out.println("NULL");
+            }
         }
     }
 }

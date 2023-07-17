@@ -9,9 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-import java.util.Objects;
-
 import sas.mastermind.android.MainActivity;
+import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
 
 public class SaveDialog extends AppCompatDialogFragment {
@@ -25,17 +24,17 @@ public class SaveDialog extends AppCompatDialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) { //TODO PLANTEARME QUE ESTA CLASE SE CREE EN LA CLASE VIEW
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(this.titleMessage())
-                .setMessage("Do you want to save?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setMessage(R.string.save_question)
+                .setPositiveButton(R.string.save_positive, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        ((MainActivity) requireActivity()).toast("persistence has not been implemented yet \n:(");
+                        ((MainActivity) requireActivity()).toast("persistence has not been implemented yet \n:(");//TODO borrar cuando se implente la persistencia
                         playController.next();
                         playController.next();
                         ((MainActivity) requireActivity()).next();
                     }
                 })
-                .setNegativeButton("No", (dialogInterface, i) -> {
+                .setNegativeButton(R.string.save_negative, (dialogInterface, i) -> {
                     playController.next();
                     playController.next();
                     ((MainActivity) requireActivity()).next();
@@ -45,12 +44,12 @@ public class SaveDialog extends AppCompatDialogFragment {
     private String titleMessage(){
         if (this.playController.isFinished()){
             if (this.playController.isWinner()){
-                return "Has ganao tío!! :D";
+                return getString(R.string.winner_message);
             }else {
-                return "jajaja perdiste! xD";
+                return getString(R.string.looser_message);
             }
         }else {
-            return "Exit";
+            return getString(R.string.exit_dialog);
         }
     }
 }

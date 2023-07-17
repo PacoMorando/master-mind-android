@@ -48,7 +48,6 @@ public class PlayView extends Fragment {
     }
 
     public void undo() {
-        System.out.println("UNDO");
         if (this.playController.isUndoable()){
             this.playController.undo();
             this.boardView.showBoardResults((MainActivity) getActivity());
@@ -58,7 +57,6 @@ public class PlayView extends Fragment {
     }
 
     public void redo() {
-        System.out.println("REDO");
         if (this.playController.isRedoable()){
             this.playController.redo();
             this.boardView.showBoardResults((MainActivity) getActivity());

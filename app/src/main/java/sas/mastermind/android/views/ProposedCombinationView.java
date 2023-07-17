@@ -31,10 +31,10 @@ public class ProposedCombinationView extends Fragment {
     }
 
     private void setColors() {
-        this.proposedCombinationColors.add(new ColorPicker("PickerOne", this.binding.pickerOne));
-        this.proposedCombinationColors.add( new ColorPicker("PickerTwo", this.binding.pickerTwo));
-        this.proposedCombinationColors.add(new ColorPicker("PickerThree", this.binding.pickerThree));
-        this.proposedCombinationColors.add(new ColorPicker("PickerFour", this.binding.pickerFour));
+        this.proposedCombinationColors.add(new ColorPicker(this.binding.pickerOne));
+        this.proposedCombinationColors.add( new ColorPicker(this.binding.pickerTwo));
+        this.proposedCombinationColors.add(new ColorPicker(this.binding.pickerThree));
+        this.proposedCombinationColors.add(new ColorPicker(this.binding.pickerFour));
     }
 
     public void addProposedCombination(PlayController playController) {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save_question">Do you want to save?</string>
+    <string name="save_positive">Yes</string>
+    <string name="save_negative">No</string>
+    <string name="winner_message">Has ganao!! :D</string>
+    <string name="looser_message">Perdiste!… :/</string>
+    <string name="exit_dialog">Exit</string>
+</resources>
