@@ -28,8 +28,7 @@ public class ResumeView extends Fragment {
     }
 
     public void exit (){
-        ((MainActivity) requireActivity()).toast("Bye!!");
         this.resumeController.resume(false);
-        requireActivity().finishAndRemoveTask();//TODO Este metodo no finaliza por completo la app, la cierra pero no hace lo mismo a que si le doy stop al IDE o la cierro desde el cel
+        requireActivity().onBackPressed();
     }
 }

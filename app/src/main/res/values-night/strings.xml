@@ -6,4 +6,10 @@
     <string name="winner_message">Has ganao!! :D</string>
     <string name="looser_message">Perdiste!… :/</string>
     <string name="exit_dialog">Exit</string>
+    <string name="game_over">Game Over</string>
+    <string name="developer_sing">developed by saturn apple studios</string>
+    <string name="continue_button">CONTINUE</string>
+    <string name="exit_button">EXIT</string>
+    <string name="new_game_button">NEW GAME</string>
+    <string name="open_game_button">OPEN GAME</string>
 </resources>

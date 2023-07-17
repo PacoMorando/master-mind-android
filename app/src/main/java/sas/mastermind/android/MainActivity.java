@@ -37,4 +37,6 @@ public class MainActivity extends AppCompatActivity {
     public void toast(String message) { //TODO eliminar este metodo que solo es para pruebas chapusas
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
+    //TODO implentar que no se pueda girar la pantalla y no se si implentar que desaparezca la barra de abajo...
 }
