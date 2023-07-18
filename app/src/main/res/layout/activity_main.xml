@@ -11,6 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/database_test"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Texto de prueba para base de datos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
