@@ -28,7 +28,8 @@ public class StartView extends Fragment {
     }
 
     public void openGame(){
-        ((MainActivity)requireActivity()).toast("persistence has not been implemented yet");
+        new OpenDialog().show(requireActivity().getSupportFragmentManager(),"open game");
+        //((MainActivity)requireActivity()).toast("persistence has not been implemented yet");
     }
 
     @Override
@@ -36,5 +37,4 @@ public class StartView extends Fragment {
         super.onDestroyView();
         this.binding = null;
     }
-
 }
