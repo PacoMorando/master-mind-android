@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
@@ -16,15 +18,19 @@ import sas.mastermind.core.controllers.PlayController;
 public class SaveDialog extends AppCompatDialogFragment {
     private PlayController playController;
 
-    public SaveDialog (PlayController playController){
+    public SaveDialog(PlayController playController) {
         this.playController = playController;
     }
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) { //TODO PLANTEARME QUE ESTA CLASE SE CREE EN LA CLASE VIEW
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getActivity());
         builder.setTitle(this.titleMessage())
                 .setMessage(R.string.save_question)
+                .setNeutralButton("Name", (dialogInterface, i) -> {
+                    new NameDialog().show(requireActivity().getSupportFragmentManager(), "name");
+                })
                 .setPositiveButton(R.string.save_positive, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -41,14 +47,15 @@ public class SaveDialog extends AppCompatDialogFragment {
                 });
         return builder.create();
     }
-    private String titleMessage(){
-        if (this.playController.isFinished()){
-            if (this.playController.isWinner()){
+
+    private String titleMessage() {
+        if (this.playController.isFinished()) {
+            if (this.playController.isWinner()) {
                 return getString(R.string.winner_message);
-            }else {
+            } else {
                 return getString(R.string.looser_message);
             }
-        }else {
+        } else {
             return getString(R.string.exit_dialog);
         }
     }
