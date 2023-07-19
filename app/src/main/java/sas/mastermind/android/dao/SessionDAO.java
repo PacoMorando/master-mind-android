@@ -62,7 +62,7 @@ public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
             names[i] = games.get(i).name;
         }
         return names;*/
-        return null;
+        return new String[]{"Juego 1", "Juego 2", "Juego 3", "Juego 4", "Juego 5", "Juego 6", "Juego 7"};
     }
 
     @Override

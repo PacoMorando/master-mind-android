@@ -14,21 +14,29 @@ import sas.mastermind.android.databinding.StartViewBinding;
 import sas.mastermind.core.controllers.StartController;
 
 public class StartView extends Fragment {
+    private StartController startController;
     private StartViewBinding binding;
+
     public void interact(StartController startController) {
+        this.startController = startController;
         startController.start();
     }
 
     @Override
-    public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         this.binding = StartViewBinding.inflate(inflater, container, false);
         binding.setStartView(this);
+        this.setOpenGameEnable();
         View view = binding.getRoot();
         return view;
     }
 
-    public void openGame(){
-        new OpenDialog().show(requireActivity().getSupportFragmentManager(),"open game");
+    private void setOpenGameEnable() {
+        this.binding.openGameButton.setEnabled(this.startController.getGamesNames().length > 0);
+    }
+
+    public void openGame() {
+        new OpenDialog(this.startController).show(requireActivity().getSupportFragmentManager(), "open game");
         //((MainActivity)requireActivity()).toast("persistence has not been implemented yet");
     }
 

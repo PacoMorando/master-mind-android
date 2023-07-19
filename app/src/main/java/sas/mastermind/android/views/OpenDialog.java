@@ -16,8 +16,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import sas.mastermind.android.R;
+import sas.mastermind.core.controllers.StartController;
 
 public class OpenDialog extends AppCompatDialogFragment {
+    private final StartController startController   ;
+
+    public OpenDialog(StartController startController) {
+        this.startController = startController;
+    }
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -33,6 +40,6 @@ public class OpenDialog extends AppCompatDialogFragment {
     private void setSavedGamesRecyclerView(View view) {
         RecyclerView savedGamesRecyclerView = view.findViewById(R.id.savedGames);
         savedGamesRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        savedGamesRecyclerView.setAdapter(new SavedGamesRecyclerAdapter());
+        savedGamesRecyclerView.setAdapter(new SavedGamesRecyclerAdapter(this.startController.getGamesNames()));
     }
 }

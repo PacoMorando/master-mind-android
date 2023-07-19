@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import java.util.Objects;
+
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.databinding.PlayViewBinding;
 import sas.mastermind.core.controllers.PlayController;
@@ -31,7 +33,7 @@ public class PlayView extends Fragment {
     public void onResume() {
         super.onResume();
         this.boardView = new BoardView(playController, (MainActivity) requireActivity());
-        this.boardView.showBoardResults((MainActivity) getActivity());
+        this.boardView.showBoardResults();
         this.setEnableButtons();
     }
 
@@ -43,28 +45,37 @@ public class PlayView extends Fragment {
 
     public void addProposeCombination() {
         this.boardView.addProposedCombination();
-        this.boardView.showBoardResults((MainActivity) getActivity());
+        this.boardView.showBoardResults();
         this.setEnableButtons();
+        this.showFinishDialog();
+
     }
 
     public void undo() {
-        if (this.playController.isUndoable()){
+        if (this.playController.isUndoable()) {
             this.playController.undo();
-            this.boardView.showBoardResults((MainActivity) getActivity());
+            this.boardView.showBoardResults();
         }
         this.setEnableButtons();
-        ((MainActivity)requireActivity()).toast(this.playController.getSecretCombination().toString());//TODO borrar esta linea, es solo para pruebas
+        ((MainActivity) requireActivity()).toast(this.playController.getSecretCombination().toString());//TODO borrar esta linea, es solo para pruebas
     }
 
     public void redo() {
-        if (this.playController.isRedoable()){
+        if (this.playController.isRedoable()) {
             this.playController.redo();
-            this.boardView.showBoardResults((MainActivity) getActivity());
+            this.boardView.showBoardResults();
         }
         this.setEnableButtons();
+        this.showFinishDialog();
+    }
+
+    private void showFinishDialog() {
+        if (this.playController.isFinished()) {
+            new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "save game");
+        }
     }
 
     public void exit() {
-        new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(),"exit game");
+        new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "exit game");
     }
 }

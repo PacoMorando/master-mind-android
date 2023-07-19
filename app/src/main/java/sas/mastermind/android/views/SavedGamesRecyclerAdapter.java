@@ -11,6 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import sas.mastermind.android.R;
 
 public class SavedGamesRecyclerAdapter extends RecyclerView.Adapter<SavedGamesRecyclerAdapter.ViewHolder> {
+    private final String[] gamesNames;
+
+    public SavedGamesRecyclerAdapter(String[] gamesNames) {
+        this.gamesNames = gamesNames;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -20,12 +26,12 @@ public class SavedGamesRecyclerAdapter extends RecyclerView.Adapter<SavedGamesRe
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.savedGame.setText("Game" + position);
+        holder.savedGame.setText(gamesNames[position]);
     }
 
     @Override
     public int getItemCount() {
-        return 50;
+        return gamesNames.length;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

@@ -16,7 +16,7 @@ import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.PlayController;
 
 public class SaveDialog extends AppCompatDialogFragment {
-    private PlayController playController;
+    private final PlayController playController;
 
     public SaveDialog(PlayController playController) {
         this.playController = playController;
@@ -34,10 +34,7 @@ public class SaveDialog extends AppCompatDialogFragment {
                 .setPositiveButton(R.string.save_positive, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        ((MainActivity) requireActivity()).toast("persistence has not been implemented yet \n:(");//TODO borrar cuando se implente la persistencia
-                        playController.next();
-                        playController.next();
-                        ((MainActivity) requireActivity()).next();
+                        saveGame();
                     }
                 })
                 .setNegativeButton(R.string.save_negative, (dialogInterface, i) -> {
@@ -46,6 +43,13 @@ public class SaveDialog extends AppCompatDialogFragment {
                     ((MainActivity) requireActivity()).next();
                 });
         return builder.create();
+    }
+
+    private void saveGame() {
+        ((MainActivity) requireActivity()).toast("persistence has not been implemented yet \n:(");//TODO borrar cuando se implente la persistencia
+        playController.next();
+        playController.next();
+        ((MainActivity) requireActivity()).next();
     }
 
     private String titleMessage() {

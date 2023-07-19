@@ -6,7 +6,6 @@ import sas.mastermind.core.controllers.PlayController;
 
 public class BoardView {
     private final PlayController playController;
-
     private final SecretCombinationView secretCombinationView;
     private final ProposedCombinationView proposedCombinationView;
     private final ResultsView resultsView;
@@ -21,23 +20,22 @@ public class BoardView {
         mainActivity.setFragmentView(R.id.resultsRecyclerViewFragmentContainer, this.resultsView);
     }
 
-    public void showBoardResults(MainActivity mainActivity) {
+    public void showBoardResults() {
         if (!this.playController.isFinished()) {
             this.secretCombinationView.showUnrevealed();
             this.resultsView.showProposedCombinationsResult();
         } else {
             this.resultsView.showProposedCombinationsResult();
-            this.showGameResult(mainActivity);
+            this.showGameResult();
         }
     }
 
-    private void showGameResult(MainActivity mainActivity) {
+    private void showGameResult() {
         if (this.playController.isWinner()) {
             this.secretCombinationView.showRevealed();
         } else {
             this.secretCombinationView.showRevealed();
         }
-        new SaveDialog(this.playController).show(mainActivity.getSupportFragmentManager(),"save game");
     }
 
     public void addProposedCombination() {
