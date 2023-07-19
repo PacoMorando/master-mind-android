@@ -11,9 +11,11 @@ import java.util.List;
 public interface GameDao {
     @Query("SELECT * FROM game")
     List<Game> getGames();
+    @Query("SELECT * FROM game WHERE name = :name")
+    Game getGame(String name);
 
     @Insert
-    void insertAll(Game... games);
+    void insert(Game game);
 
     @Delete
     void deleteAll(Game... user);

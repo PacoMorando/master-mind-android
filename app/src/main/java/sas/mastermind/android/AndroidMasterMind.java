@@ -1,6 +1,7 @@
 package sas.mastermind.android;
 
-import androidx.fragment.app.FragmentManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import sas.mastermind.android.dao.SessionDAO;
 import sas.mastermind.core.controllers.AcceptorController;
@@ -12,9 +13,9 @@ public class AndroidMasterMind {
     private final Logic logic;//TODO Falta implementar el DAO
     private final View view;
 
-    public AndroidMasterMind(FragmentManager supportFragmentManager) {
-        this.logic = new LogicImplementation(new SessionDAO());//Falta implementar el DAO
-        this.view = new sas.mastermind.android.views.View(supportFragmentManager);
+    public AndroidMasterMind(AppCompatActivity appCompatActivity) {
+        this.logic = new LogicImplementation(new SessionDAO(appCompatActivity.getApplicationContext()));
+        this.view = new sas.mastermind.android.views.View(appCompatActivity.getSupportFragmentManager());
     }
 
     protected void play() {

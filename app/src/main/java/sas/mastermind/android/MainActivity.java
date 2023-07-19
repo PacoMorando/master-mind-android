@@ -15,7 +15,7 @@ import sas.mastermind.android.dao.ProposedCombination;
 import sas.mastermind.android.dao.ProposedCombinationDAO;
 
 public class MainActivity extends AppCompatActivity {
-    private final AndroidMasterMind androidMasterMind = new AndroidMasterMind(getSupportFragmentManager());
+    private final AndroidMasterMind androidMasterMind = new AndroidMasterMind(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        AppDataBase db = Room.databaseBuilder(getApplicationContext(), AppDataBase.class, "mastermind-games").allowMainThreadQueries().build();
-        GameDao gameDao = db.gameDao();
-        ProposedCombinationDAO proposedCombinationDAO = db.proposedCombinationDAO();
+        //AppDataBase db = Room.databaseBuilder(getApplicationContext(), AppDataBase.class, "mastermind-games").allowMainThreadQueries().build();
+        //GameDao gameDao = db.gameDao();
+        //ProposedCombinationDAO proposedCombinationDAO = db.proposedCombinationDAO();
 
     }
 
