@@ -4,9 +4,13 @@ import android.content.Context;
 
 import androidx.room.Room;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
+import sas.mastermind.android.views.SecretCombinationView;
 import sas.mastermind.core.models.Game;
+import sas.mastermind.core.models.SecretCombination;
 
 public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
     /*private AppDataBase dataBase;
@@ -23,6 +27,7 @@ public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
     public void load(String name) {/*
         this.sessionDTO.setName(name);
         this.sessionDTO.loadGame(this.getLoadedGame(this.gameDao.getGame(name), this.proposedCombinationDAO.gameProposedCombinations(name)));*/
+        this.tempLoad(name);
     }
 
     private Game getLoadedGame(sas.mastermind.android.dao.Game game, List<ProposedCombination> proposedCombinations) {
@@ -38,7 +43,9 @@ public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
             this.upDateProposedCombinations(name);
         }
         //TODO aqui me va a dar un error, si ya tengo un game salvado y lo quiero volver a grabar va a insertar un game con el mismo nombre y dara error*/
+        this.tempSave(name);
     }
+
 
     private void saveProposedCombinations(String name) {/*
         for (sas.mastermind.core.models.ProposedCombination proposedCombination : this.sessionDTO.getProposeCombinations()) {
@@ -62,7 +69,8 @@ public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
             names[i] = games.get(i).name;
         }
         return names;*/
-        return new String[]{"Juego 1", "Juego 2", "Juego 3", "Juego 4", "Juego 5", "Juego 6", "Juego 7"};
+        //return new String[]{"Juego 1", "Juego 2", "Juego 3", "Juego 4", "Juego 5", "Juego 6", "Juego 7"};
+        return this.tempGetGamesNames();
     }
 
     @Override
@@ -70,4 +78,43 @@ public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
         return this.gameDao.getGame(name) != null;*/
         return false;
     }
+
+
+    //TODO metodo para salvar en la memoria temporal, todos se borraran cuando esten terminadas los dialogs open/save
+
+    private final HashMap<String, Game> gamesSaved = new HashMap<>();
+    private final HashMap<String, SecretCombination> secretCombinationsMap = new HashMap<>();
+    private final HashMap<String, ArrayList<sas.mastermind.core.models.ProposedCombination>> proposedCombinationMap = new HashMap<>();
+
+    public void tempLoad(String name){
+        this.sessionDTO.setName(name);
+        //this.sessionDTO.loadGame(gamesSaved.get(name));
+        this.sessionDTO.loadGame(new Game(secretCombinationsMap.get(name),proposedCombinationMap.get(name)));
+    }
+    public void tempSave(String name) {
+        gamesSaved.put(name, new Game(sessionDTO.getSecretCombination(), sessionDTO.getProposeCombinations()));
+        secretCombinationsMap.put(name, new SecretCombination(this.sessionDTO.getSecretCombination().toString()));
+        proposedCombinationMap.put(name, this.tempSaveProposedCombinations());
+    }
+
+    public void tempSave(){
+       this.tempSave(this.sessionDTO.getName());
+    }
+
+    private ArrayList<sas.mastermind.core.models.ProposedCombination> tempSaveProposedCombinations() {
+        ArrayList<sas.mastermind.core.models.ProposedCombination> proposedCombinations = new ArrayList<>();
+        for (sas.mastermind.core.models.ProposedCombination proposedCombination : this.sessionDTO.getProposeCombinations()) {
+            proposedCombinations.add(new sas.mastermind.core.models.ProposedCombination(proposedCombination.toString()));
+        }
+        return proposedCombinations;
+    }
+
+    public String[] tempGetGamesNames() {
+        ArrayList<String> gamesNames = new ArrayList<>();
+        gamesSaved.forEach((name, game) -> {
+            gamesNames.add(name);
+        });
+        return gamesNames.toArray(new String[0]);
+    }
+
 }

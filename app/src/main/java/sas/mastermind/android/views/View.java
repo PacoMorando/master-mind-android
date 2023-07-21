@@ -1,5 +1,7 @@
 package sas.mastermind.android.views;
 
+import android.content.Context;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -38,8 +40,9 @@ public class View extends sas.mastermind.core.views.View {
 
     @Override
     public void visit(SaveController saveController) {
-        this.setFragmentView(R.id.fragment_container_view, this.saveView);
-        this.saveView.interact(saveController);
+        new SaveDialog(saveController).show(fragmentManager.beginTransaction(), "save game");
+        //this.setFragmentView(R.id.fragment_container_view, this.saveView);
+        //this.saveView.interact(saveController);
     }
 
     @Override

@@ -17,8 +17,10 @@ public class PlayView extends Fragment {
     private PlayController playController;
     private PlayViewBinding binding;
     private BoardView boardView;
+    private boolean isNextStateEnable;
 
     public void interact(PlayController playController) {
+        this.isNextStateEnable = true;
         this.playController = playController;
     }
 
@@ -48,7 +50,6 @@ public class PlayView extends Fragment {
         this.boardView.showBoardResults();
         this.setEnableButtons();
         this.showFinishDialog();
-
     }
 
     public void undo() {
@@ -71,11 +72,21 @@ public class PlayView extends Fragment {
 
     private void showFinishDialog() {
         if (this.playController.isFinished()) {
-            new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "save game");
+            //new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "save game");
+            this.next();
         }
     }
 
     public void exit() {
-        new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "exit game");
+       // new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "exit game");
+        this.next();
+    }
+
+    private void next() {
+        if (this.isNextStateEnable){
+            playController.next();
+            this.isNextStateEnable = false;
+        }
+        ((MainActivity) requireActivity()).next();
     }
 }

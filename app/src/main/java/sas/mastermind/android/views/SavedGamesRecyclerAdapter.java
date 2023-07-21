@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import sas.mastermind.android.R;
 
 public class SavedGamesRecyclerAdapter extends RecyclerView.Adapter<SavedGamesRecyclerAdapter.ViewHolder> {
+    private OpenDialog openDialog; //TODO Analizar si esto genera un ciclo y es por eso mejor declarar la interfaz
     private final String[] gamesNames;
 
     public SavedGamesRecyclerAdapter(String[] gamesNames) {
@@ -26,6 +27,12 @@ public class SavedGamesRecyclerAdapter extends RecyclerView.Adapter<SavedGamesRe
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.itemView.setOnClickListener(view -> {
+            if (this.openDialog != null) {
+                this.openDialog.showGameNameClicked((String) holder.savedGame.getText());
+            }
+        });
+
         holder.savedGame.setText(gamesNames[position]);
     }
 
@@ -41,5 +48,9 @@ public class SavedGamesRecyclerAdapter extends RecyclerView.Adapter<SavedGamesRe
             super(itemView);
             this.savedGame = itemView.findViewById(R.id.savedGame);
         }
+    }
+
+    public void setOpenDialog (OpenDialog openDialog){
+        this.openDialog = openDialog;
     }
 }

@@ -19,7 +19,6 @@ public class StartView extends Fragment {
 
     public void interact(StartController startController) {
         this.startController = startController;
-        startController.start();
     }
 
     @Override
@@ -38,6 +37,11 @@ public class StartView extends Fragment {
     public void openGame() {
         new OpenDialog(this.startController).show(requireActivity().getSupportFragmentManager(), "open game");
         //((MainActivity)requireActivity()).toast("persistence has not been implemented yet");
+    }
+
+    public void start(){
+        this.startController.start();
+        ((MainActivity) requireActivity()).next();
     }
 
     @Override

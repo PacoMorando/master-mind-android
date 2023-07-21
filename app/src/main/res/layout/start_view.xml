@@ -27,7 +27,7 @@
             android:id="@+id/newGameButton"
             android:layout_width="@dimen/main_buttons_width"
             android:layout_height="@dimen/main_buttons_height"
-            android:onClick="next"
+            android:onClick="@{() -> startView.start()}"
             android:text="@string/new_game_button"
             android:textSize="@dimen/button_text_size"
             android:fontFamily="@font/baloo2_semi_bold"
