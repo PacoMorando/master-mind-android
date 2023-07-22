@@ -14,12 +14,15 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.util.Objects;
+
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.SaveController;
 
 public class NameDialog extends AppCompatDialogFragment {
-    private SaveController saveController;
+    private final SaveController saveController;
+
     public NameDialog(SaveController saveController) {
         this.saveController = saveController;
     }
@@ -41,14 +44,19 @@ public class NameDialog extends AppCompatDialogFragment {
     }
 
     private void save(String name) {
-        if (this.saveController.exists(name)){
-            ((MainActivity) requireActivity()).toast(name + " Already Exist");
-            new NameDialog(this.saveController).show(requireActivity().getSupportFragmentManager(),"Exist");
-        }else {
+        if (this.saveController.exists(name)) {
+            this.showAlreadyExistNameDialog(name);
+        } else {
             this.saveController.save(name);
             this.saveController.next();
             ((MainActivity) requireActivity()).toast(name + " Has been save");
             ((MainActivity) requireActivity()).next();
         }
+    }
+
+    private void showAlreadyExistNameDialog(String name) {
+        ((MainActivity) requireActivity()).toast("\n\n" + name + " Already Exist" + "\n\n");
+        NameDialog alreadyExistNameDialog = new NameDialog(this.saveController);
+        alreadyExistNameDialog.show(requireActivity().getSupportFragmentManager(), "Exist");
     }
 }
