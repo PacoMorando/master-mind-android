@@ -72,13 +72,11 @@ public class PlayView extends Fragment {
 
     private void showFinishDialog() {
         if (this.playController.isFinished()) {
-            //new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "save game");
             this.next();
         }
     }
 
     public void exit() {
-       // new SaveDialog(this.playController).show(requireActivity().getSupportFragmentManager(), "exit game");
         this.next();
     }
 

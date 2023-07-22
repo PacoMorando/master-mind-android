@@ -39,7 +39,6 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
         holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, this.itemHeight));
         this.setItemViewCombinationsResults(holder, position);
         holder.showProposedCombinationsResult();
-        holder.testCombination();
     }
 
     private void setItemViewCombinationsResults(@NonNull ViewHolder holder, int position) {
@@ -117,14 +116,6 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
 
         private int getResultImageResource(int i) {
             return this.resultCombination.getResultResource(i);
-        }
-
-        public void testCombination() {//TODO Borrar esto despues de que el adapter este funcionando y refactorizado
-            if (this.proposedCombination != null) {
-                System.out.println(this.proposedCombination);
-            } else {
-                System.out.println("NULL");
-            }
         }
     }
 }

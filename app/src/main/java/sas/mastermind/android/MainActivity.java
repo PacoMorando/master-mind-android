@@ -22,9 +22,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //AppDataBase db = Room.databaseBuilder(getApplicationContext(), AppDataBase.class, "mastermind-games").allowMainThreadQueries().build();
-        //GameDao gameDao = db.gameDao();
-        //ProposedCombinationDAO proposedCombinationDAO = db.proposedCombinationDAO();
     }
 
     public void setFragmentView(int fragmentContainerView, Fragment fragmentView) {
