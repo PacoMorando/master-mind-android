@@ -25,7 +25,7 @@ public class SaveDialog extends AppCompatDialogFragment {
 
     @NonNull
     @Override
-    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) { //TODO PLANTEARME QUE ESTA CLASE SE CREE EN LA CLASE VIEW
+    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getActivity());
         builder.setTitle(this.titleMessage())
                 .setMessage(R.string.save_question)
@@ -36,7 +36,7 @@ public class SaveDialog extends AppCompatDialogFragment {
                     }
                 })
                 .setNegativeButton(R.string.save_negative, (dialogInterface, i) -> {
-                    saveController.next();
+                    this.saveController.next();
                     ((MainActivity) requireActivity()).next();
                 });
         return builder.create();
@@ -46,14 +46,14 @@ public class SaveDialog extends AppCompatDialogFragment {
         if (this.saveController.hasName()){
             this.saveController.save();
             this.saveController.next();
+            ((MainActivity) requireActivity()).next();
         }else {
             new NameDialog(this.saveController).show(requireActivity().getSupportFragmentManager(), "name");
         }
-        //((MainActivity) requireActivity()).toast("persistence has not been implemented yet \n:(");//TODO borrar cuando se implente la persistencia
-       // ((MainActivity) requireActivity()).next();
     }
 
     private String titleMessage() {
+        //TODO Resolver el mensaje de ganar o perder
        /* if (this.playController.isFinished()) {
             if (this.playController.isWinner()) {
                 return getString(R.string.winner_message);

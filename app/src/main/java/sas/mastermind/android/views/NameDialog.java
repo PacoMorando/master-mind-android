@@ -1,19 +1,18 @@
 package sas.mastermind.android.views;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
-
-import java.util.Objects;
 
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
@@ -35,7 +34,6 @@ public class NameDialog extends AppCompatDialogFragment {
                 .setNeutralButton("Cancel", (dialogInterface, i) -> {
                 })
                 .setPositiveButton("Save", (dialogInterface, i) -> {
-                    ((MainActivity) requireActivity()).toast(gameName.getText() + " Has been save");
                     this.save(String.valueOf(gameName.getText()));
                 })
                 .setView(view);
@@ -43,8 +41,14 @@ public class NameDialog extends AppCompatDialogFragment {
     }
 
     private void save(String name) {
-        this.saveController.save(name);
-        this.saveController.next();
-        ((MainActivity) requireActivity()).next();
+        if (this.saveController.exists(name)){
+            ((MainActivity) requireActivity()).toast(name + " Already Exist");
+            new NameDialog(this.saveController).show(requireActivity().getSupportFragmentManager(),"Exist");
+        }else {
+            this.saveController.save(name);
+            this.saveController.next();
+            ((MainActivity) requireActivity()).toast(name + " Has been save");
+            ((MainActivity) requireActivity()).next();
+        }
     }
 }
