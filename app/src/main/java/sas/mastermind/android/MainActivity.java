@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //TODO Configuracion para que no se pueda girar la pantalla
         this.androidMasterMind = new AndroidMasterMind(this);
         this.androidMasterMind.play();
 
