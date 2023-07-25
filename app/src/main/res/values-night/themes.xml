@@ -26,5 +26,13 @@
         <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
+        <item name="android:statusBarColor">@color/md_theme_dark_onPrimary</item>
+
+        <item name="colorRedToken">@color/them_dark_redToken</item>
+        <item name="colorGreenToken">@color/them_dark_greenToken</item>
+        <item name="colorBlueToken">@color/them_dark_blueToken</item>
+        <item name="colorCianToken">@color/them_dark_cianToken</item>
+        <item name="colorYellowToken">@color/them_dark_yellowToken</item>
+        <item name="colorMagentaToken">@color/them_dark_magentaToken</item>
     </style>
 </resources>

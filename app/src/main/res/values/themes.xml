@@ -26,6 +26,13 @@
         <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
+
+        <item name="colorRedToken">@color/redToken</item>
+        <item name="colorGreenToken">@color/greenToken</item>
+        <item name="colorBlueToken">@color/blueToken</item>
+        <item name="colorCianToken">@color/cianToken</item>
+        <item name="colorYellowToken">@color/yellowToken</item>
+        <item name="colorMagentaToken">@color/magentaToken</item>
     </style>
 
     <style name="Theme.MasterMind" parent="Base.Theme.MasterMind" />

@@ -73,12 +73,12 @@
         <color name="yellowToken">#BB8E11</color>
         <color name="magentaToken">#DB66C6</color>
 
-        <color name="them_dark_redToken">#DB4343</color>
-        <color name="them_dark_greenToken">#85C247</color>
-        <color name="them_dark_blueToken">#47469B</color>
-        <color name="them_dark_cianToken">#259FA7</color>
-        <color name="them_dark_yellowToken">#B68A11</color>
-        <color name="them_dark_magentaToken">#D85AC1</color>
+        <color name="them_dark_redToken">#CC0000</color>
+        <color name="them_dark_greenToken">#A6E665</color>
+        <color name="them_dark_blueToken">#454BFC</color>
+        <color name="them_dark_cianToken">#64D5DD</color>
+        <color name="them_dark_yellowToken">#F0BA5C</color>
+        <color name="them_dark_magentaToken">#FF99D5</color>
 
 
 </resources>
