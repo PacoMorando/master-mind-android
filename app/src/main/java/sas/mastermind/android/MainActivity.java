@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private AndroidMasterMind androidMasterMind;
@@ -37,9 +36,5 @@ public class MainActivity extends AppCompatActivity {
 
     public void next(View view) {
         this.androidMasterMind.play();
-    }
-
-    public void toast(String message) { //TODO eliminar este metodo que solo es para pruebas chapusas
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

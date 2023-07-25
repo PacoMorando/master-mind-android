@@ -1,4 +1,4 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.SecretCombinationBinding;
+import sas.mastermind.android.views.CombinationColors;
 import sas.mastermind.core.models.SecretCombination;
 
 public class SecretCombinationView extends Fragment {

@@ -1,4 +1,4 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,8 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-
-import java.util.Objects;
 
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.databinding.PlayViewBinding;
@@ -58,7 +56,6 @@ public class PlayView extends Fragment {
             this.boardView.showBoardResults();
         }
         this.setEnableButtons();
-        ((MainActivity) requireActivity()).toast(this.playController.getSecretCombination().toString());//TODO borrar esta linea, es solo para pruebas
     }
 
     public void redo() {
@@ -72,19 +69,12 @@ public class PlayView extends Fragment {
 
     private void showFinishDialog() {
         if (this.playController.isFinished()) {
-            this.next();
+            new FinishDialog(this.playController, this.playController.isWinner()).show(requireActivity().getSupportFragmentManager(), "finish");
         }
     }
 
     public void exit() {
-        this.next();
-    }
-
-    private void next() {
-        if (this.isNextStateEnable){
-            playController.next();
-            this.isNextStateEnable = false;
-        }
+        playController.next();
         ((MainActivity) requireActivity()).next();
     }
 }

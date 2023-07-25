@@ -1,10 +1,11 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import sas.mastermind.android.databinding.ColorPickerBinding;
+import sas.mastermind.android.views.CombinationColors;
 
 public class ColorPicker {
     private final ImageButton up;

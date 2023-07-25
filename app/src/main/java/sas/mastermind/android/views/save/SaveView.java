@@ -1,4 +1,4 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.save;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -3,7 +3,7 @@
     <data>
         <variable
             name="resultsView"
-            type="sas.mastermind.android.views.ResultsView" />
+            type="sas.mastermind.android.views.play.ResultsView" />
     </data>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/resultsRecyclerView"

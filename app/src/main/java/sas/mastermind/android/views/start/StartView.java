@@ -1,16 +1,15 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.start;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
 import sas.mastermind.android.MainActivity;
-import sas.mastermind.android.R;
 import sas.mastermind.android.databinding.StartViewBinding;
+import sas.mastermind.android.views.start.OpenDialog;
 import sas.mastermind.core.controllers.StartController;
 
 public class StartView extends Fragment {

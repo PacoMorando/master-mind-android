@@ -1,11 +1,12 @@
 package sas.mastermind.android.views;
 
-import android.content.Context;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import sas.mastermind.android.R;
+import sas.mastermind.android.views.play.PlayView;
+import sas.mastermind.android.views.save.SaveDialog;
+import sas.mastermind.android.views.start.StartView;
 import sas.mastermind.core.controllers.PlayController;
 import sas.mastermind.core.controllers.ResumeController;
 import sas.mastermind.core.controllers.SaveController;
@@ -15,14 +16,14 @@ public class View extends sas.mastermind.core.views.View {
     private final FragmentManager fragmentManager;
     private final StartView startView;
     private final PlayView playView;
-    private final SaveView saveView;
+    private final SaveDialog saveView;
     private final ResumeView resumeView;
 
     public View(FragmentManager supportFragmentManager) {
         this.fragmentManager = supportFragmentManager;
         this.startView = new StartView();
         this.playView = new PlayView();
-        this.saveView = new SaveView();
+        this.saveView = new SaveDialog();
         this.resumeView = new ResumeView();
     }
 
@@ -40,9 +41,9 @@ public class View extends sas.mastermind.core.views.View {
 
     @Override
     public void visit(SaveController saveController) {
-        new SaveDialog(saveController).show(fragmentManager.beginTransaction(), "save game");
-        //this.setFragmentView(R.id.fragment_container_view, this.saveView);
-        //this.saveView.interact(saveController);
+        this.saveView.setSaveController(saveController);
+        this.saveView.setCancelable(false);
+        this.saveView.show(fragmentManager.beginTransaction(), "save game");
     }
 
     @Override

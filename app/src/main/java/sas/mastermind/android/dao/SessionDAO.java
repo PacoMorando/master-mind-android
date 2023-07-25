@@ -4,13 +4,9 @@ import android.content.Context;
 
 import androidx.room.Room;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import sas.mastermind.android.views.SecretCombinationView;
 import sas.mastermind.core.models.Game;
-import sas.mastermind.core.models.SecretCombination;
 
 public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
     private final GameDao gameDao;
@@ -34,22 +30,22 @@ public class SessionDAO extends sas.mastermind.core.dao.SessionDAO {
 
     @Override
     public void save(String name) {
-        if (!this.exist(name)){
+        if (!this.exist(name)) {
             this.gameDao.insert(new sas.mastermind.android.dao.Game(name, this.sessionDTO.getSecretCombination().toString()));
             this.saveProposedCombinations(name);
-        }else {
+        } else {
             this.upDateProposedCombinations(name);
         }
     }
 
     private void saveProposedCombinations(String name) {
         for (sas.mastermind.core.models.ProposedCombination proposedCombination : this.sessionDTO.getProposeCombinations()) {
-            proposedCombinationDAO.insert(new ProposedCombination(name,proposedCombination.toString()));
+            proposedCombinationDAO.insert(new ProposedCombination(name, proposedCombination.toString()));
         }
     }
 
     private void upDateProposedCombinations(String name) {
-        //TODO CAMBIAR QUE SE BORRE TODO Y SE REESCRIBA POR UPDATE
+        //TODO DEVELOP FOR UPDATE QUERY, INSTEAD OF DELETE EVERYTHING
         for (ProposedCombination proposedCombination : this.proposedCombinationDAO.gameProposedCombinations(name)) {
             this.proposedCombinationDAO.delete(proposedCombination);
         }

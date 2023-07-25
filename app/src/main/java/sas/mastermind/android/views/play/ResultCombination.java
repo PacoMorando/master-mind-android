@@ -1,6 +1,7 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import sas.mastermind.android.R;
+import sas.mastermind.android.views.CombinationColors;
 
 public class ResultCombination {
     private final int whiteResource = R.drawable.token_white;

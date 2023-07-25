@@ -1,12 +1,9 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.start;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,13 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import java.util.Objects;
-
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;
 import sas.mastermind.core.controllers.StartController;
 
-public class OpenDialog extends AppCompatDialogFragment {
+public class OpenDialog extends AppCompatDialogFragment implements SavedGamesRecyclerAdapter.OnSavedGameClickListener {
     private final StartController startController;
 
     public OpenDialog(StartController startController) {
@@ -36,7 +31,7 @@ public class OpenDialog extends AppCompatDialogFragment {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity());
         this.setSavedGamesRecyclerView(view);
         builder.setTitle("Select Game")
-                .setNeutralButton("Cancel", (dialogInterface, i) -> {
+                .setNeutralButton(getString(R.string.dialog_neutral), (dialogInterface, i) -> {
                 })
                 .setView(view);
         return builder.create();
@@ -45,15 +40,15 @@ public class OpenDialog extends AppCompatDialogFragment {
     private void setSavedGamesRecyclerView(View view) {
         RecyclerView savedGamesRecyclerView = view.findViewById(R.id.savedGames);
         SavedGamesRecyclerAdapter savedGamesRecyclerAdapter = new SavedGamesRecyclerAdapter(this.startController.getGamesNames());
-        savedGamesRecyclerAdapter.setOpenDialog(this);
+        savedGamesRecyclerAdapter.setSavedGameClickListener(this);
         savedGamesRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         savedGamesRecyclerView.setAdapter(savedGamesRecyclerAdapter);
     }
 
-    public void showGameNameClicked(String name) {
+    @Override
+    public void onClickListener(String name) {
         this.dismiss();
         this.startController.start(name);
-        ((MainActivity) requireActivity()).toast(name);
         ((MainActivity) requireActivity()).next();
     }
 }

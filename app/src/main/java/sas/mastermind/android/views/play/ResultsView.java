@@ -1,4 +1,4 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

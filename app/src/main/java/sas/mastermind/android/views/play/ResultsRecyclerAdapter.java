@@ -1,4 +1,4 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import sas.mastermind.android.R;
+import sas.mastermind.android.views.CombinationColors;
 import sas.mastermind.core.controllers.PlayController;
 import sas.mastermind.core.models.ProposedCombination;
 

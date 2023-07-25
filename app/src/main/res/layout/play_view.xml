@@ -7,7 +7,7 @@
 
         <variable
             name="playView"
-            type="sas.mastermind.android.views.PlayView" />
+            type="sas.mastermind.android.views.play.PlayView" />
     </data>
 
     <LinearLayout

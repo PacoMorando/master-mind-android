@@ -1,4 +1,4 @@
-package sas.mastermind.android.views;
+package sas.mastermind.android.views.play;
 
 import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.R;

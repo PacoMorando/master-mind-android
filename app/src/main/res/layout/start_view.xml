@@ -5,7 +5,7 @@
     <data>
         <variable
             name="startView"
-            type="sas.mastermind.android.views.StartView" />
+            type="sas.mastermind.android.views.start.StartView" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
