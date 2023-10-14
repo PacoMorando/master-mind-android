@@ -1,0 +1,53 @@
+@startuml colaboration-open
+!theme plain
+
+actor player
+
+package views_ANDROID {
+    agent startView
+    agent startMenu
+    agent openGameCommand
+    agent gameSelectMenu
+    agent gameSelectCommand
+}
+
+player -right-> startView :open()
+startView --> startMenu :execute()
+startMenu -right-> openGameCommand :execute()
+openGameCommand --> gameSelectMenu :execute()
+gameSelectMenu -right-> gameSelectCommand :execute()
+
+package controllers <<master-mind-core dependency>> {
+    agent startController
+}
+gameSelectCommand --> startController :start(gameSelectedTitle)
+
+package dao {
+    agent sessionImpDAO
+    agent gameDAO
+    agent file 
+    agent fileReader
+    agent bufferedReader
+}
+
+package models <<master-mind-core dependency>>{
+    agent session
+    agent sessionDTO
+    agent game
+}
+
+startController --> session :next()
+startController --> sessionImpDAO :load(gameSelectedTitle)\nassociate(this.session)
+sessionImpDAO --> gameDAO :load(bufferedReader)
+sessionImpDAO --> sessionDTO :load(game)
+sessionImpDAO ..> file
+sessionImpDAO ..> fileReader
+sessionImpDAO ..> bufferedReader
+fileReader .left.> file
+bufferedReader .left.> fileReader
+gameDAO .left.> bufferedReader
+sessionDTO -right-> session :load(game) 
+sessionDTO ..> game 
+gameDAO -right-> game :new()
+
+@enduml

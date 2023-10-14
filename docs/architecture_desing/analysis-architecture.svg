@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="625px" preserveAspectRatio="none" style="width:497px;height:625px;background:#FFFFFF;" version="1.1" viewBox="0 0 497 625" width="497px" zoomAndPan="magnify"><defs/><g><!--MD5=[64daa5a824998c700cfb188d1583c07e]
+cluster analysis--><g id="cluster_analysis"><path d="M57.5,12.1191 L160.5,12.1191 A3.75,3.75 0 0 1 163,14.6191 L170,44.8564 L211.5,44.8564 A2.5,2.5 0 0 1 214,47.3564 L214,355.6191 A2.5,2.5 0 0 1 211.5,358.1191 L57.5,358.1191 A2.5,2.5 0 0 1 55,355.6191 L55,14.6191 A2.5,2.5 0 0 1 57.5,12.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="55" x2="170" y1="44.8564" y2="44.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="102" x="59" y="36.2373">analysis</text></g><!--MD5=[464b8a121da435760d275ace2e6f7972]
+cluster front--><g id="cluster_front"><path d="M240.5,122.1191 L302.5,122.1191 A3.75,3.75 0 0 1 305,124.6191 L312,154.8564 L374.5,154.8564 A2.5,2.5 0 0 1 377,157.3564 L377,506.6191 A2.5,2.5 0 0 1 374.5,509.1191 L240.5,509.1191 A2.5,2.5 0 0 1 238,506.6191 L238,124.6191 A2.5,2.5 0 0 1 240.5,122.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="238" x2="312" y1="154.8564" y2="154.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="61" x="242" y="146.2373">front</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="110" x="256.5" y="170.9316">«Text Console»</text></g><!--MD5=[47c14c564e796a575e671c2b0469a7bb]
+cluster backend--><g id="cluster_backend"><path d="M13.5,382.1191 L118.5,382.1191 A3.75,3.75 0 0 1 121,384.6191 L128,414.8564 L164.5,414.8564 A2.5,2.5 0 0 1 167,417.3564 L167,615.6191 A2.5,2.5 0 0 1 164.5,618.1191 L13.5,618.1191 A2.5,2.5 0 0 1 11,615.6191 L11,384.6191 A2.5,2.5 0 0 1 13.5,382.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="11" x2="128" y1="414.8564" y2="414.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="104" x="15" y="406.2373">backend</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="86" x="50" y="430.9316">«FileWriter»</text></g><!--MD5=[b843a707a9d29bfe6172f1502199d263]
+entity XView--><g id="elem_XView"><path d="M152.5,61.1191 L152.5,85.1191 M152.5,73.1191 L169.5,73.1191 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="181.5" cy="73.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="152" y="103.1943">XView</text></g><!--MD5=[a91319e7cfad8d66707571e19cb9c3d9]
+entity XController--><g id="elem_XController"><ellipse cx="116" cy="200.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="112,188.1191,118,183.1191,116,188.1191,118,193.1191,112,188.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="76.5" y="230.1943">XController</text></g><!--MD5=[3d3c7c6b097889d312e80a936bff3df4]
+entity XDAO--><g id="elem_XDAO"><ellipse cx="92" cy="309.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="80" x2="104" y1="323.1191" y2="323.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="71" y="339.1943">XDAO</text></g><!--MD5=[fd32a81c2404801ffd3250cd88dc7b13]
+entity XModel--><g id="elem_XModel"><ellipse cx="173" cy="309.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="161" x2="185" y1="323.1191" y2="323.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="50" x="148" y="339.1943">XModel</text></g><!--MD5=[c3f30a2b90631fb01f633d049b6ed225]
+entity XConsoleView--><g id="elem_XConsoleView"><path d="M282.5,188.1191 L282.5,212.1191 M282.5,200.1191 L299.5,200.1191 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="311.5" cy="200.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="98" x="254" y="230.1943">XConsoleView</text></g><!--MD5=[3c6eb9dbb232c81e763fd96b8e611316]
+entity XConsole--><g id="elem_XConsole"><path d="M305.5,448.1191 L305.5,472.1191 M305.5,460.1191 L322.5,460.1191 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="334.5" cy="460.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="66" x="293" y="490.1943">XConsole</text></g><!--MD5=[321b20efe707b2af61850df35de3c316]
+entity XMessage--><g id="elem_XMessage"><path d="M305.5,297.1191 L305.5,321.1191 M305.5,309.1191 L322.5,309.1191 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="334.5" cy="309.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="70" x="291" y="339.1943">XMessage</text></g><!--MD5=[9472a1ee4e0618b0b73dd6798e1c6f04]
+entity XSessionImpDAO--><g id="elem_XSessionImpDAO"><ellipse cx="89" cy="460.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="77" x2="101" y1="474.1191" y2="474.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="124" x="27" y="490.1943">XSessionImpDAO</text></g><!--MD5=[1950fda03e46cac9a99987e7830495ad]
+entity XGameDAO--><g id="elem_XGameDAO"><ellipse cx="99" cy="569.1191" fill="#FFFFFF" rx="12" ry="12" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="87" x2="111" y1="583.1191" y2="583.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="82" x="58" y="599.1943">XGameDAO</text></g><!--MD5=[50a2f9fbc7f4e317ae9a157602683354]
+link XView to XController--><g id="link_XView_XController"><path d="M162.28,106.1291 C152.82,126.8591 139.03,157.1191 128.96,179.2091 " fill="none" id="XView-to-XController" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="126.87,183.7891,134.2604,177.279,128.9562,179.2452,126.99,173.941,126.87,183.7891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[ec381c4eec30df59611508dbe01cdcf3]
+link XView to XModel--><g id="link_XView_XModel"><path d="M173,106.3391 C173,149.5291 173,240.8291 173,287.6291 " fill="none" id="XView-to-XModel" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="173,292.8291,177,283.8291,173,287.8291,169,283.8291,173,292.8291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[b87fd9631df6affa7e778aa25e2c6d03]
+link XController to XModel--><g id="link_XController_XModel"><path d="M128.65,233.3691 C137.28,249.5691 148.76,271.1191 157.88,288.2391 " fill="none" id="XController-to-XModel" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="160.39,292.9391,159.6792,283.116,158.0348,288.5286,152.6222,286.8842,160.39,292.9391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[0d95fea56a75b9c17caa8f96f96ff615]
+link XController to XDAO--><g id="link_XController_XDAO"><path d="M110.67,233.3691 C107.07,249.4391 102.29,270.7591 98.46,287.7991 " fill="none" id="XController-to-XDAO" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="97.31,292.9391,103.172,285.0248,98.3977,288.0589,95.3636,283.2845,97.31,292.9391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[3f8ee806e49693e05067da000670b6fb]
+reverse link XView to XConsoleView--><g id="link_XView_XConsoleView"><path d="M201.91,103.9291 C206.05,107.2391 210.2,110.6991 214,114.1191 C238.83,136.4491 264.9,164.4591 282.36,183.9791 " fill="none" id="XView-backto-XConsoleView" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="197.78,100.6691,202.387,109.3741,201.7121,103.7576,207.3285,103.0827,197.78,100.6691" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[cf332f38fe3a257d9f4479d4b1500e05]
+reverse link XController to XConsoleView--><g id="link_XController_XConsoleView"><path d="M161.17,208.6191 C192.06,208.6191 222.95,208.6191 253.84,208.6191 " fill="none" id="XController-backto-XConsoleView" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="155.81,208.6191,164.81,212.6191,160.81,208.6191,164.81,204.6191,155.81,208.6191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[36c080a40b81db7c5ea87d9770c7bc0c]
+link XConsoleView to XConsole--><g id="link_XConsoleView_XConsole"><path d="M292.08,233.1391 C285.08,249.5491 276.65,272.1791 273,293.1191 C267.43,325.0791 265.27,334.6091 273,366.1191 C279.52,392.6791 294.34,420.0091 306.66,439.6091 " fill="none" id="XConsoleView-to-XConsole" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="309.4,443.9191,307.9364,434.1796,306.7128,439.7026,301.1899,438.4791,309.4,443.9191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8ecd6ad2d97730a6eb6f9ff60d406d36]
+link XConsoleView to XMessage--><g id="link_XConsoleView_XMessage"><path d="M308.1,233.3691 C311.56,249.4391 316.14,270.7591 319.8,287.7991 " fill="none" id="XConsoleView-to-XMessage" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="320.91,292.9391,322.9162,283.2968,319.8526,288.0522,315.0971,284.9886,320.91,292.9391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[317a76084bf09870edaaae53cf52c10d]
+link XConsoleView to XModel--><g id="link_XConsoleView_XModel"><path d="M274.15,233.3691 C252.74,250.9891 223.66,274.9191 202.18,292.5991 " fill="none" id="XConsoleView-to-XModel" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="198.26,295.8291,207.7523,293.2029,202.1221,292.6536,202.6714,287.0235,198.26,295.8291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[984596a0e28c7a4c78692c8e8c3bd23a]
+reverse link XView to XConsole--><g id="link_XView_XConsole"><path d="M202.89,82.0391 C259.51,81.6491 379.1,84.4591 405,114.1191 C490.42,211.9291 386.63,381.9491 343.3,444.0491 " fill="none" id="XView-backto-XConsole" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="197.61,82.0891,206.644,86.0119,202.6098,82.0463,206.5754,78.0121,197.61,82.0891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[0dcf157d96db91a5ab5f6bcf86505fb2]
+reverse link XView to XMessage--><g id="link_XView_XMessage"><path d="M203.11,82.8691 C252.88,83.9891 348.91,89.3891 370,114.1191 C414.12,165.8591 369.11,251.5791 342.53,292.8991 " fill="none" id="XView-backto-XMessage" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="197.86,82.7591,206.7662,86.9638,202.8587,82.8734,206.9491,78.9658,197.86,82.7591" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[836f0152388ce73659febbf82a1a998a]
+link XMessage to XConsole--><g id="link_XMessage_XConsole"><path d="M326,342.2291 C326,368.3391 326,410.4291 326,438.5491 " fill="none" id="XMessage-to-XConsole" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="326,443.6291,330,434.6291,326,438.6291,322,434.6291,326,443.6291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[58449ffa50b29036dcc406913e261ab2]
+reverse link XDAO to XSessionImpDAO--><g id="link_XDAO_XSessionImpDAO"><path d="M91.42,347.2791 C90.86,375.2691 90.01,417.3591 89.48,443.6291 " fill="none" id="XDAO-backto-XSessionImpDAO" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="91.52,342.2291,87.3408,351.1474,91.42,347.2281,95.3392,351.3073,91.52,342.2291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[ecadcc4cae554e458c7c9ba54e7d7d9f]
+reverse link XModel to XSessionImpDAO--><g id="link_XModel_XSessionImpDAO"><path d="M157.23,346.5891 C141.46,374.5691 117.46,417.1391 102.53,443.6291 " fill="none" id="XModel-backto-XSessionImpDAO" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="159.69,342.2291,151.7996,348.1233,157.2448,346.5905,158.7777,352.0357,159.69,342.2291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[31756b1e06ebd6c02d7ce1b43af42910]
+link XSessionImpDAO to XGameDAO--><g id="link_XSessionImpDAO_XGameDAO"><path d="M91.22,493.3691 C92.72,509.4391 94.71,530.7591 96.31,547.7991 " fill="none" id="XSessionImpDAO-to-XGameDAO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="96.79,552.9391,99.9491,543.6107,96.3322,547.9601,91.9827,544.3432,96.79,552.9391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[5f123b110c0e5f95bffd6bb22e4b2b00]
+reverse link XModel to XGameDAO--><g id="link_XModel_XGameDAO"><path d="M179.26,347.5491 C186.46,387.7491 194.19,461.8091 168,517.1191 C161.3,531.2691 149.46,543.3791 137.46,552.8991 " fill="none" id="XModel-backto-XGameDAO" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="178.3,342.3391,176.0137,351.9189,179.2145,347.2548,183.8787,350.4557,178.3,342.3391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[419e230219694f8761b518d106482b6c]
+@startuml analysis-architecture
+!theme plain
+
+package analysis{
+    boundary XView
+    control XController
+    entity XDAO
+    entity XModel
+}
+
+
+XView ..> XController
+XView ..> XModel
+XController ..> XModel
+XController ..> XDAO
+
+package front <<Text Console>> {
+    boundary XConsoleView
+    boundary XConsole
+    boundary XMessage
+}
+
+XConsoleView .up.> XView
+XConsoleView .up.> XController
+XConsoleView - -> XConsole
+XConsoleView - -> XMessage
+XConsoleView ..> XModel
+XConsole .up.> XView
+XMessage .up.> XView
+XMessage - -> XConsole
+
+package backend <<FileWriter>> {
+    entity XSessionImpDAO
+    entity XGameDAO
+}
+
+XSessionImpDAO .up.> XDAO
+XSessionImpDAO .up.> XModel
+XSessionImpDAO - -> XGameDAO
+XGameDAO .up.> XModel
+
+@enduml
+
+@startuml analysis-architecture
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+
+package analysis{
+    boundary XView
+    control XController
+    entity XDAO
+    entity XModel
+}
+
+
+XView ..> XController
+XView ..> XModel
+XController ..> XModel
+XController ..> XDAO
+
+package front <<Text Console>> {
+    boundary XConsoleView
+    boundary XConsole
+    boundary XMessage
+}
+
+XConsoleView .up.> XView
+XConsoleView .up.> XController
+XConsoleView - -> XConsole
+XConsoleView - -> XMessage
+XConsoleView ..> XModel
+XConsole .up.> XView
+XMessage .up.> XView
+XMessage - -> XConsole
+
+package backend <<FileWriter>> {
+    entity XSessionImpDAO
+    entity XGameDAO
+}
+
+XSessionImpDAO .up.> XDAO
+XSessionImpDAO .up.> XModel
+XSessionImpDAO - -> XGameDAO
+XGameDAO .up.> XModel
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 12:01:30 CDT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: es
+Country: MX
+--></g></svg>

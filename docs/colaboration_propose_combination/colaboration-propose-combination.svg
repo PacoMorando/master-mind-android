@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="819px" preserveAspectRatio="none" style="width:1135px;height:819px;background:#FFFFFF;" version="1.1" viewBox="0 0 1135 819" width="1135px" zoomAndPan="magnify"><defs/><g><!--MD5=[86cbce8df1eb9d604fbbb2fa357940f8]
+cluster view--><g id="cluster_view"><path d="M71.5,12.1191 L131.5,12.1191 A3.75,3.75 0 0 1 134,14.6191 L141,44.8564 L570.5,44.8564 A2.5,2.5 0 0 1 573,47.3564 L573,387.1191 A2.5,2.5 0 0 1 570.5,389.6191 L71.5,389.6191 A2.5,2.5 0 0 1 69,387.1191 L69,14.6191 A2.5,2.5 0 0 1 71.5,12.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="69" x2="141" y1="44.8564" y2="44.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="59" x="73" y="36.2373">view</text></g><!--MD5=[f4e70ef68289585296b9045165e58692]
+cluster controllers--><g id="cluster_controllers"><path d="M599.5,291.6191 L735.5,291.6191 A3.75,3.75 0 0 1 738,294.1191 L745,324.3564 L1125.5,324.3564 A2.5,2.5 0 0 1 1128,326.8564 L1128,387.1191 A2.5,2.5 0 0 1 1125.5,389.6191 L599.5,389.6191 A2.5,2.5 0 0 1 597,387.1191 L597,294.1191 A2.5,2.5 0 0 1 599.5,291.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="597" x2="745" y1="324.3564" y2="324.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="135" x="601" y="315.7373">controllers</text></g><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
+cluster models--><g id="cluster_models"><path d="M272.5,470.6191 L362.5,470.6191 A3.75,3.75 0 0 1 365,473.1191 L372,503.3564 L712.5,503.3564 A2.5,2.5 0 0 1 715,505.8564 L715,810.1191 A2.5,2.5 0 0 1 712.5,812.6191 L272.5,812.6191 A2.5,2.5 0 0 1 270,810.1191 L270,473.1191 A2.5,2.5 0 0 1 272.5,470.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="270" x2="372" y1="503.3564" y2="503.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="89" x="274" y="494.7373">models</text></g><!--MD5=[d6249b9d0baee13b642442fb7009bad3]
+entity playMenu--><g id="elem_playMenu"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="85" x="391.5" y="57.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="65" x="401.5" y="81.1943">playMenu</text></g><!--MD5=[b3f68362c3f2042c2c75c32302451c53]
+entity proposedCombinationCommand--><g id="elem_proposedCombinationCommand"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="246" x="311" y="191.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="226" x="321" y="215.6943">proposedCombinationCommand</text></g><!--MD5=[6ec64ccabbe573002792a401221fa1bf]
+entity proposedCombinationView--><g id="elem_proposedCombinationView"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="207" x="213.5" y="336.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="187" x="223.5" y="360.6943">proposedCombinationView</text></g><!--MD5=[62712c3e8a606f7e5116ef99ea9b5d12]
+entity message--><g id="elem_message"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="82" x="194" y="191.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="62" x="204" y="215.6943">message</text></g><!--MD5=[5ff5fa45ad236cb7c8993bec112332ca]
+entity console--><g id="elem_console"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="73" x="85.5" y="191.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="53" x="95.5" y="215.6943">console</text></g><!--MD5=[05a9baef6bd043058c3bbdd85940c391]
+entity playController--><g id="elem_playController"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="117" x="613.5" y="336.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="97" x="623.5" y="360.6943">playController</text></g><!--MD5=[3b15c3baf64762de6beae41fd3945220]
+entity proposedCombinationController--><g id="elem_proposedCombinationController"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="244" x="868" y="336.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="878" y="360.6943">proposedCombinationController</text></g><!--MD5=[3cc8c711f13e618a9f246baa7cb77485]
+entity session--><g id="elem_session"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="73" x="611.5" y="515.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="53" x="621.5" y="539.6943">session</text></g><!--MD5=[aff0e67a1692f4b0d96c087fa0872bfd]
+entity registry--><g id="elem_registry"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="74" x="611" y="645.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="54" x="621" y="669.6943">registry</text></g><!--MD5=[60f39db9307333e30ad09f57b45aa936]
+entity game--><g id="elem_game"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="58" x="518" y="645.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="38" x="528" y="669.6943">game</text></g><!--MD5=[583c48422b376adff395f8a0cf4a0e4d]
+entity proposedCombination--><g id="elem_proposedCombination"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="175" x="523.5" y="759.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="155" x="533.5" y="783.6943">proposedCombination</text></g><!--MD5=[3b98d72c30b49c62d3a6252bb2f730f0]
+entity combination--><g id="elem_combination"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="105" x="383.5" y="759.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="85" x="393.5" y="783.6943">combination</text></g><!--MD5=[429d483b989edb763d39b7fb4c95d2bb]
+entity colors--><g id="elem_colors"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="62" x="286" y="759.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="296" y="783.6943">colors</text></g><!--MD5=[d8eca564858595245321772129d300af]
+entity player--><g id="elem_player"><ellipse cx="32" cy="45.6191" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><path d="M32,53.6191 L32,80.6191 M19,61.6191 L45,61.6191 M32,80.6191 L19,95.6191 M32,80.6191 L45,95.6191 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="11" y="111.6943">player</text></g><!--MD5=[528e302889f1cf0206b9f1a3356bd42d]
+link playMenu to playController--><g id="link_playMenu_playController"><path d="M460.2,94.2591 C490.14,115.2191 539.56,152.3291 575,191.6191 C598.86,218.0791 600.57,228.1391 619,258.6191 C633.83,283.1491 649.63,312.0191 660.08,331.5391 " fill="none" id="playMenu-to-playController" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="662.62,336.2891,661.9092,326.466,660.2648,331.8786,654.8522,330.2342,662.62,336.2891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[dab88eb952be564fa953bf94d9368c2f]
+link player to playMenu--><g id="link_player_playMenu"><path d="M53.05,75.6191 C115.14,75.6191 298.68,75.6191 386.34,75.6191 " fill="none" id="player-to-playMenu" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="391.47,75.6191,382.47,71.6191,386.47,75.6191,382.47,79.6191,391.47,75.6191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="101" x="171.75" y="69.689">addPropComb()</text></g><!--MD5=[a8eef93b420c1b0655924ab8745d84be]
+link playMenu to proposedCombinationCommand--><g id="link_playMenu_proposedCombinationCommand"><path d="M434,94.2091 C434,117.8691 434,159.9891 434,186.1291 " fill="none" id="playMenu-to-proposedCombinationCommand" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="434,191.4491,438,182.4491,434,186.4491,430,182.4491,434,191.4491" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="65" x="435" y="158.689">execute()</text></g><!--MD5=[d7c8c2a0f38db440299351769f937d70]
+link proposedCombinationCommand to playController--><g id="link_proposedCombinationCommand_playController"><path d="M449.75,228.8291 C464.3,243.9391 487.35,264.8891 512,275.6191 C537.07,286.5391 547.55,273.6091 573,283.6191 C601.84,294.9591 630.18,316.4991 649.1,332.7991 " fill="none" id="proposedCombinationCommand-to-playController" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="653.22,336.3991,649.0616,327.4712,649.45,333.1147,643.8065,333.5031,653.22,336.3991" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="101" x="513" y="272.689">addPropComb()</text></g><!--MD5=[dbe0ca7f43eadae4834a61a4c60a42d3]
+link proposedCombinationCommand to proposedCombinationView--><g id="link_proposedCombinationCommand_proposedCombinationView"><path d="M419.65,228.6491 C398.25,254.8091 358,304.0091 334.76,332.4091 " fill="none" id="proposedCombinationCommand-to-proposedCombinationView" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="331.46,336.4391,340.2657,332.0277,334.6355,332.577,334.0862,326.9469,331.46,336.4391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[9426f4731fe41669760ef69ea4f7a6b0]
+reverse link message to proposedCombinationCommand--><g id="link_message_proposedCombinationCommand"><path d="M281.32,210.1191 C291.12,210.1191 300.92,210.1191 310.72,210.1191 " fill="none" id="message-backto-proposedCombinationCommand" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="276.2,210.1191,285.2,214.1191,281.2,210.1191,285.2,206.1191,276.2,210.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[84b62ed9c6039de5cb2a82b2674ff207]
+reverse link console to proposedCombinationView--><g id="link_console_proposedCombinationView"><path d="M149.98,231.6391 C188.36,259.7791 256.67,309.8791 292.89,336.4391 " fill="none" id="console-backto-proposedCombinationView" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="145.91,228.6491,150.7982,237.1993,149.9407,231.6078,155.5321,230.7502,145.91,228.6491" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[33465f53cca52f49d65684008862c115]
+reverse link message to proposedCombinationView--><g id="link_message_proposedCombinationView"><path d="M247.56,233.0291 C263.83,261.3991 291.88,310.3091 306.86,336.4391 " fill="none" id="message-backto-proposedCombinationView" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="245.05,228.6491,246.0492,238.4472,247.5338,232.9886,252.9923,234.4731,245.05,228.6491" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[5c6607214c2ce82aef292f91637000b6]
+link proposedCombinationView to combination--><g id="link_proposedCombinationView_combination"><path d="M327.7,373.9691 C332.88,383.1791 338.85,394.7391 343,405.6191 C391.66,533.1491 422.08,695.0591 432.23,754.1891 " fill="none" id="proposedCombinationView-to-combination" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="433.09,759.2591,435.5157,749.7137,432.2472,754.3307,427.6301,751.0622,433.09,759.2591" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[d0a931806df699c9e417ac294731b7b8]
+link proposedCombinationView to colors--><g id="link_proposedCombinationView_colors"><path d="M317,373.6691 C317,440.5391 317,679.3291 317,754.3791 " fill="none" id="proposedCombinationView-to-colors" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="317,759.4891,321,750.4891,317,754.4891,313,750.4891,317,759.4891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[4e13cfd8c25341834921b61f9bee8241]
+reverse link console to message--><g id="link_console_message"><path d="M163.86,210.1191 C173.85,210.1191 183.84,210.1191 193.84,210.1191 " fill="none" id="console-backto-message" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="158.64,210.1191,167.64,214.1191,163.64,210.1191,167.64,206.1191,158.64,210.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[3cc6c9eb5790289b64d7978a50699d6f]
+link playController to proposedCombinationController--><g id="link_playController_proposedCombinationController"><path d="M730.7,355.1191 C767.68,355.1191 816.89,355.1191 862.5,355.1191 " fill="none" id="playController-to-proposedCombinationController" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="867.76,355.1191,858.76,351.1191,862.76,355.1191,858.76,359.1191,867.76,355.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="101" x="748.75" y="349.189">addPropComb()</text></g><!--MD5=[235b4adf7e6ab0a867d0f8b5c1bc9674]
+link proposedCombinationController to session--><g id="link_proposedCombinationController_session"><path d="M955.96,373.7391 C891.94,406.8691 754.01,478.2491 686.63,513.1291 " fill="none" id="proposedCombinationController-to-session" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="681.9,515.5691,691.7314,514.9838,686.3403,513.2705,688.0536,507.8793,681.9,515.5691" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="101" x="889" y="419.689">addPropComb()</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="83" x="898" y="435.4883">nextAttempt</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="49" x="915" y="451.2876">regist()</text></g><!--MD5=[751b61c69a1b342c470f63ee712c1c84]
+link session to game--><g id="link_session_game"><path d="M611.32,540.2091 C585.75,545.8791 553.39,557.7791 537,582.6191 C525.66,599.8091 530.54,623.6291 536.81,640.8991 " fill="none" id="session-to-game" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="538.6,645.5791,539.1227,635.7442,536.8147,640.9087,531.6501,638.6007,538.6,645.5791" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="101" x="538" y="596.689">addPropComb()</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="83" x="547" y="612.4883">nextAttempt</text></g><!--MD5=[dbdecfaa6cb1599a8aec4d82bde6daa1]
+link session to registry--><g id="link_session_registry"><path d="M648,552.6491 C648,575.4091 648,615.1691 648,640.2691 " fill="none" id="session-to-registry" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="648,645.3891,652,636.3891,648,640.3891,644,636.3891,648,645.3891" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="49" x="649" y="604.689">regist()</text></g><!--MD5=[efc360da957eeea4d29a12abad6526e9]
+reverse link game to registry--><g id="link_game_registry"><path d="M581.36,664.1191 C591.23,664.1191 601.1,664.1191 610.98,664.1191 " fill="none" id="game-backto-registry" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="576.2,664.1191,585.2,668.1191,581.2,664.1191,585.2,660.1191,576.2,664.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[d962e907b3d13f6a8bb2754c27349212]
+link game to proposedCombination--><g id="link_game_proposedCombination"><path d="M557.28,683.1091 C568.45,702.6591 586.3,733.8991 598.33,754.9491 " fill="none" id="game-to-proposedCombination" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="600.95,759.5391,599.9508,749.7411,598.4662,755.1997,593.0077,753.7151,600.95,759.5391" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="36" x="583" y="726.689">add()</text></g><!--MD5=[80ba6438252ec84ba23787d368e0496c]
+reverse link combination to proposedCombination--><g id="link_combination_proposedCombination"><path d="M493.75,778.1191 C503.51,778.1191 513.28,778.1191 523.05,778.1191 " fill="none" id="combination-backto-proposedCombination" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="488.64,778.1191,497.64,782.1191,493.64,778.1191,497.64,774.1191,488.64,778.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[1256a04e72427607f125ef015a7a7c80]
+reverse link colors to combination--><g id="link_colors_combination"><path d="M353.39,778.1191 C363.43,778.1191 373.46,778.1191 383.49,778.1191 " fill="none" id="colors-backto-combination" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="348.14,778.1191,357.14,782.1191,353.14,778.1191,357.14,774.1191,348.14,778.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c20cb3dc06283a1f446f8ef21b52cdd4]
+@startuml colaboration-propose-combination
+!theme plain
+
+actor player
+
+package view{
+    agent playMenu
+    agent proposedCombinationCommand
+    agent proposedCombinationView
+    agent message
+    agent console
+}
+package controllers {
+    agent playController
+    agent proposedCombinationController
+}
+package models {
+    agent session
+    agent registry
+    agent game
+    agent proposedCombination
+    agent combination
+    agent colors
+}
+
+playMenu ..> playController
+player -right-> playMenu :addPropComb()
+playMenu - -> proposedCombinationCommand :execute()
+proposedCombinationCommand - -> playController :addPropComb()
+proposedCombinationCommand ..> proposedCombinationView
+proposedCombinationCommand .left.> message
+proposedCombinationView .up.> console
+proposedCombinationView .up.> message
+proposedCombinationView ..> combination
+proposedCombinationView ..> colors
+message .left.> console
+
+playController -right-> proposedCombinationController :addPropComb()
+proposedCombinationController -down-> session :addPropComb()\nnextAttempt\nregist()
+session -down-> game :addPropComb()\nnextAttempt
+session -down-> registry :regist()
+registry .left.> game
+game -down-> proposedCombination :add()
+proposedCombination .left.> combination
+combination .left.> colors
+
+@enduml
+
+@startuml colaboration-propose-combination
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+
+actor player
+
+package view{
+    agent playMenu
+    agent proposedCombinationCommand
+    agent proposedCombinationView
+    agent message
+    agent console
+}
+package controllers {
+    agent playController
+    agent proposedCombinationController
+}
+package models {
+    agent session
+    agent registry
+    agent game
+    agent proposedCombination
+    agent combination
+    agent colors
+}
+
+playMenu ..> playController
+player -right-> playMenu :addPropComb()
+playMenu - -> proposedCombinationCommand :execute()
+proposedCombinationCommand - -> playController :addPropComb()
+proposedCombinationCommand ..> proposedCombinationView
+proposedCombinationCommand .left.> message
+proposedCombinationView .up.> console
+proposedCombinationView .up.> message
+proposedCombinationView ..> combination
+proposedCombinationView ..> colors
+message .left.> console
+
+playController -right-> proposedCombinationController :addPropComb()
+proposedCombinationController -down-> session :addPropComb()\nnextAttempt\nregist()
+session -down-> game :addPropComb()\nnextAttempt
+session -down-> registry :regist()
+registry .left.> game
+game -down-> proposedCombination :add()
+proposedCombination .left.> combination
+combination .left.> colors
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 12:01:30 CDT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: es
+Country: MX
+--></g></svg>

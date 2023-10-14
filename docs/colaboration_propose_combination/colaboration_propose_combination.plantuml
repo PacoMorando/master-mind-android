@@ -1,0 +1,47 @@
+@startuml colaboration-propose-combination
+!theme plain
+
+actor player
+
+package view_ANDROID{
+    agent playMenu
+    agent proposedCombinationCommand
+    agent proposedCombinationView
+    agent message
+    agent console
+}
+package controllers {
+    agent playController
+    agent proposedCombinationController
+}
+package models {
+    agent session
+    agent registry
+    agent game
+    agent proposedCombination
+    agent combination
+    agent colors
+}
+
+playMenu ..> playController
+player -right-> playMenu :addPropComb()
+playMenu --> proposedCombinationCommand :execute()
+proposedCombinationCommand --> playController :addPropComb()
+proposedCombinationCommand ..> proposedCombinationView
+proposedCombinationCommand .left.> message
+proposedCombinationView .up.> console
+proposedCombinationView .up.> message
+proposedCombinationView ..> combination
+proposedCombinationView ..> colors
+message .left.> console
+
+playController -right-> proposedCombinationController :addPropComb()
+proposedCombinationController -down-> session :addPropComb()\nnextAttempt\nregist()
+session -down-> game :addPropComb()\nnextAttempt
+session -down-> registry :regist()
+registry .left.> game
+game -down-> proposedCombination :add()
+proposedCombination .left.> combination
+combination .left.> colors
+
+@enduml

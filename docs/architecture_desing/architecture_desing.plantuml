@@ -1,0 +1,54 @@
+@startuml analysis-architecture
+!theme plain
+
+package analysis{
+    boundary XView
+    control XController
+    entity XDAO
+    entity XModel
+}
+
+
+XView ..> XController
+XView ..> XModel
+XController ..> XModel
+XController ..> XDAO
+
+package front <<Android App>> {
+    boundary AndroidView
+    boundary MainActivity
+    boundary XFragments
+}
+AndroidView ..> XFragments 
+AndroidView .up.> XView
+MainActivity --> XFragments
+MainActivity --> AndroidView
+' XFragments ..> XController DUDA
+
+package backend <<FileWriter>> {
+    entity XSessionImpDAO
+    entity XGameDAO
+}
+
+XSessionImpDAO .up.> XDAO
+XSessionImpDAO .up.> XModel
+XSessionImpDAO --> XGameDAO
+XGameDAO .up.> XModel
+
+package app-core <<Maven dependency>> {
+    entity CoreSessionDAO <<abstract>>
+    boundary CoreViews <<abstract>>
+    control CoreControllers
+    entity CoreModels
+}
+
+CoreControllers --> CoreModels
+CoreControllers --> CoreSessionDAO
+CoreViews --> CoreControllers
+
+front .left.> CoreControllers
+front .down.> CoreViews
+front .down.> CoreModels
+backend ..> CoreSessionDAO
+backend ..> CoreModels
+
