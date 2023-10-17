@@ -8,32 +8,19 @@ package analysis{
     entity XModel
 }
 
-
-XView ..> XController
-XView ..> XModel
-XController ..> XModel
-XController ..> XDAO
-
 package front <<Android App>> {
-    boundary AndroidView
+    boundary AndroidViews
     boundary MainActivity
-    boundary XFragments
-}
-AndroidView ..> XFragments 
-AndroidView .up.> XView
-MainActivity --> XFragments
-MainActivity --> AndroidView
-' XFragments ..> XController DUDA
-
-package backend <<FileWriter>> {
-    entity XSessionImpDAO
-    entity XGameDAO
+    boundary Fragments
 }
 
-XSessionImpDAO .up.> XDAO
-XSessionImpDAO .up.> XModel
-XSessionImpDAO --> XGameDAO
-XGameDAO .up.> XModel
+package backend <<Room-SQLite>> {
+    entity SessionDAO
+    entity GameDAO
+    entity GameEntity
+    entity PropCombDAO
+    entity PropCombEntity
+}
 
 package app-core <<Maven dependency>> {
     entity CoreSessionDAO <<abstract>>
@@ -42,13 +29,42 @@ package app-core <<Maven dependency>> {
     entity CoreModels
 }
 
+' analysis
+XView ..> XController
+XView ..> XModel
+XController ..> XModel
+XController ..> XDAO
+
+' front
+AndroidViews --> Fragments 
+MainActivity ..> Fragments
+MainActivity --> AndroidViews
+
+AndroidViews .up.> XView
+MainActivity .up.> XView
+Fragments .up.> XView
+
+' backend
+SessionDAO --> GameDAO
+SessionDAO --> PropCombDAO
+GameDAO --> GameEntity
+PropCombDAO --> PropCombEntity
+
+SessionDAO .up.> XDAO
+GameDAO .up.> XDAO
+PropCombDAO .up.> XDAO
+GameEntity .right.> XModel
+PropCombEntity .right.> XModel
+
+' app-core
+CoreViews --> CoreControllers
+CoreViews --> CoreModels
 CoreControllers --> CoreModels
 CoreControllers --> CoreSessionDAO
-CoreViews --> CoreControllers
 
-front .left.> CoreControllers
-front .down.> CoreViews
-front .down.> CoreModels
-backend ..> CoreSessionDAO
-backend ..> CoreModels
+CoreViews .up.> XView
+CoreControllers .up.> XController
+CoreModels .up.> XModel
+CoreSessionDAO .up.> XDAO
+
 
