@@ -1,72 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="970px" preserveAspectRatio="none" style="width:853px;height:970px;background:#FFFFFF;" version="1.1" viewBox="0 0 853 970" width="853px" zoomAndPan="magnify"><defs/><g><!--MD5=[e2a75efa8a0f57c2afae8bf75386f79c]
-cluster views--><g id="cluster_views"><path d="M117.5,12.1191 L190.5,12.1191 A3.75,3.75 0 0 1 193,14.6191 L200,44.8564 L555.5,44.8564 A2.5,2.5 0 0 1 558,47.3564 L558,356.1191 A2.5,2.5 0 0 1 555.5,358.6191 L117.5,358.6191 A2.5,2.5 0 0 1 115,356.1191 L115,14.6191 A2.5,2.5 0 0 1 117.5,12.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="115" x2="200" y1="44.8564" y2="44.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="72" x="119" y="36.2373">views</text></g><!--MD5=[f4e70ef68289585296b9045165e58692]
-cluster controllers--><g id="cluster_controllers"><path d="M331.5,407.6191 L467.5,407.6191 A3.75,3.75 0 0 1 470,410.1191 L477,440.3564 L580.5,440.3564 A2.5,2.5 0 0 1 583,442.8564 L583,520.1191 A2.5,2.5 0 0 1 580.5,522.6191 L331.5,522.6191 A2.5,2.5 0 0 1 329,520.1191 L329,410.1191 A2.5,2.5 0 0 1 331.5,407.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="329" x2="477" y1="440.3564" y2="440.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="135" x="333" y="431.7373">controllers</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="238" x="341" y="456.4316">«master-mind-core dependency»</text></g><!--MD5=[5622bc4ba3bf2be5d17935065b98c5f9]
-cluster dao--><g id="cluster_dao"><path d="M21.5,587.6191 L67.5,587.6191 A3.75,3.75 0 0 1 70,590.1191 L77,620.3564 L499.5,620.3564 A2.5,2.5 0 0 1 502,622.8564 L502,845.1191 A2.5,2.5 0 0 1 499.5,847.6191 L21.5,847.6191 A2.5,2.5 0 0 1 19,845.1191 L19,590.1191 A2.5,2.5 0 0 1 21.5,587.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="19" x2="77" y1="620.3564" y2="620.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="45" x="23" y="611.7373">dao</text></g><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
-cluster models--><g id="cluster_models"><path d="M528.5,732.6191 L618.5,732.6191 A3.75,3.75 0 0 1 621,735.1191 L628,765.3564 L843.5,765.3564 A2.5,2.5 0 0 1 846,767.8564 L846,961.1191 A2.5,2.5 0 0 1 843.5,963.6191 L528.5,963.6191 A2.5,2.5 0 0 1 526,961.1191 L526,735.1191 A2.5,2.5 0 0 1 528.5,732.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="526" x2="628" y1="765.3564" y2="765.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="89" x="530" y="756.7373">models</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="238" x="571" y="781.4316">«master-mind-core dependency»</text></g><!--MD5=[d4a09bf2671889d283ef1ed146d87b74]
-entity startView--><g id="elem_startView"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="86" x="134" y="57.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="66" x="144" y="81.1943">startView</text></g><!--MD5=[4ceca6667893db310e3c8fe4b8e44312]
-entity startMenu--><g id="elem_startMenu"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="91" x="131.5" y="191.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="71" x="141.5" y="215.6943">startMenu</text></g><!--MD5=[67754659c1d6f747fdca4862b418ba4f]
-entity openGameCommand--><g id="elem_openGameCommand"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="166" x="324" y="191.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="146" x="334" y="215.6943">openGameCommand</text></g><!--MD5=[a55e9c5d5a876e553d389e7e4b5d85a2]
-entity gameSelectMenu--><g id="elem_gameSelectMenu"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="137" x="131.5" y="305.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="117" x="141.5" y="329.6943">gameSelectMenu</text></g><!--MD5=[bbb95d91527d7cbd29a4da3a725a2d8d]
-entity gameSelectCommand--><g id="elem_gameSelectCommand"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="171" x="370.5" y="305.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="380.5" y="329.6943">gameSelectCommand</text></g><!--MD5=[9be06ed98f0657ace32e5a74d13793c6]
-entity startController--><g id="elem_startController"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="123" x="394.5" y="469.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="103" x="404.5" y="493.6943">startController</text></g><!--MD5=[18e17601343045acbd01698847016141]
-entity sessionImpDAO--><g id="elem_sessionImpDAO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="132" x="255" y="632.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="112" x="265" y="656.6943">sessionImpDAO</text></g><!--MD5=[9b1729daf5800274fa0ed42c63213414]
-entity gameDAO--><g id="elem_gameDAO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="90" x="396" y="794.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="70" x="406" y="818.6943">gameDAO</text></g><!--MD5=[7edcefaa406c65155265f04249a95b70]
-entity file--><g id="elem_file"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="39" x="35.5" y="794.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="19" x="45.5" y="818.6943">file</text></g><!--MD5=[1c9c7223f677ff98b7f836349b26e4fb]
-entity fileReader--><g id="elem_fileReader"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="88" x="110" y="794.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="68" x="120" y="818.6943">fileReader</text></g><!--MD5=[5d325678d7e01c3d5f5515de18611874]
-entity bufferedReader--><g id="elem_bufferedReader"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="128" x="233" y="794.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="108" x="243" y="818.6943">bufferedReader</text></g><!--MD5=[3cc8c711f13e618a9f246baa7cb77485]
-entity session--><g id="elem_session"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="73" x="756.5" y="794.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="53" x="766.5" y="818.6943">session</text></g><!--MD5=[5ee56baf55e939591d3db5307d08d3e4]
-entity sessionDTO--><g id="elem_sessionDTO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="104" x="542" y="794.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="552" y="818.6943">sessionDTO</text></g><!--MD5=[60f39db9307333e30ad09f57b45aa936]
-entity game--><g id="elem_game"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="58" x="553" y="910.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="38" x="563" y="934.6943">game</text></g><!--MD5=[d8eca564858595245321772129d300af]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="742px" preserveAspectRatio="none" style="width:1103px;height:742px;background:#FFFFFF;" version="1.1" viewBox="0 0 1103 742" width="1103px" zoomAndPan="magnify"><defs/><g><!--MD5=[e297f64b7d5c63063320c682806a6d69]
+cluster android-views--><g id="cluster_android-views"><path d="M71.5,12.1191 L250.5,12.1191 A3.75,3.75 0 0 1 253,14.6191 L260,44.8564 L296.5,44.8564 A2.5,2.5 0 0 1 299,47.3564 L299,453.1191 A2.5,2.5 0 0 1 296.5,455.6191 L71.5,455.6191 A2.5,2.5 0 0 1 69,453.1191 L69,14.6191 A2.5,2.5 0 0 1 71.5,12.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="69" x2="260" y1="44.8564" y2="44.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="178" x="73" y="36.2373">android-views</text></g><!--MD5=[f4e70ef68289585296b9045165e58692]
+cluster controllers--><g id="cluster_controllers"><path d="M377.5,177.6191 L513.5,177.6191 A3.75,3.75 0 0 1 516,180.1191 L523,210.3564 L626.5,210.3564 A2.5,2.5 0 0 1 629,212.8564 L629,290.1191 A2.5,2.5 0 0 1 626.5,292.6191 L377.5,292.6191 A2.5,2.5 0 0 1 375,290.1191 L375,180.1191 A2.5,2.5 0 0 1 377.5,177.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="375" x2="523" y1="210.3564" y2="210.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="135" x="379" y="201.7373">controllers</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="238" x="387" y="226.4316">«master-mind-core dependency»</text></g><!--MD5=[5622bc4ba3bf2be5d17935065b98c5f9]
+cluster dao--><g id="cluster_dao"><path d="M325.5,357.6191 L371.5,357.6191 A3.75,3.75 0 0 1 374,360.1191 L381,390.3564 L749.5,390.3564 A2.5,2.5 0 0 1 752,392.8564 L752,617.1191 A2.5,2.5 0 0 1 749.5,619.6191 L325.5,619.6191 A2.5,2.5 0 0 1 323,617.1191 L323,360.1191 A2.5,2.5 0 0 1 325.5,357.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="323" x2="381" y1="390.3564" y2="390.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="45" x="327" y="381.7373">dao</text></g><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
+cluster models--><g id="cluster_models"><path d="M778.5,504.6191 L868.5,504.6191 A3.75,3.75 0 0 1 871,507.1191 L878,537.3564 L1093.5,537.3564 A2.5,2.5 0 0 1 1096,539.8564 L1096,733.1191 A2.5,2.5 0 0 1 1093.5,735.6191 L778.5,735.6191 A2.5,2.5 0 0 1 776,733.1191 L776,507.1191 A2.5,2.5 0 0 1 778.5,504.6191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="776" x2="878" y1="537.3564" y2="537.3564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="89" x="780" y="528.7373">models</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="238" x="821" y="553.4316">«master-mind-core dependency»</text></g><!--MD5=[d4a09bf2671889d283ef1ed146d87b74]
+entity startView--><g id="elem_startView"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="86" x="136" y="57.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="66" x="146" y="81.1943">startView</text></g><!--MD5=[f3e5a983b4764859bc201b96288eabaa]
+entity openDialog--><g id="elem_openDialog"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="98" x="135" y="239.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="78" x="145" y="263.6943">openDialog</text></g><!--MD5=[75ca6c3bfd481e0415141f6fc4da5839]
+entity savedGamesRecyclerView--><g id="elem_savedGamesRecyclerView"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="198" x="85" y="402.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="178" x="95" y="426.6943">savedGamesRecyclerView</text></g><!--MD5=[9be06ed98f0657ace32e5a74d13793c6]
+entity startController--><g id="elem_startController"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="123" x="440.5" y="239.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="103" x="450.5" y="263.6943">startController</text></g><!--MD5=[18e17601343045acbd01698847016141]
+entity sessionImpDAO--><g id="elem_sessionImpDAO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="132" x="450" y="402.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="112" x="460" y="426.6943">sessionImpDAO</text></g><!--MD5=[9b1729daf5800274fa0ed42c63213414]
+entity gameDAO--><g id="elem_gameDAO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="90" x="469" y="566.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="70" x="479" y="590.6943">gameDAO</text></g><!--MD5=[cf82803e8017398028ae20d2b678881b]
+entity propCombDAO--><g id="elem_propCombDAO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="126" x="594" y="566.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="604" y="590.6943">propCombDAO</text></g><!--MD5=[1e7686ede22288f75d3ce2dfd7d2a8a3]
+entity gameDTO--><g id="elem_gameDTO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="89" x="342.5" y="566.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="69" x="352.5" y="590.6943">gameDTO</text></g><!--MD5=[3cc8c711f13e618a9f246baa7cb77485]
+entity session--><g id="elem_session"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="73" x="1006.5" y="566.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="53" x="1016.5" y="590.6943">session</text></g><!--MD5=[5ee56baf55e939591d3db5307d08d3e4]
+entity sessionDTO--><g id="elem_sessionDTO"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="104" x="792" y="566.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="802" y="590.6943">sessionDTO</text></g><!--MD5=[60f39db9307333e30ad09f57b45aa936]
+entity game--><g id="elem_game"><rect fill="#FFFFFF" height="37.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="58" x="803" y="682.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="38" x="813" y="706.6943">game</text></g><!--MD5=[d8eca564858595245321772129d300af]
 entity player--><g id="elem_player"><ellipse cx="32" cy="45.6191" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><path d="M32,53.6191 L32,80.6191 M19,61.6191 L45,61.6191 M32,80.6191 L19,95.6191 M32,80.6191 L45,95.6191 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="11" y="111.6943">player</text></g><!--MD5=[367af4b5222b80585152442ad09d992b]
-link player to startView--><g id="link_player_startView"><path d="M53.08,75.6191 C72.82,75.6191 103.03,75.6191 128.67,75.6191 " fill="none" id="player-to-startView" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="133.74,75.6191,124.74,71.6191,128.74,75.6191,124.74,79.6191,133.74,75.6191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="44" x="71.5" y="69.689">open()</text></g><!--MD5=[d5c03a8635d2292d1a1667483b5b815d]
-link startView to startMenu--><g id="link_startView_startMenu"><path d="M177,94.2091 C177,117.8691 177,159.9891 177,186.1291 " fill="none" id="startView-to-startMenu" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="177,191.4491,181,182.4491,177,186.4491,173,182.4491,177,191.4491" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="65" x="178" y="158.689">execute()</text></g><!--MD5=[34b30d25dcf1d91baa8c2725afc539a7]
-link startMenu to openGameCommand--><g id="link_startMenu_openGameCommand"><path d="M222.72,210.1191 C250.07,210.1191 285.77,210.1191 318.45,210.1191 " fill="none" id="startMenu-to-openGameCommand" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="323.67,210.1191,314.67,206.1191,318.67,210.1191,314.67,214.1191,323.67,210.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="65" x="240.75" y="204.189">execute()</text></g><!--MD5=[6d489ed7831ae6692674d00485b19a5a]
-link openGameCommand to gameSelectMenu--><g id="link_openGameCommand_gameSelectMenu"><path d="M374.2,228.8691 C336.95,249.0191 276.31,281.8291 237.29,302.9391 " fill="none" id="openGameCommand-to-gameSelectMenu" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="232.65,305.4591,242.4684,304.6857,237.0455,303.0759,238.6552,297.6529,232.65,305.4591" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="65" x="316" y="272.689">execute()</text></g><!--MD5=[f3828d2f4b775f80823b5ed92448975a]
-link gameSelectMenu to gameSelectCommand--><g id="link_gameSelectMenu_gameSelectCommand"><path d="M268.6,324.1191 C298.27,324.1191 333.4,324.1191 365.18,324.1191 " fill="none" id="gameSelectMenu-to-gameSelectCommand" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="370.25,324.1191,361.25,320.1191,365.25,324.1191,361.25,328.1191,370.25,324.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="65" x="287" y="318.189">execute()</text></g><!--MD5=[7a65b6408b0ee63785b09591229ef6f9]
-link gameSelectCommand to startController--><g id="link_gameSelectCommand_startController"><path d="M456,342.7691 C456,372.2191 456,431.3991 456,464.0991 " fill="none" id="gameSelectCommand-to-startController" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="456,469.4991,460,460.4991,456,464.4991,452,460.4991,456,469.4991" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="166" x="457" y="388.689">start(gameSelectedTitle)</text></g><!--MD5=[9e0b9653ef4d3ee50d08a994e551bc79]
-link startController to session--><g id="link_startController_session"><path d="M517.62,505.5791 C539.61,513.3291 563.69,524.1291 583,538.6191 C679.44,610.9991 754.12,738.7891 781.59,789.9991 " fill="none" id="startController-to-session" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="783.94,794.4191,783.2159,784.5969,781.5789,790.0117,776.1641,788.3747,783.94,794.4191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="41" x="705" y="656.689">next()</text></g><!--MD5=[c2930912c6d1b51f027516d9d578c4fb]
-link startController to sessionImpDAO--><g id="link_startController_sessionImpDAO"><path d="M441.3,506.6591 C416.44,536.2991 366.2,596.2091 339.18,628.4391 " fill="none" id="startController-to-sessionImpDAO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="335.69,632.6091,344.5404,628.2882,338.905,628.7798,338.4134,623.1443,335.69,632.6091" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="161" x="413" y="552.689">load(gameSelectedTitle)</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="152" x="417.5" y="568.4883">associate(this.session)</text></g><!--MD5=[9cfd55350552baea5184e4ef4e2f72ef]
-link sessionImpDAO to gameDAO--><g id="link_sessionImpDAO_gameDAO"><path d="M335.59,669.7691 C347.5,684.3091 364.65,705.5691 379,724.6191 C395.52,746.5491 413.59,772.2591 425.93,790.1091 " fill="none" id="sessionImpDAO-to-gameDAO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="428.94,794.4691,427.1146,784.7909,426.0977,790.3556,420.533,789.3387,428.94,794.4691" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="139" x="373" y="713.689">load(bufferedReader)</text></g><!--MD5=[fa52c654f8bfe3910b88ada136fea4c7]
-link sessionImpDAO to sessionDTO--><g id="link_sessionImpDAO_sessionDTO"><path d="M387.35,655.4191 C428.95,660.3391 481.92,672.0591 521,699.6191 C553.06,722.2291 574.55,763.8191 585.48,789.6091 " fill="none" id="sessionImpDAO-to-sessionDTO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="587.4,794.2291,587.6459,784.3834,585.484,789.6108,580.2566,787.4489,587.4,794.2291" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="74" x="541" y="713.689">load(game)</text></g><!--MD5=[46ce0a781dcc1258651b70668d6a7f12]
-link sessionImpDAO to file--><g id="link_sessionImpDAO_file"><path d="M254.79,658.4191 C204.91,666.3591 137.7,684.2591 93,724.6191 C74.16,741.6391 64.25,769.6491 59.34,789.3891 " fill="none" id="sessionImpDAO-to-file" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="58.14,794.4691,64.095,786.6245,59.2852,789.6021,56.3077,784.7922,58.14,794.4691" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[770ed25b6b26fcb2815a6b498193883f]
-link sessionImpDAO to fileReader--><g id="link_sessionImpDAO_fileReader"><path d="M289.45,669.8591 C267.4,683.1791 238.06,702.8191 216,724.6191 C196.1,744.2791 178.2,771.0091 166.81,789.7291 " fill="none" id="sessionImpDAO-to-fileReader" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="164.05,794.3091,172.1243,788.6694,166.633,790.028,165.2744,784.5367,164.05,794.3091" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[fb0d57f30d70600f0b7c32ff259d700b]
-link sessionImpDAO to bufferedReader--><g id="link_sessionImpDAO_bufferedReader"><path d="M313.32,669.8191 C309.86,678.6091 306.08,689.4991 304,699.6191 C297.72,730.1391 296.54,766.2191 296.55,789.1291 " fill="none" id="sessionImpDAO-to-bufferedReader" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="296.58,794.3791,300.5285,785.3564,296.5514,789.3792,292.5286,785.4021,296.58,794.3791" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c8551110ff04006d1b5f8f6347d60a3f]
-reverse link file to fileReader--><g id="link_file_fileReader"><path d="M79.92,813.1191 C89.85,813.1191 99.78,813.1191 109.72,813.1191 " fill="none" id="file-backto-fileReader" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="74.72,813.1191,83.72,817.1191,79.72,813.1191,83.72,809.1191,74.72,813.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[886b66bee78729a4347e34e6d0367c2c]
-reverse link fileReader to bufferedReader--><g id="link_fileReader_bufferedReader"><path d="M203.29,813.1191 C213.16,813.1191 223.02,813.1191 232.89,813.1191 " fill="none" id="fileReader-backto-bufferedReader" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="198.13,813.1191,207.13,817.1191,203.13,813.1191,207.13,809.1191,198.13,813.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[e79e1ffb76edb7fdf51e804646c6dfeb]
-reverse link bufferedReader to gameDAO--><g id="link_bufferedReader_gameDAO"><path d="M366.27,813.1191 C376.1,813.1191 385.93,813.1191 395.76,813.1191 " fill="none" id="bufferedReader-backto-gameDAO" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="361.12,813.1191,370.1314,817.0934,366.12,813.1049,370.1085,809.0934,361.12,813.1191" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[be0c05e9e41776c9383956cd4c0e3145]
-link sessionDTO to session--><g id="link_sessionDTO_session"><path d="M646.02,813.1191 C678.79,813.1191 720.53,813.1191 751.15,813.1191 " fill="none" id="sessionDTO-to-session" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="756.35,813.1191,747.35,809.1191,751.35,813.1191,747.35,817.1191,756.35,813.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="74" x="664.25" y="807.189">load(game)</text></g><!--MD5=[23bac820dad7f95545817cb23638e57e]
-link sessionDTO to game--><g id="link_sessionDTO_game"><path d="M592.12,831.9291 C590.04,851.7591 586.66,883.8491 584.39,905.4491 " fill="none" id="sessionDTO-to-game" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="583.86,910.4291,588.7624,901.8871,584.373,905.4555,580.8046,901.0662,583.86,910.4291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[03282c5e0ce94f971771a28e13fdfdc9]
-link gameDAO to game--><g id="link_gameDAO_game"><path d="M462.72,831.6791 C487.8,851.9591 529.03,885.2891 555.85,906.9691 " fill="none" id="gameDAO-to-game" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="560.02,910.3491,555.5379,901.5793,556.1324,907.2048,550.5069,907.7994,560.02,910.3491" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="39" x="520" y="877.689">new()</text></g><!--MD5=[4b7d5f2b90fa275384f02c393ddf1570]
+link player to startView--><g id="link_player_startView"><path d="M53.06,75.6191 C73.23,75.6191 104.39,75.6191 130.67,75.6191 " fill="none" id="player-to-startView" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="135.86,75.6191,126.86,71.6191,130.86,75.6191,126.86,79.6191,135.86,75.6191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="44" x="72.5" y="69.689">open()</text></g><!--MD5=[80ec4112c1d1a88488f80f130fc3a13b]
+link startView to openDialog--><g id="link_startView_openDialog"><path d="M179.49,94.2591 C180.4,127.1491 182.36,197.8091 183.37,234.2891 " fill="none" id="startView-to-openDialog" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="183.51,239.4091,187.2773,230.3093,183.3815,234.4108,179.28,230.5149,183.51,239.4091" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="46" x="182" y="158.689">show()</text></g><!--MD5=[752110d5d37cb3bd9b90bc2c4f8fa379]
+link openDialog to savedGamesRecyclerView--><g id="link_openDialog_savedGamesRecyclerView"><path d="M184,276.6591 C184,305.9291 184,364.7491 184,397.2391 " fill="none" id="openDialog-to-savedGamesRecyclerView" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="184,402.6091,188,393.6091,184,397.6091,180,393.6091,184,402.6091" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[1f70405e9acd33f12d9358ec65221d37]
+reverse link startController to openDialog--><g id="link_startController_openDialog"><path d="M435.24,258.1191 C374.93,258.1191 287.55,258.1191 233.34,258.1191 " fill="none" id="startController-backto-openDialog" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="440.26,258.1191,431.26,254.1191,435.26,258.1191,431.26,262.1191,440.26,258.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="166" x="253.75" y="252.189">start(gameSelectedTitle)</text></g><!--MD5=[6565c8983423a00c9a7dd12a73a4084e]
+reverse link startController to savedGamesRecyclerView--><g id="link_startController_savedGamesRecyclerView"><path d="M447.45,278.4791 C424.99,286.9791 398.92,297.5391 376,308.6191 C315.27,337.9791 247.85,379.2991 211.26,402.5091 " fill="none" id="startController-backto-savedGamesRecyclerView" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="452.19,276.6991,442.3565,276.1501,447.5148,278.472,445.193,283.6304,452.19,276.6991" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="120" x="377" y="330.689">getGamesNames()</text></g><!--MD5=[9e0b9653ef4d3ee50d08a994e551bc79]
+link startController to session--><g id="link_startController_session"><path d="M563.81,272.3291 C598.64,280.7591 642.54,293.0291 680,308.6191 C829.43,370.8191 971.86,509.5591 1023.04,562.7791 " fill="none" id="startController-to-session" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1026.57,566.4591,1023.2396,557.1905,1023.1139,562.8459,1017.4584,562.7203,1026.57,566.4591" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="41" x="918" y="426.689">next()</text></g><!--MD5=[c2930912c6d1b51f027516d9d578c4fb]
+link startController to sessionImpDAO--><g id="link_startController_sessionImpDAO"><path d="M503.52,276.6591 C506.07,305.9291 511.18,364.7491 514.01,397.2391 " fill="none" id="startController-to-sessionImpDAO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="514.48,402.6091,517.668,393.2905,514.0376,397.6287,509.6994,393.9983,514.48,402.6091" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="161" x="510" y="322.689">load(gameSelectedTitle)</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="152" x="514.5" y="338.4883">associate(this.session)</text></g><!--MD5=[9cfd55350552baea5184e4ef4e2f72ef]
+link sessionImpDAO to gameDAO--><g id="link_sessionImpDAO_gameDAO"><path d="M514.66,439.9791 C514.01,449.3891 513.32,461.1191 513,471.6191 C512.06,502.7091 512.68,538.6491 513.28,561.3791 " fill="none" id="sessionImpDAO-to-gameDAO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="513.42,566.5791,517.1613,557.4686,513.2772,561.5812,509.1646,557.6971,513.42,566.5791" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="70" x="514" y="485.689">getGame()</text></g><!--MD5=[d7894c102b71a0486af6ce67922a37df]
+link sessionImpDAO to propCombDAO--><g id="link_sessionImpDAO_propCombDAO"><path d="M548.1,439.6791 C561.75,448.1491 577.19,459.1791 589,471.6191 C614.92,498.9291 635.68,537.7691 647.16,561.9291 " fill="none" id="sessionImpDAO-to-propCombDAO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="649.33,566.5591,649.1216,556.7125,647.2031,562.0341,641.8815,560.1156,649.33,566.5591" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="106" x="603" y="485.689">getPropCombs()</text></g><!--MD5=[fa52c654f8bfe3910b88ada136fea4c7]
+link sessionImpDAO to sessionDTO--><g id="link_sessionImpDAO_sessionDTO"><path d="M582.34,431.5891 C622.86,439.0091 674.98,451.5191 718,471.6191 C763.65,492.9491 804.77,536.3191 826.89,562.5391 " fill="none" id="sessionImpDAO-to-sessionDTO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="830.27,566.5991,827.5673,557.1284,827.0634,562.7627,821.4291,562.2588,830.27,566.5991" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="74" x="746" y="485.689">load(game)</text></g><!--MD5=[4236b00e0caf4c517db6ce30c1cb9c40]
+link sessionImpDAO to gameDTO--><g id="link_sessionImpDAO_gameDTO"><path d="M449.72,437.7791 C431.66,445.1691 413.83,455.9491 402,471.6191 C382.38,497.5991 381.84,536.9191 383.92,561.5291 " fill="none" id="sessionImpDAO-to-gameDTO" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="384.4,566.5391,387.535,557.2026,383.9293,561.5613,379.5705,557.9557,384.4,566.5391" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="100" x="403" y="485.689">getLoad(game)</text></g><!--MD5=[be0c05e9e41776c9383956cd4c0e3145]
+link sessionDTO to session--><g id="link_sessionDTO_session"><path d="M896.02,585.1191 C928.79,585.1191 970.53,585.1191 1001.15,585.1191 " fill="none" id="sessionDTO-to-session" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1006.35,585.1191,997.35,581.1191,1001.35,585.1191,997.35,589.1191,1006.35,585.1191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="74" x="914.25" y="579.189">load(game)</text></g><!--MD5=[23bac820dad7f95545817cb23638e57e]
+link sessionDTO to game--><g id="link_sessionDTO_game"><path d="M842.12,603.9291 C840.04,623.7591 836.66,655.8491 834.39,677.4491 " fill="none" id="sessionDTO-to-game" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="833.86,682.4291,838.7624,673.8871,834.373,677.4555,830.8046,673.0662,833.86,682.4291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[b33bbbc2f334700adce0602b7189828d]
+link gameDTO to game--><g id="link_gameDTO_game"><path d="M409.9,603.7891 C421.85,612.1991 437.07,621.6791 452,627.6191 C573.35,675.8591 729.57,692.6391 797.69,697.9291 " fill="none" id="gameDTO-to-game" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="802.84,698.3191,794.162,693.6616,797.8538,697.9477,793.5677,701.6395,802.84,698.3191" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="39" x="522" y="649.689">new()</text></g><!--MD5=[184a644122e1c9145e306202476b2971]
 @startuml colaboration-open
 !theme plain
 
 actor player
 
-package views {
+package android-views {
     agent startView
-    agent startMenu
-    agent openGameCommand
-    agent gameSelectMenu
-    agent gameSelectCommand
+    agent openDialog
+    agent savedGamesRecyclerView
 }
 
 player -right-> startView :open()
-startView - -> startMenu :execute()
-startMenu -right-> openGameCommand :execute()
-openGameCommand - -> gameSelectMenu :execute()
-gameSelectMenu -right-> gameSelectCommand :execute()
+startView - -> openDialog :show()
+openDialog - -> savedGamesRecyclerView
 
 package controllers <<master-mind-core dependency>> {
     agent startController
 }
-gameSelectCommand - -> startController :start(gameSelectedTitle)
+
+openDialog -left-> startController :start(gameSelectedTitle)
+savedGamesRecyclerView -left-> startController :getGamesNames()
 
 package dao {
     agent sessionImpDAO
     agent gameDAO
-    agent file 
-    agent fileReader
-    agent bufferedReader
+    agent propCombDAO
+    agent gameDTO
 }
 
 package models <<master-mind-core dependency>>{
@@ -77,17 +66,15 @@ package models <<master-mind-core dependency>>{
 
 startController - -> session :next()
 startController - -> sessionImpDAO :load(gameSelectedTitle)\nassociate(this.session)
-sessionImpDAO - -> gameDAO :load(bufferedReader)
+sessionImpDAO - -> gameDAO :getGame()
+sessionImpDAO - -> propCombDAO :getPropCombs()
 sessionImpDAO - -> sessionDTO :load(game)
-sessionImpDAO ..> file
-sessionImpDAO ..> fileReader
-sessionImpDAO ..> bufferedReader
-fileReader .left.> file
-bufferedReader .left.> fileReader
-gameDAO .left.> bufferedReader
+sessionImpDAO - -> gameDTO :getLoad(game)
+
+
 sessionDTO -right-> session :load(game) 
 sessionDTO ..> game 
-gameDAO -right-> game :new()
+gameDTO -right-> game :new()
 
 @enduml
 
@@ -239,31 +226,28 @@ skinparam UseCaseStereoType {
 
 actor player
 
-package views {
+package android-views {
     agent startView
-    agent startMenu
-    agent openGameCommand
-    agent gameSelectMenu
-    agent gameSelectCommand
+    agent openDialog
+    agent savedGamesRecyclerView
 }
 
 player -right-> startView :open()
-startView - -> startMenu :execute()
-startMenu -right-> openGameCommand :execute()
-openGameCommand - -> gameSelectMenu :execute()
-gameSelectMenu -right-> gameSelectCommand :execute()
+startView - -> openDialog :show()
+openDialog - -> savedGamesRecyclerView
 
 package controllers <<master-mind-core dependency>> {
     agent startController
 }
-gameSelectCommand - -> startController :start(gameSelectedTitle)
+
+openDialog -left-> startController :start(gameSelectedTitle)
+savedGamesRecyclerView -left-> startController :getGamesNames()
 
 package dao {
     agent sessionImpDAO
     agent gameDAO
-    agent file 
-    agent fileReader
-    agent bufferedReader
+    agent propCombDAO
+    agent gameDTO
 }
 
 package models <<master-mind-core dependency>>{
@@ -274,17 +258,15 @@ package models <<master-mind-core dependency>>{
 
 startController - -> session :next()
 startController - -> sessionImpDAO :load(gameSelectedTitle)\nassociate(this.session)
-sessionImpDAO - -> gameDAO :load(bufferedReader)
+sessionImpDAO - -> gameDAO :getGame()
+sessionImpDAO - -> propCombDAO :getPropCombs()
 sessionImpDAO - -> sessionDTO :load(game)
-sessionImpDAO ..> file
-sessionImpDAO ..> fileReader
-sessionImpDAO ..> bufferedReader
-fileReader .left.> file
-bufferedReader .left.> fileReader
-gameDAO .left.> bufferedReader
+sessionImpDAO - -> gameDTO :getLoad(game)
+
+
 sessionDTO -right-> session :load(game) 
 sessionDTO ..> game 
-gameDAO -right-> game :new()
+gameDTO -right-> game :new()
 
 @enduml
 

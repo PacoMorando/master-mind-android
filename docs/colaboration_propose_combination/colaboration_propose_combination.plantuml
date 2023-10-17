@@ -3,18 +3,17 @@
 
 actor player
 
-package view_ANDROID{
-    agent playMenu
-    agent proposedCombinationCommand
+package android-views{
+    agent playView
     agent proposedCombinationView
-    agent message
-    agent console
+    agent colorPicker
+    agent boardView
 }
-package controllers {
+package controllers <<master-mind-core dependency>> {
     agent playController
     agent proposedCombinationController
 }
-package models {
+package models <<master-mind-core dependency>> {
     agent session
     agent registry
     agent game
@@ -23,17 +22,12 @@ package models {
     agent colors
 }
 
-playMenu ..> playController
-player -right-> playMenu :addPropComb()
-playMenu --> proposedCombinationCommand :execute()
-proposedCombinationCommand --> playController :addPropComb()
-proposedCombinationCommand ..> proposedCombinationView
-proposedCombinationCommand .left.> message
-proposedCombinationView .up.> console
-proposedCombinationView .up.> message
-proposedCombinationView ..> combination
-proposedCombinationView ..> colors
-message .left.> console
+player -right-> playView :addPropComb()
+playView -right-> boardView :addPropComb()
+boardView  --> proposedCombinationView :addPropComb()
+proposedCombinationView --> playController :addPropComb()
+proposedCombinationView .left.> colorPicker
+
 
 playController -right-> proposedCombinationController :addPropComb()
 proposedCombinationController -down-> session :addPropComb()\nnextAttempt\nregist()
