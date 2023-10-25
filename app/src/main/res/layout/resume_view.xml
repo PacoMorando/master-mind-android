@@ -17,22 +17,22 @@
             android:id="@+id/resumeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="?attr/colorOnSecondaryContainer"
-            android:text="@string/game_over"
-            android:textSize="23pt"
             android:fontFamily="@font/dyna_puff_semi_condensed_regular"
+            android:text="@string/game_over"
+            android:textColor="?attr/colorOnSecondaryContainer"
+            android:textSize="@dimen/game_over_height"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.2" />
+            app:layout_constraintVertical_bias="0.178" />
 
         <TextView
             android:id="@+id/developer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/developer_sing"
-            android:textSize="5pt"
+            android:textSize="@dimen/game_over_sub_height"
             android:textColor="?attr/colorOnSecondaryContainer"
             android:fontFamily="@font/baloo2_semi_bold"
             app:layout_constraintBottom_toBottomOf="parent"

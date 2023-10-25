@@ -3,7 +3,9 @@
     <dimen name="token_size">34dp</dimen>
     <dimen name="main_buttons_width">110dp</dimen>
     <dimen name="token_result_size">10dp</dimen>
-    <dimen name="button_text_size">8.5pt</dimen>
+    <dimen name="button_text_size">16dp</dimen>
     <dimen name="start_margin_result">16dp</dimen>
     <dimen name="main_buttons_height">40dp</dimen>
+    <dimen name="game_over_height">60dp</dimen>
+    <dimen name="game_over_sub_height">12dp</dimen>
 </resources>
