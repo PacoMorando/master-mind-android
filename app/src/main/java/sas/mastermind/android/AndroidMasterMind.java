@@ -10,7 +10,7 @@ import sas.mastermind.core.controllers.LogicImplementation;
 import sas.mastermind.core.views.View;
 
 public class AndroidMasterMind {
-    private final Logic logic;//TODO Falta implementar el DAO
+    private final Logic logic;
     private final View view;
 
     public AndroidMasterMind(AppCompatActivity appCompatActivity) {

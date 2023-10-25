@@ -84,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:paddingVertical="10dp">
 
-                        <Button
+                        <!--<Button
                             android:id="@+id/undo"
                             style="@style/Widget.App.Button.OutlinedButton.IconOnly"
                             android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                             android:layout_height="wrap_content"
                             android:onClick="@{() -> playView.redo()}"
                             android:backgroundTint="?attr/colorSurface"
-                            app:icon="@drawable/ic_redo" />
+                            app:icon="@drawable/ic_redo" />-->
 
                     </com.google.android.material.button.MaterialButtonToggleGroup>
 

@@ -9,8 +9,8 @@
     <string name="dialog_negative">No</string>
     <string name="dialog_neutral">Cancel</string>
     <string name="dialog_save">save</string>
-    <string name="winner_message">Has ganao!! :D</string>
-    <string name="looser_message">Perdiste!… :/</string>
+    <string name="winner_message">You won! :D</string>
+    <string name="looser_message">You lost!… :/</string>
     <string name="exit_dialog">Exit</string>
     <string name="game_over">Game Over</string>
     <string name="developer_sing">developed by saturn apple studios</string>
@@ -19,6 +19,7 @@
     <string name="new_game_button">NEW GAME</string>
     <string name="open_game_button">OPEN GAME</string>
     <string name="name_dialog_title">Set a name</string>
+    <string name="leave_questrion">Do you want to leave?</string>
     <string-array name="combination_colors">
         <item>r</item>
         <item>g</item>

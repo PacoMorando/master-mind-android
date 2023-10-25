@@ -15,10 +15,8 @@ public class PlayView extends Fragment {
     private PlayController playController;
     private PlayViewBinding binding;
     private BoardView boardView;
-    private boolean isNextStateEnable;
 
     public void interact(PlayController playController) {
-        this.isNextStateEnable = true;
         this.playController = playController;
     }
 
@@ -38,8 +36,8 @@ public class PlayView extends Fragment {
     }
 
     private void setEnableButtons() {
-        this.binding.undo.setEnabled(this.playController.isUndoable());
-        this.binding.redo.setEnabled(this.playController.isRedoable());
+        /*this.binding.undo.setEnabled(this.playController.isUndoable());
+        this.binding.redo.setEnabled(this.playController.isRedoable());*/
         this.binding.addProposeCombination.setEnabled(!this.playController.isFinished());
     }
 

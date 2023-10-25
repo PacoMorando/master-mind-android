@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 
-import sas.mastermind.android.MainActivity;
 import sas.mastermind.android.databinding.ResumeViewBinding;
 import sas.mastermind.core.controllers.ResumeController;
 
@@ -27,8 +26,13 @@ public class ResumeView extends Fragment {
         return this.binding.getRoot();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
     public void exit (){
-        this.resumeController.resume(false);
         requireActivity().onBackPressed();
+        this.resumeController.resume(true);
     }
 }

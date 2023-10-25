@@ -15,7 +15,7 @@ import sas.mastermind.core.controllers.PlayController;
 
 public class FinishDialog extends AppCompatDialogFragment {
     private final PlayController playController;
-    private boolean winner;
+    private final boolean winner;
 
     public FinishDialog(PlayController playController, boolean winner) {
         this.playController = playController;
@@ -27,7 +27,7 @@ public class FinishDialog extends AppCompatDialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity());
         builder.setTitle(this.setMessage())
-                .setMessage("Quieres salir?")
+                .setMessage(R.string.leave_questrion)
                 .setPositiveButton(R.string.dialog_positive, (dialogInterface, i) -> {
                     this.playController.next();
                     ((MainActivity) requireActivity()).next();
